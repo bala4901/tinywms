@@ -1,0 +1,675 @@
+2013/09/16 13:32:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/list".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('api/list')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/wms/index.php/api/post
+---
+2013/09/16 13:32:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "api/view".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('api/view')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/wms/index.php/api/post/1
+---
+2013/09/16 13:36:38 [error] [exception.CException] exception 'CException' with message 'ApiController and its behaviors do not have a method or closure named "_sendResponse".' in C:\wamp\www\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\wms\protected\controllers\ApiController.php(46): CComponent->__call('_sendResponse', Array)
+#1 C:\wamp\www\wms\protected\controllers\ApiController.php(46): ApiController->_sendResponse(501, 'Error: Mode <b>...')
+#2 C:\wamp\www\framework\web\actions\CInlineAction.php(49): ApiController->actionList()
+#3 C:\wamp\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('list')
+#7 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('api/list')
+#8 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 C:\wamp\www\wms\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/wms/index.php/api/post
+---
+2013/09/16 13:37:45 [error] [exception.CException] exception 'CException' with message 'ApiController and its behaviors do not have a method or closure named "_getStatusCodeMessage".' in C:\wamp\www\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\wms\protected\controllers\ApiController.php(105): CComponent->__call('_getStatusCodeM...', Array)
+#1 C:\wamp\www\wms\protected\controllers\ApiController.php(105): ApiController->_getStatusCodeMessage(501)
+#2 C:\wamp\www\wms\protected\controllers\ApiController.php(46): ApiController->_sendResponse(501, 'Error: Mode <b>...')
+#3 C:\wamp\www\framework\web\actions\CInlineAction.php(49): ApiController->actionList()
+#4 C:\wamp\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('list')
+#8 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('api/list')
+#9 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\wms\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/wms/index.php/api/post
+---
+2013/09/16 14:06:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "post".' in C:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\framework\web\CController.php(270): CController->missingAction('post')
+#1 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('post')
+#2 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('api/post/17')
+#3 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/wms/index.php/api/post/17
+---
+2013/09/16 14:08:09 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\wms\protected\controllers\ApiController.php:131)
+Stack trace:
+#0 C:\wamp\www\framework\web\CController.php(286): ApiController->runAction()
+#1 C:\wamp\www\framework\web\CController.php(265): ApiController->runActionWithFilters()
+#2 C:\wamp\www\framework\web\CWebApplication.php(282): ApiController->run()
+#3 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\wms\index.php(13): CWebApplication->run()
+REQUEST_URI=/wms/index.php/api/post/17
+in C:\wamp\www\wms\protected\controllers\ApiController.php (131)
+in C:\wamp\www\wms\index.php (13)
+2013/09/16 14:41:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "posts/REST.GET".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('posts/REST.GET')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/wms/index.php/api/posts
+---
+2013/09/16 14:42:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "REST.GET".' in C:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\framework\web\CController.php(270): CController->missingAction('REST.GET')
+#1 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('REST.GET')
+#2 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/REST.GET')
+#3 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/wms/index.php/api/post
+---
+2013/09/16 14:44:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "REST.GET".' in C:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\framework\web\CController.php(270): CController->missingAction('REST.GET')
+#1 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('REST.GET')
+#2 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/REST.GET')
+#3 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/wms/index.php/api/post
+---
+2013/09/16 14:45:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "posts/REST.GET".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('posts/REST.GET')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/wms/index.php/api/posts
+---
+2013/09/16 14:45:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "REST.GET".' in C:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\framework\web\CController.php(270): CController->missingAction('REST.GET')
+#1 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('REST.GET')
+#2 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/REST.GET')
+#3 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/wms/index.php/api/post
+---
+2013/09/16 14:49:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "REST.GET".' in C:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\framework\web\CController.php(270): CController->missingAction('REST.GET')
+#1 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('REST.GET')
+#2 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/REST.GET')
+#3 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/wms/index.php/api/post
+---
+2013/09/16 14:50:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "REST.GET".' in C:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\framework\web\CController.php(270): CController->missingAction('REST.GET')
+#1 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('REST.GET')
+#2 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/REST.GET')
+#3 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/wms/index.php/api/post
+---
+2013/09/16 14:52:41 [error] [php] include(EController.php): failed to open stream: No such file or directory (C:\wamp\www\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\wms\protected\controllers\PostController.php(4): spl_autoload_call()
+#1 C:\wamp\www\framework\web\CWebApplication.php(354): require()
+#2 C:\wamp\www\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\wms\index.php(13): CWebApplication->run()
+REQUEST_URI=/wms/index.php/api/post
+in C:\wamp\www\wms\protected\controllers\PostController.php (4)
+in C:\wamp\www\wms\index.php (13)
+2013/09/16 14:53:02 [error] [php] include(ERestController.php): failed to open stream: No such file or directory (C:\wamp\www\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\wms\protected\controllers\PostController.php(4): spl_autoload_call()
+#1 C:\wamp\www\framework\web\CWebApplication.php(354): require()
+#2 C:\wamp\www\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\wms\index.php(13): CWebApplication->run()
+REQUEST_URI=/wms/index.php/api/post
+in C:\wamp\www\wms\protected\controllers\PostController.php (4)
+in C:\wamp\www\wms\index.php (13)
+2013/09/16 14:53:53 [error] [php] include(ERestController.php): failed to open stream: No such file or directory (C:\wamp\www\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\wms\protected\controllers\PostController.php(4): spl_autoload_call()
+#1 C:\wamp\www\framework\web\CWebApplication.php(354): require()
+#2 C:\wamp\www\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\wms\index.php(13): CWebApplication->run()
+REQUEST_URI=/wms/index.php/api/post
+in C:\wamp\www\wms\protected\controllers\PostController.php (4)
+in C:\wamp\www\wms\index.php (13)
+2013/09/16 14:54:16 [error] [php] include(ERestController.php): failed to open stream: No such file or directory (C:\wamp\www\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\wms\protected\controllers\PostController.php(4): spl_autoload_call()
+#1 C:\wamp\www\framework\web\CWebApplication.php(354): require()
+#2 C:\wamp\www\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\wms\index.php(13): CWebApplication->run()
+REQUEST_URI=/wms/index.php/api/post
+in C:\wamp\www\wms\protected\controllers\PostController.php (4)
+in C:\wamp\www\wms\index.php (13)
+2013/09/16 14:54:18 [error] [php] include(ERestController.php): failed to open stream: No such file or directory (C:\wamp\www\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\wms\protected\controllers\PostController.php(4): spl_autoload_call()
+#1 C:\wamp\www\framework\web\CWebApplication.php(354): require()
+#2 C:\wamp\www\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\wms\index.php(13): CWebApplication->run()
+REQUEST_URI=/wms/index.php/api/post
+in C:\wamp\www\wms\protected\controllers\PostController.php (4)
+in C:\wamp\www\wms\index.php (13)
+2013/09/16 14:54:53 [error] [php] include(ERestController.php): failed to open stream: No such file or directory (C:\wamp\www\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\wms\protected\controllers\PostController.php(4): spl_autoload_call()
+#1 C:\wamp\www\framework\web\CWebApplication.php(354): require()
+#2 C:\wamp\www\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\wms\index.php(13): CWebApplication->run()
+REQUEST_URI=/wms/index.php/api/post
+in C:\wamp\www\wms\protected\controllers\PostController.php (4)
+in C:\wamp\www\wms\index.php (13)
+2013/09/16 14:55:58 [error] [php] include(ERestController.php): failed to open stream: No such file or directory (C:\wamp\www\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\wms\protected\controllers\PostController.php(4): spl_autoload_call()
+#1 C:\wamp\www\framework\web\CWebApplication.php(354): require()
+#2 C:\wamp\www\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\wms\index.php(13): CWebApplication->run()
+REQUEST_URI=/wms/index.php/api/post
+in C:\wamp\www\wms\protected\controllers\PostController.php (4)
+in C:\wamp\www\wms\index.php (13)
+2013/09/16 14:56:16 [error] [php] include(ERestController.php): failed to open stream: No such file or directory (C:\wamp\www\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\wms\protected\controllers\PostController.php(4): spl_autoload_call()
+#1 C:\wamp\www\framework\web\CWebApplication.php(354): require()
+#2 C:\wamp\www\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\wms\index.php(13): CWebApplication->run()
+REQUEST_URI=/wms/index.php/api/post
+in C:\wamp\www\wms\protected\controllers\PostController.php (4)
+in C:\wamp\www\wms\index.php (13)
+2013/09/16 14:56:38 [error] [php] include(ERestController.php): failed to open stream: No such file or directory (C:\wamp\www\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\wms\protected\controllers\PostController.php(4): spl_autoload_call()
+#1 C:\wamp\www\framework\web\CWebApplication.php(354): require()
+#2 C:\wamp\www\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\wms\index.php(13): CWebApplication->run()
+REQUEST_URI=/wms/index.php/api/post
+in C:\wamp\www\wms\protected\controllers\PostController.php (4)
+in C:\wamp\www\wms\index.php (13)
+2013/09/16 14:56:59 [error] [php] include(ERestController.php): failed to open stream: No such file or directory (C:\wamp\www\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\wms\protected\controllers\PostController.php(4): spl_autoload_call()
+#1 C:\wamp\www\framework\web\CWebApplication.php(354): require()
+#2 C:\wamp\www\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\wms\index.php(13): CWebApplication->run()
+REQUEST_URI=/wms/index.php/api/post
+in C:\wamp\www\wms\protected\controllers\PostController.php (4)
+in C:\wamp\www\wms\index.php (13)
+2013/09/16 14:57:00 [error] [php] include(ERestController.php): failed to open stream: No such file or directory (C:\wamp\www\framework\YiiBase.php:427)
+Stack trace:
+#0 C:\wamp\www\wms\protected\controllers\PostController.php(4): spl_autoload_call()
+#1 C:\wamp\www\framework\web\CWebApplication.php(354): require()
+#2 C:\wamp\www\framework\web\CWebApplication.php(276): CWebApplication->createController()
+#3 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#5 C:\wamp\www\wms\index.php(13): CWebApplication->run()
+REQUEST_URI=/wms/index.php/api/post
+in C:\wamp\www\wms\protected\controllers\PostController.php (4)
+in C:\wamp\www\wms\index.php (13)
+2013/09/16 14:57:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "REST.GET".' in C:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\framework\web\CController.php(270): CController->missingAction('REST.GET')
+#1 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('REST.GET')
+#2 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/REST.GET')
+#3 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/wms/index.php/api/post
+---
+2013/09/16 15:03:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "posts/REST.GET".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('posts/REST.GET')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/wms/index.php/api/posts
+---
+2013/09/16 15:03:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "posts/REST.GET".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('posts/REST.GET')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/wms/index.php/api/posts
+---
+2013/09/16 15:03:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "posts/REST.GET".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('posts/REST.GET')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/wms/index.php/api/posts
+---
+2013/09/16 15:04:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "posts/REST.GET".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('posts/REST.GET')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/wms/index.php/api/posts
+---
+2013/09/16 15:11:11 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:48
+Stack trace:
+#0 C:\wamp\www\framework\web\filters\CFilter.php(38): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#2 C:\wamp\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('REST.GET')
+#9 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/REST.GET')
+#10 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\wms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/wms/index.php/api/post
+---
+2013/09/16 15:11:43 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:48
+Stack trace:
+#0 C:\wamp\www\framework\web\filters\CFilter.php(38): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#2 C:\wamp\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('REST.GET')
+#9 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/REST.GET')
+#10 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\wms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/wms/index.php/api/post
+---
+2013/09/16 15:13:04 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:48
+Stack trace:
+#0 C:\wamp\www\framework\web\filters\CFilter.php(38): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#2 C:\wamp\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('REST.GET')
+#9 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/REST.GET')
+#10 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\wms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/wms/index.php/api/post
+---
+2013/09/16 15:13:05 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:48
+Stack trace:
+#0 C:\wamp\www\framework\web\filters\CFilter.php(38): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#2 C:\wamp\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('REST.GET')
+#9 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/REST.GET')
+#10 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\wms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/wms/index.php/api/post
+---
+2013/09/16 15:15:35 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:48
+Stack trace:
+#0 C:\wamp\www\framework\web\filters\CFilter.php(38): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#2 C:\wamp\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('REST.GET')
+#9 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/REST.GET')
+#10 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\wms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/wms/index.php/api/post
+---
+2013/09/16 15:16:27 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:48
+Stack trace:
+#0 C:\wamp\www\framework\web\filters\CFilter.php(38): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#2 C:\wamp\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('REST.GET')
+#9 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/REST.GET')
+#10 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\wms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/wms/index.php/api/post/1
+---
+2013/09/16 15:16:38 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:48
+Stack trace:
+#0 C:\wamp\www\framework\web\filters\CFilter.php(38): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#2 C:\wamp\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(EActionRestPOST), Array)
+#8 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('REST.POST')
+#9 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/REST.POST')
+#10 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\wms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/wms/index.php/api/post/1
+---
+2013/09/16 15:16:49 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:48
+Stack trace:
+#0 C:\wamp\www\framework\web\filters\CFilter.php(38): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#2 C:\wamp\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('REST.GET')
+#9 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/REST.GET')
+#10 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\wms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/wms/index.php/api/post/1
+---
+2013/09/16 15:27:21 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\wms\protected\extensions\starship\RestfullYii\components\ERestResourceHelper.php:147)
+Stack trace:
+#0 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array()
+#1 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit()
+#2 unknown(0): ERestBehavior->emitRest()
+#3 C:\wamp\www\framework\base\CComponent.php(261): call_user_func_array()
+#4 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\actions\EActionRestPUT.php(71): PostController->__call()
+#5 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\actions\EActionRestPUT.php(71): PostController->emitRest()
+#6 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\actions\EActionRestPUT.php(47): EActionRestPUT->handlePut()
+#7 unknown(0): EActionRestPUT->run()
+#8 C:\wamp\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\wamp\www\framework\web\actions\CAction.php(74): EActionRestPUT->runWithParamsInternal()
+#10 C:\wamp\www\framework\web\CController.php(308): EActionRestPUT->runWithParams()
+#11 C:\wamp\www\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#12 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(52): CFilterChain->run()
+#13 C:\wamp\www\framework\web\filters\CFilter.php(38): ERestFilter->preFilter()
+#14 C:\wamp\www\framework\web\filters\CFilterChain.php(130): ERestFilter->filter()
+#15 C:\wamp\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\wamp\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\wamp\www\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#18 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\wamp\www\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\wamp\www\framework\web\CController.php(265): PostController->runActionWithFilters()
+#21 C:\wamp\www\framework\web\CWebApplication.php(282): PostController->run()
+#22 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\wamp\www\wms\index.php(13): CWebApplication->run()
+REQUEST_URI=/wms/index.php/api/post/1
+in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\components\ERestResourceHelper.php (147)
+in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\events\ERestEventListenerRegistry.php (671)
+in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2013/09/16 15:29:49 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:48
+Stack trace:
+#0 C:\wamp\www\framework\web\filters\CFilter.php(38): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#2 C:\wamp\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(EActionRestPUT), Array)
+#8 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('REST.PUT')
+#9 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/REST.PUT')
+#10 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\wms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/wms/index.php/api/post/1
+---
+2013/09/16 15:29:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "post".' in C:\wamp\www\framework\web\CController.php:483
+Stack trace:
+#0 C:\wamp\www\framework\web\CController.php(270): CController->missingAction('post')
+#1 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('post')
+#2 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('api/post')
+#3 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 C:\wamp\www\wms\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/wms/index.php/api/post
+---
+2013/09/16 15:30:08 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:48
+Stack trace:
+#0 C:\wamp\www\framework\web\filters\CFilter.php(38): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#2 C:\wamp\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('REST.GET')
+#9 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/REST.GET')
+#10 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\wms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/wms/index.php/api/post
+---
+2013/09/16 15:30:14 [error] [exception.CHttpException.401] exception 'CHttpException' with message 'Unauthorized' in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\filters\ERestFilter.php:48
+Stack trace:
+#0 C:\wamp\www\framework\web\filters\CFilter.php(38): ERestFilter->preFilter(Object(CFilterChain))
+#1 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#2 C:\wamp\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 C:\wamp\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\wamp\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\framework\web\CController.php(291): CFilterChain->run()
+#7 C:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#8 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('REST.GET')
+#9 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/REST.GET')
+#10 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\wms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/wms/index.php/api/post
+---
+2013/09/16 15:34:45 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\wms\protected\extensions\starship\RestfullYii\components\ERestResourceHelper.php:147)
+Stack trace:
+#0 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array()
+#1 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit()
+#2 unknown(0): ERestBehavior->emitRest()
+#3 C:\wamp\www\framework\base\CComponent.php(261): call_user_func_array()
+#4 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\actions\EActionRestPUT.php(71): PostController->__call()
+#5 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\actions\EActionRestPUT.php(71): PostController->emitRest()
+#6 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\actions\EActionRestPUT.php(47): EActionRestPUT->handlePut()
+#7 unknown(0): EActionRestPUT->run()
+#8 C:\wamp\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\wamp\www\framework\web\actions\CAction.php(74): EActionRestPUT->runWithParamsInternal()
+#10 C:\wamp\www\framework\web\CController.php(308): EActionRestPUT->runWithParams()
+#11 C:\wamp\www\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#12 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(52): CFilterChain->run()
+#13 C:\wamp\www\framework\web\filters\CFilter.php(38): ERestFilter->preFilter()
+#14 C:\wamp\www\framework\web\filters\CFilterChain.php(130): ERestFilter->filter()
+#15 C:\wamp\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\wamp\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\wamp\www\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#18 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\wamp\www\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\wamp\www\framework\web\CController.php(265): PostController->runActionWithFilters()
+#21 C:\wamp\www\framework\web\CWebApplication.php(282): PostController->run()
+#22 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\wamp\www\wms\index.php(13): CWebApplication->run()
+REQUEST_URI=/wms/index.php/api/post/13
+in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\components\ERestResourceHelper.php (147)
+in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\events\ERestEventListenerRegistry.php (671)
+in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2013/09/16 15:37:00 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\wms\protected\extensions\starship\RestfullYii\components\ERestResourceHelper.php:147)
+Stack trace:
+#0 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array()
+#1 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit()
+#2 unknown(0): ERestBehavior->emitRest()
+#3 C:\wamp\www\framework\base\CComponent.php(261): call_user_func_array()
+#4 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\actions\EActionRestPUT.php(71): PostController->__call()
+#5 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\actions\EActionRestPUT.php(71): PostController->emitRest()
+#6 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\actions\EActionRestPUT.php(47): EActionRestPUT->handlePut()
+#7 unknown(0): EActionRestPUT->run()
+#8 C:\wamp\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\wamp\www\framework\web\actions\CAction.php(74): EActionRestPUT->runWithParamsInternal()
+#10 C:\wamp\www\framework\web\CController.php(308): EActionRestPUT->runWithParams()
+#11 C:\wamp\www\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#12 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(52): CFilterChain->run()
+#13 C:\wamp\www\framework\web\filters\CFilter.php(38): ERestFilter->preFilter()
+#14 C:\wamp\www\framework\web\filters\CFilterChain.php(130): ERestFilter->filter()
+#15 C:\wamp\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\wamp\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\wamp\www\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#18 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\wamp\www\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\wamp\www\framework\web\CController.php(265): PostController->runActionWithFilters()
+#21 C:\wamp\www\framework\web\CWebApplication.php(282): PostController->run()
+#22 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\wamp\www\wms\index.php(13): CWebApplication->run()
+REQUEST_URI=/wms/index.php/api/post/13
+in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\components\ERestResourceHelper.php (147)
+in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\events\ERestEventListenerRegistry.php (671)
+in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2013/09/16 15:38:16 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\wms\protected\extensions\starship\RestfullYii\components\ERestResourceHelper.php:147)
+Stack trace:
+#0 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array()
+#1 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit()
+#2 unknown(0): ERestBehavior->emitRest()
+#3 C:\wamp\www\framework\base\CComponent.php(261): call_user_func_array()
+#4 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\actions\EActionRestPUT.php(71): PostController->__call()
+#5 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\actions\EActionRestPUT.php(71): PostController->emitRest()
+#6 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\actions\EActionRestPUT.php(47): EActionRestPUT->handlePut()
+#7 unknown(0): EActionRestPUT->run()
+#8 C:\wamp\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs()
+#9 C:\wamp\www\framework\web\actions\CAction.php(74): EActionRestPUT->runWithParamsInternal()
+#10 C:\wamp\www\framework\web\CController.php(308): EActionRestPUT->runWithParams()
+#11 C:\wamp\www\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#12 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(52): CFilterChain->run()
+#13 C:\wamp\www\framework\web\filters\CFilter.php(38): ERestFilter->preFilter()
+#14 C:\wamp\www\framework\web\filters\CFilterChain.php(130): ERestFilter->filter()
+#15 C:\wamp\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#16 C:\wamp\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#17 C:\wamp\www\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#18 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#19 C:\wamp\www\framework\web\CController.php(291): CFilterChain->run()
+#20 C:\wamp\www\framework\web\CController.php(265): PostController->runActionWithFilters()
+#21 C:\wamp\www\framework\web\CWebApplication.php(282): PostController->run()
+#22 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#23 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#24 C:\wamp\www\wms\index.php(13): CWebApplication->run()
+REQUEST_URI=/wms/index.php/api/post/13
+in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\components\ERestResourceHelper.php (147)
+in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\events\ERestEventListenerRegistry.php (671)
+in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php (170)
+2013/09/16 15:40:11 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\ARBehaviors\ERestActiveRecordRelationBehavior.php (114)
+in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\ARBehaviors\ERestActiveRecordRelationBehavior.php (48)
+in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\events\ERestEventListenerRegistry.php (696)
+2013/09/16 15:40:56 [warning] [application] Failed to set unsafe attribute "id" of "Post".
+in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\ARBehaviors\ERestActiveRecordRelationBehavior.php (114)
+in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\ARBehaviors\ERestActiveRecordRelationBehavior.php (48)
+in C:\wamp\www\wms\protected\extensions\starship\RestfullYii\events\ERestEventListenerRegistry.php (696)
+2013/09/17 13:05:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\wamp\www\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\wamp\www\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 C:\wamp\www\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 C:\wamp\www\framework\base\CModule.php(387): CDbConnection->init()
+#3 C:\wamp\www\framework\base\CApplication.php(450): CModule->getComponent('db')
+#4 C:\wamp\www\framework\db\ar\CActiveRecord.php(634): CApplication->getDb()
+#5 C:\wamp\www\framework\db\ar\CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 C:\wamp\www\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Post))
+#7 C:\wamp\www\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\events\ERestEventListenerRegistry.php(448): CActiveRecord->__construct()
+#9 [internal function]: ERestEventListenerRegistry->{closure}()
+#10 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\events\Eventor\Eventor.php(170): call_user_func_array(Object(Closure), Array)
+#11 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\behaviors\ERestBehavior.php(109): Eventor->emit('model.instance', Array)
+#12 [internal function]: ERestBehavior->emitRest('model.instance')
+#13 C:\wamp\www\framework\base\CComponent.php(261): call_user_func_array(Array, Array)
+#14 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(31): CComponent->__call('emitRest', Array)
+#15 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\actions\ERestBaseAction.php(31): PostController->emitRest('model.instance')
+#16 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\actions\EActionRestGET.php(29): ERestBaseAction->getRequestActionType('17', NULL, NULL, 'get')
+#17 [internal function]: EActionRestGET->run('17', NULL, NULL)
+#18 C:\wamp\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(EActionRestGET), Array)
+#19 C:\wamp\www\framework\web\actions\CAction.php(74): CAction->runWithParamsInternal(Object(EActionRestGET), Object(ReflectionMethod), Array)
+#20 C:\wamp\www\framework\web\CController.php(308): CAction->runWithParams(Array)
+#21 C:\wamp\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(EActionRestGET))
+#22 C:\wamp\www\wms\protected\extensions\starship\RestfullYii\filters\ERestFilter.php(52): CFilterChain->run()
+#23 C:\wamp\www\framework\web\filters\CFilter.php(38): ERestFilter->preFilter(Object(CFilterChain))
+#24 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CFilter->filter(Object(CFilterChain))
+#25 C:\wamp\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#26 C:\wamp\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#27 C:\wamp\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#28 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#29 C:\wamp\www\framework\web\CController.php(291): CFilterChain->run()
+#30 C:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(EActionRestGET), Array)
+#31 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('REST.GET')
+#32 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('post/REST.GET')
+#33 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#34 C:\wamp\www\wms\index.php(13): CApplication->run()
+#35 {main}
+REQUEST_URI=/wms/index.php/api/post/17
+---
+2013/09/17 15:53:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii/REST.GET".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/REST.GET')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\wms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/wms/index.php/api/gii
+---
