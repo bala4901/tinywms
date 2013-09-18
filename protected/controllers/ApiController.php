@@ -6,7 +6,7 @@ class ApiController extends Controller
     /**
      * Key which has to be in HTTP USERNAME and PASSWORD headers 
      */
-    Const APPLICATION_ID = 'ASCCPE';
+    Const APPLICATION_ID = 'ASCCPE2222';
  
     /**
      * Default response format
