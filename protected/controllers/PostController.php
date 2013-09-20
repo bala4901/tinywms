@@ -1,5 +1,6 @@
 <?php
-
+Yii::import('application.vendors.*');
+require_once('Swagger\Swagger');
 class PostController extends Controller
 {
 	/**

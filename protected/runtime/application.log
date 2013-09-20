@@ -673,3 +673,91 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/wms/index.php/api/gii
 ---
+2013/09/19 17:49:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/controller/Users.js".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('app/controller/...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/app/controller/Users.js?_dc=1379612947597
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/19 17:50:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "modules/account_manager/app/controller/Users.js".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('modules/account...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/modules/account_manager/app/controller/Users.js?_dc=1379613033269
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/19 17:51:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/controller/Users.js".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('app/controller/...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/app/controller/Users.js?_dc=1379613090442
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/19 18:38:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/controller/Users.js".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('app/controller/...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/app/controller/Users.js?_dc=1379615921042
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/19 18:38:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/controller/Users.js".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('app/controller/...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/app/controller/Users.js?_dc=1379615936628
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/19 18:59:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/controller/Users.js".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('app/controller/...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/app/controller/Users.js?_dc=1379617164417
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/19 19:00:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "app/controller/Users.js".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('app/controller/...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/app/controller/Users.js?_dc=1379617217188
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/19 19:00:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/app/controller/Users.js".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('js/app/controll...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/js/app/controller/Users.js?_dc=1379617258788
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/19 19:01:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('js')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/js
+---
+2013/09/19 19:01:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/app".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('js/app')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/js/app
+---
