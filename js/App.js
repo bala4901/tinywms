@@ -9,10 +9,13 @@ Ext.define('MyDesktop.App', {
     extend: 'Ext.ux.desktop.App',
 
     requires: [
-      /*  'Ext.window.MessageBox',
+       // 
+        'Ext.window.MessageBox',
 
         'Ext.ux.desktop.ShortcutModel',
-
+        'MyDesktop.core.TabWindow',
+       // 'MyDesktop.core.Notepad',
+/*
         'MyDesktop.core.SystemStatus',
         'MyDesktop.core.VideoWindow',
         'MyDesktop.core.GridWindow',
@@ -26,25 +29,26 @@ Ext.define('MyDesktop.App', {
         'MyDesktop.core.Settings'*/
     ],
 
-  /*  init: function() {
+  init: function() {
         // custom logic before getXYZ methods get called...
 
         this.callParent();
 
         // now ready...
     },
-
+  
     getModules : function(){
         return [
-            new MyDesktop.VideoWindow(),
+           new MyDesktop.TabWindow(),
+           /* new MyDesktop.VideoWindow(),
             //new MyDesktop.Blockalanche(),
             new MyDesktop.SystemStatus(),
             new MyDesktop.GridWindow(),
             new MyDesktop.TabWindow(),
             new MyDesktop.AccordionWindow(),
-            new MyDesktop.Notepad(),
+          new MyDesktop.Notepad(),
             new MyDesktop.BogusMenuModule(),
-            new MyDesktop.BogusModule()
+            new MyDesktop.BogusModule()*/
         ];
     },
 
@@ -125,5 +129,5 @@ Ext.define('MyDesktop.App', {
             desktop: this.desktop
         });
         dlg.show();
-    }*/
+    }
 });

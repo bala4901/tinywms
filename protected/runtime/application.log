@@ -788,3 +788,91 @@ Stack trace:
 REQUEST_URI=/tinywms/index.php/App.js?_dc=1379640256576
 HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
 ---
+2013/09/20 02:33:04 [error] [php] Undefined variable: qo_desk (C:\wamp\www\tinywms\protected\views\client\index.php:22)
+Stack trace:
+#0 C:\wamp\www\framework\web\CController.php(869): ClientController->renderFile()
+#1 C:\wamp\www\framework\web\CController.php(782): ClientController->renderPartial()
+#2 C:\wamp\www\tinywms\protected\controllers\ClientController.php(7): ClientController->render()
+#3 C:\wamp\www\framework\web\actions\CInlineAction.php(49): ClientController->actionIndex()
+#4 C:\wamp\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\wamp\www\framework\web\CController.php(286): ClientController->runAction()
+#6 C:\wamp\www\framework\web\CController.php(265): ClientController->runActionWithFilters()
+#7 C:\wamp\www\framework\web\CWebApplication.php(282): ClientController->run()
+#8 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\wamp\www\tinywms\index.php(13): CWebApplication->run()
+REQUEST_URI=/tinywms/index.php/client
+in C:\wamp\www\tinywms\protected\views\client\index.php (22)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (7)
+in C:\wamp\www\tinywms\index.php (13)
+2013/09/20 02:40:34 [error] [exception.CException] exception 'CException' with message 'QoModulesController cannot find the requested view "index".' in C:\wamp\www\framework\web\CController.php:878
+Stack trace:
+#0 C:\wamp\www\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#1 C:\wamp\www\tinywms\protected\controllers\QoModulesController.php(128): CController->render('index', Array)
+#2 C:\wamp\www\framework\web\actions\CInlineAction.php(49): QoModulesController->actionIndex()
+#3 C:\wamp\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 C:\wamp\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\framework\web\CController.php(291): CFilterChain->run()
+#10 C:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('')
+#12 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('qoModules')
+#13 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/tinywms/index.php/qoModules
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/gii/crud/index
+---
+2013/09/20 03:16:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'qwikioffice.post' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `post`.
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (11)
+in C:\wamp\www\tinywms\index.php (13)
+2013/09/20 03:16:58 [error] [exception.CDbException] exception 'CDbException' with message 'The table "post" for active record class "Post" cannot be found in the database.' in C:\wamp\www\framework\db\ar\CActiveRecord.php:2362
+Stack trace:
+#0 C:\wamp\www\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Post))
+#1 C:\wamp\www\framework\db\ar\CActiveRecord.php(658): CActiveRecord->getMetaData()
+#2 C:\wamp\www\framework\db\ar\CActiveRecord.php(1350): CActiveRecord->getTableSchema()
+#3 C:\wamp\www\framework\db\ar\CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#4 C:\wamp\www\tinywms\protected\controllers\ClientController.php(11): CActiveRecord->find(Array)
+#5 C:\wamp\www\framework\web\actions\CInlineAction.php(49): ClientController->actionIndex()
+#6 C:\wamp\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('')
+#10 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client')
+#11 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/tinywms/index.php/client
+---
+2013/09/20 03:17:13 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT id,data FROM `qo_modules` `t` WHERE active=:1 LIMIT 1.
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (11)
+in C:\wamp\www\tinywms\index.php (13)
+2013/09/20 03:17:13 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT id,data FROM `qo_modules` `t` WHERE active=:1 LIMIT 1' in C:\wamp\www\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\wamp\www\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 C:\wamp\www\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryRow()
+#2 C:\wamp\www\framework\db\ar\CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#3 C:\wamp\www\tinywms\protected\controllers\ClientController.php(11): CActiveRecord->find(Array)
+#4 C:\wamp\www\framework\web\actions\CInlineAction.php(49): ClientController->actionIndex()
+#5 C:\wamp\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\framework\web\CWebApplication.php(282): CController->run('')
+#9 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('client')
+#10 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/tinywms/index.php/client
+---
+2013/09/20 04:22:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---

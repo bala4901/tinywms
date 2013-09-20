@@ -157,6 +157,7 @@ Ext.define('Ext.ux.desktop.App', {
     },
 
     getDesktop : function() {
+
         return this.desktop;
     },
 
