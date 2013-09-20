@@ -761,3 +761,30 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/tinywms/index.php/js/app
 ---
+2013/09/20 01:23:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "App.js".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('App.js')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/App.js?_dc=1379640235904
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/20 01:24:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "App.js".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('App.js')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/App.js?_dc=1379640251533
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/20 01:24:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "App.js".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('App.js')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/App.js?_dc=1379640256576
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---

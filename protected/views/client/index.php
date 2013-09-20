@@ -1,25 +1,13 @@
 <script type="text/javascript">
-    Ext.application({
-    requires: ['Ext.container.Viewport'],
-    name: 'AM',
+    Ext.Loader.setPath({
+        'Ext.ux.desktop': '<?php echo Yii::app()->request->baseUrl; ?>/js/app',
+        MyDesktop: '<?php echo Yii::app()->request->baseUrl; ?>/js'
+    });
 
-    appFolder: '<?php echo Yii::app()->request->baseUrl; ?>/js/app',
-    controllers: [
-        'Users'
-    ],
+    Ext.require('MyDesktop.App');
 
-
-  launch: function() {
-       
-        Ext.create('Ext.container.Viewport', {
-            layout: 'fit',
-            items: [
-                {
-                    xtype: 'userlist'
-                }
-            ]
-        });
-   
-    }
-});
-    </script>
+    var myDesktopApp;
+    Ext.onReady(function() {
+        myDesktopApp = new MyDesktop.App();
+    });
+</script> 
