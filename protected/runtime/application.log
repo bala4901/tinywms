@@ -876,3 +876,12 @@ Stack trace:
 REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
 HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
 ---
+2013/09/22 00:19:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
