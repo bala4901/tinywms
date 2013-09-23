@@ -6,11 +6,12 @@
         <meta name="language" content="en" />
         <title><?php echo CHtml::encode($this->pageTitle); ?></title>
 
-        <!-- blueprint CSS framework -->
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/ext-4/resources/css/ext-all-debug.css" />
-        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/core/main.css" />
-
-        <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/ext-4/ext-all-debug.js"></script>
+	<link rel="stylesheet" href="<?php echo Yii::app()->request->baseUrl; ?>/themes/default/css/loading.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	
+	<script src="<?php echo Yii::app()->request->baseUrl; ?>/js/Bleext/Bleext.js" type="text/javascript" charset="utf-8"></script>	
+	<script type="text/javascript">
+                Bleext.BASE_PATH = "<?php echo Yii::app()->request->baseUrl; ?>/";
+	</script>
 
         
     </head>

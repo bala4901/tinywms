@@ -1,0 +1,108 @@
+2013/09/23 18:28:21 [trace] [vardump] 'here1'
+in C:\wamp\www\tinywms\protected\config\commons.php (16)
+in C:\wamp\www\tinywms\protected\models\Applications.php (138)
+in C:\wamp\www\tinywms\protected\models\Applications.php (128)
+2013/09/23 18:28:21 [trace] [vardump] array
+(
+    0 => array
+    (
+        'menu' => array
+        (
+            'text' => 'Administration'
+            'name' => 'Administration'
+            'application_k' => '1'
+            'application_parent_k' => '0'
+            'klass' => ''
+            'description' => 'Administration folder'
+            'configurations' => '{\"iconCls\":\"\",\"width\":800,\"height\":480,\"shorcutIconCls\":\"\"}'
+            'active' => '1'
+            'iconCls' => ''
+            2 => array
+            (
+                'menu' => array
+                (
+                    'text' => 'Applications'
+                    'name' => 'Applications'
+                    'application_k' => '2'
+                    'application_parent_k' => '1'
+                    'klass' => 'Bleext.modules.catalogs.applications.controller.Application'
+                    'description' => 'Applications catalog'
+                    'configurations' => '{
+   \"iconCls\":\"applications-icon\"
+}'
+                    'active' => '1'
+                    'iconCls' => 'applications-icon'
+                )
+            )
+            6 => array
+            (
+                'menu' => array
+                (
+                    'text' => 'Privileges'
+                    'name' => 'Privileges'
+                    'application_k' => '6'
+                    'application_parent_k' => '1'
+                    'klass' => 'Bleext.modules.security.permissions.controller.Permission'
+                    'description' => 'This module allow you to set the privileges to the roles and applications'
+                    'configurations' => '{\"iconCls\":\"permissions-icon-16\",\"width\":800,\"height\":480,\"shorcutIconCls\":\"\"}'
+                    'active' => '1'
+                    'iconCls' => 'permissions-icon-16'
+                )
+            )
+            7 => array
+            (
+                'menu' => array
+                (
+                    'text' => 'Groups'
+                    'name' => 'Groups'
+                    'application_k' => '7'
+                    'application_parent_k' => '1'
+                    'klass' => 'Bleext.modules.security.groups.controller.Groups'
+                    'description' => 'Groups module'
+                    'configurations' => '{\"iconCls\":\"groups-icon-16\",\"width\":800,\"height\":480,\"shorcutIconCls\":\"\"}'
+                    'active' => '1'
+                    'iconCls' => 'groups-icon-16'
+                )
+            )
+        )
+    )
+)
+in C:\wamp\www\tinywms\protected\config\commons.php (16)
+in C:\wamp\www\tinywms\protected\models\Applications.php (131)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (26)
+2013/09/23 18:41:25 [trace] [vardump] 'here1'
+in C:\wamp\www\tinywms\protected\config\commons.php (16)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (134)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (48)
+2013/09/23 18:41:55 [trace] [vardump] 'here1'
+in C:\wamp\www\tinywms\protected\config\commons.php (16)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (134)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (48)
+2013/09/23 18:42:16 [trace] [vardump] 'here1'
+in C:\wamp\www\tinywms\protected\config\commons.php (16)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (134)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (48)
+2013/09/23 18:42:28 [trace] [vardump] 'here1'
+in C:\wamp\www\tinywms\protected\config\commons.php (16)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (134)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (48)
+2013/09/23 18:44:22 [trace] [vardump] 'here1'
+in C:\wamp\www\tinywms\protected\config\commons.php (16)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (134)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (48)
+2013/09/23 18:46:46 [trace] [vardump] 'here1'
+in C:\wamp\www\tinywms\protected\config\commons.php (16)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (135)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (48)
+2013/09/23 18:47:06 [trace] [vardump] 'here1'
+in C:\wamp\www\tinywms\protected\config\commons.php (16)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (135)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (48)
+2013/09/23 18:47:19 [trace] [vardump] 'here1'
+in C:\wamp\www\tinywms\protected\config\commons.php (16)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (135)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (48)
+2013/09/23 18:50:46 [trace] [vardump] 'here1'
+in C:\wamp\www\tinywms\protected\config\commons.php (16)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (135)
+in C:\wamp\www\tinywms\protected\controllers\ClientController.php (48)
