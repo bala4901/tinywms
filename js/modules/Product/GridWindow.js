@@ -5,7 +5,7 @@
  * http://www.sencha.com/license
  */
 
-Ext.define('MyDesktop.GridWindow', {
+Ext.define('Modules.product.GridWindow', {
     extend: 'Ext.ux.desktop.Module',
 
     requires: [
@@ -15,7 +15,7 @@ Ext.define('MyDesktop.GridWindow', {
         'Ext.grid.RowNumberer'
     ],
 
-    id:'grid-win',
+    id:'product.grid-win',
 
     init : function(){
         this.launcher = {
@@ -48,7 +48,7 @@ Ext.define('MyDesktop.GridWindow', {
                                { name: 'change', type: 'float' },
                                { name: 'pctChange', type: 'float' }
                             ],
-                            data: MyDesktop.GridWindow.getDummyData()
+                            data: Modules.samples.GridWindow.getDummyData()
                         }),
                         columns: [
                             new Ext.grid.RowNumberer(),

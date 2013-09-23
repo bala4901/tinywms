@@ -12,9 +12,7 @@
 
         <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/ext-4/ext-all-debug.js"></script>
 
-
         
-
     </head>
 
     <body>

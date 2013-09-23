@@ -8,27 +8,26 @@
 Ext.define('MyDesktop.App', {
     extend: 'Ext.ux.desktop.App',
 
-    requires: [
+     requires: [
         'Ext.window.MessageBox',
 
         'Ext.ux.desktop.ShortcutModel',
-
-        'MyDesktop.SystemStatus',
-        'MyDesktop.VideoWindow',
-        'MyDesktop.GridWindow',
-        'MyDesktop.TabWindow',
-        'MyDesktop.AccordionWindow',
-        'MyDesktop.Notepad',
-        'MyDesktop.BogusMenuModule',
-        'MyDesktop.BogusModule',
-
-//        'MyDesktop.Blockalanche',
-        'MyDesktop.Settings'
+        'Modules.samples.SystemStatus',
+        'Modules.samples.GridWindow',
+        'Modules.samples.TabWindow',
+        'Modules.samples.AccordionWindow',
+        'Modules.samples.Notepad',
+        'Modules.samples.BogusMenuModule',
+        'Modules.samples.BogusModule',
+        'Modules.samples.Settings',
+        'Modules.samples.VideoWindow',
+        'Modules.samples.TestN',
+        'Modules.product.GridWindow',
+        'Modules.product.App',
     ],
 
     init: function() {
         // custom logic before getXYZ methods get called...
-
         this.callParent();
 
         // now ready...
@@ -36,15 +35,18 @@ Ext.define('MyDesktop.App', {
 
     getModules : function(){
         return [
-            new MyDesktop.VideoWindow(),
-            //new MyDesktop.Blockalanche(),
-            new MyDesktop.SystemStatus(),
-            new MyDesktop.GridWindow(),
-            new MyDesktop.TabWindow(),
-            new MyDesktop.AccordionWindow(),
-            new MyDesktop.Notepad(),
-            new MyDesktop.BogusMenuModule(),
-            new MyDesktop.BogusModule()
+            new Modules.samples.VideoWindow(),
+            new Modules.samples.GridWindow(),
+            
+            new Modules.samples.SystemStatus(),
+            new Modules.samples.TabWindow(),
+            new Modules.samples.AccordionWindow(),
+            new Modules.samples.Notepad(),
+            new Modules.samples.BogusMenuModule(),
+            new Modules.samples.BogusModule(),
+            new Modules.samples.TestN(),
+            new Modules.product.GridWindow(),
+            new Modules.product.App(),
         ];
     },
 
@@ -64,7 +66,8 @@ Ext.define('MyDesktop.App', {
                     { name: 'Grid Window', iconCls: 'grid-shortcut', module: 'grid-win' },
                     { name: 'Accordion Window', iconCls: 'accordion-shortcut', module: 'acc-win' },
                     { name: 'Notepad', iconCls: 'notepad-shortcut', module: 'notepad' },
-                    { name: 'System Status', iconCls: 'cpu-shortcut', module: 'systemstatus'}
+                    { name: 'System Status', iconCls: 'cpu-shortcut', module: 'systemstatus'},
+                    { name: 'Prod Grid Windows', iconCls: 'grid-shortcut', module: 'product.grid-win'}
                 ]
             }),
 
@@ -121,7 +124,7 @@ Ext.define('MyDesktop.App', {
     },
 
     onSettings: function () {
-        var dlg = new MyDesktop.Settings({
+        var dlg = new Modules.samples.Settings({
             desktop: this.desktop
         });
         dlg.show();

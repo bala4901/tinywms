@@ -885,3 +885,486 @@ Stack trace:
 REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
 HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
 ---
+2013/09/23 01:09:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:12:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:13:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:13:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:13:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:15:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:16:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:16:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:17:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:17:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:17:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:18:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:19:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:19:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:20:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:23:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:23:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:37:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:37:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:48:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+---
+2013/09/23 01:48:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+---
+2013/09/23 01:48:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+---
+2013/09/23 01:48:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:51:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 01:53:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 02:08:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 02:12:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 02:13:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 02:14:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 02:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 02:16:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 02:16:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 02:16:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 02:16:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Wood-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Wood...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Wood-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 02:16:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/blue.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/blue.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 02:21:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 02:27:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 02:27:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 02:27:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 02:46:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 02:47:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 02:50:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "MyDesktop/App.js".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('MyDesktop/App.j...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/MyDesktop/App.js?_dc=1379904655807
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 02:54:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 03:00:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 03:01:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 03:01:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 03:15:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 03:15:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 03:16:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 03:18:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 03:19:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 03:19:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Wood-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Wood...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Wood-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 03:19:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/desk.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/desk...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/desk.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---
+2013/09/23 03:23:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "wallpapers/Blue-Sencha.jpg".' in C:\wamp\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\wamp\www\framework\web\CWebApplication.php(141): CWebApplication->runController('wallpapers/Blue...')
+#1 C:\wamp\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 C:\wamp\www\tinywms\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/tinywms/index.php/wallpapers/Blue-Sencha.jpg
+HTTP_REFERER=http://localhost:8888/tinywms/index.php/client
+---

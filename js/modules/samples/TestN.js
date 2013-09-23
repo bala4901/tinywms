@@ -5,7 +5,7 @@
  * http://www.sencha.com/license
  */
 
-Ext.define('MyDesktop.Notepad', {
+Ext.define('Modules.samples.TestN', {
     extend: 'Ext.ux.desktop.Module',
 
     requires: [
@@ -13,22 +13,22 @@ Ext.define('MyDesktop.Notepad', {
         //'Ext.form.field.TextArea'
     ],
 
-    id:'notepad',
+    id:'testN',
 
     init : function(){
         this.launcher = {
-            text: 'Notepad',
+            text: 'Test NodePad',
             iconCls:'notepad'
         }
     },
 
     createWindow : function(){
         var desktop = this.app.getDesktop();
-        var win = desktop.getWindow('notepad');
+        var win = desktop.getWindow('testN');
         if(!win){
             win = desktop.createWindow({
-                id: 'notepad',
-                title:'Notepad',
+                id: 'testN',
+                title:'Notepad-Test',
                 width:600,
                 height:400,
                 iconCls: 'notepad',

@@ -7,7 +7,7 @@
 
 // From code originally written by David Davis (http://www.sencha.com/blog/html5-video-canvas-and-ext-js/)
 
-Ext.define('MyDesktop.VideoWindow', {
+Ext.define('Modules.samples.VideoWindow', {
     extend: 'Ext.ux.desktop.Module',
 
     uses: [

@@ -5,7 +5,7 @@
  * http://www.sencha.com/license
  */
 
-Ext.define('MyDesktop.Notepad', {
+Ext.define('Modules.samples.Notepad', {
     extend: 'Ext.ux.desktop.Module',
 
     requires: [
