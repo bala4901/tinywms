@@ -15,10 +15,10 @@ Ext.define("Bleext.desktop.Constants",{
 	singleton	: true,
 
 	/* login url */
-	DESKTOP_CONFIGURATION_URL	: Bleext.BASE_PATH+"index.php/client/config",
-	DESKTOP_LOGIN_URL			: Bleext.BASE_PATH+"index.php/login/validate",
-	DESKTOP_LOGOUT_URL			: Bleext.BASE_PATH+"index.php/login/logout",
-	DESKTOP_HOME_URL			: Bleext.BASE_PATH+"index.php/client/index",
+	DESKTOP_CONFIGURATION_URL               : Bleext.BASE_PATH+"index.php/site/config",
+	DESKTOP_LOGIN_URL			: Bleext.BASE_PATH+"index.php/users/login",
+	DESKTOP_LOGOUT_URL			: Bleext.BASE_PATH+"index.php/users/logout",
+	DESKTOP_HOME_URL			: Bleext.BASE_PATH,
 	
 	/* The directory where the avatars are */
 	USERS_AVATAR_PATH			: Bleext.BASE_PATH+"resources/avatars/",

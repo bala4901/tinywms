@@ -170,6 +170,16 @@ class PostController extends Controller {
                     ]);
                 });
     }
+    
+    public function doCustomRestGetTes()
+    {
+           $this->emitRest('req.render.json', [
+                        [
+                            'type' => 'raw',
+                            'data' => ['active' => true]
+                        ]
+                    ]);
+    }
 
     /**
      * Manages all models.

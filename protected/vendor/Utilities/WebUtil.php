@@ -6,18 +6,13 @@
  */
 
 /**
- * Description of Commons
+ * Description of WebUtil
  *
  * @author markus
  */
-class commons {
+class WebUtil {
 
-    //put your code here
-    public static function dTrace($variable) {
-        Yii::trace(CVarDumper::dumpAsString($variable), 'vardump');
-    }
-
-    public function _sendResponse($status = 200, $body = '', $content_type = 'text/html') {
+    public function sendResponse($status = 200, $body = '', $content_type = 'text/html') {
         // set the status
         $status_header = 'HTTP/1.1 ' . $status . ' ' . $this->_getStatusCodeMessage($status);
         header($status_header);

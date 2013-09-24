@@ -2,5 +2,5 @@
 return array (
   'template' => 'default',
   'baseClass' => 'Controller',
-  'actions' => 'Index,filter,loadModule,loadPreference',
+  'actions' => 'index, logout,validate',
 );

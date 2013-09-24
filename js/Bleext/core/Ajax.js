@@ -38,6 +38,7 @@ Ext.define("Bleext.core.Ajax",{
 	            requestOptions,
 	            request,
 	            headers,
+                    method,
 	            xhr;
 			if(options.success){
 				options.onSuccessCallback = options.success;
@@ -114,7 +115,7 @@ Ext.define("Bleext.core.Ajax",{
 		if(options.statusBar){
 			options.statusBar.showBusy(options.msg || "Loading...");
 		}
-		options.method = "POST";
+		options.method = options.method || "POST";
 		options.scope = options.scope || this;
 		options.params = options.params || {};
 		options.params.ajax_request = true;

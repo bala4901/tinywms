@@ -115,7 +115,7 @@ class Applications extends CActiveRecord {
                 ->where(
                         array(
                             'and',
-                            "U.username='crysfel'",
+                            "U.username='".$params."'",
                             "P.action='access'",
                             'RP.value=true'
                         )

@@ -1,5 +1,8 @@
 <?php
 
+Yii::import('application.vendor.*');
+require_once('Utilities/WebUtil.php');
+
 class UsersController extends Controller {
 
     /**
@@ -38,7 +41,7 @@ class UsersController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'view', 'config'),
+                'actions' => array('index', 'view', 'login', 'logout'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -168,6 +171,31 @@ class UsersController extends Controller {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }
+    }
+
+    public function actionLogin() {
+
+        $web = new WebUtil();
+        $identity = new UserIdentity($_POST["username"], $_POST["password"]);
+        if ($identity->authenticate()) {
+            Yii::app()->user->login($identity);
+
+            $web->sendResponse(200, CJSON::encode(array(
+                        "success" => true,
+                        "url" => "site"
+            )));
+        } else {
+
+            $web->sendResponse(200, CJSON::encode(array(
+                        "success" => false,
+                        "message" => $identity->errorMessage
+            )));
+        }
+    }
+
+    public function actionLogout() {    
+        Yii::app()->user->logout();
+        $this->redirect(Yii::app()->createUrl('site/login'));
     }
 
 }

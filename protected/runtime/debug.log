@@ -1,108 +1,351 @@
-2013/09/23 18:28:21 [trace] [vardump] 'here1'
-in C:\wamp\www\tinywms\protected\config\commons.php (16)
-in C:\wamp\www\tinywms\protected\models\Applications.php (138)
-in C:\wamp\www\tinywms\protected\models\Applications.php (128)
-2013/09/23 18:28:21 [trace] [vardump] array
+2013/09/24 17:13:15 [trace] [vardump] 'api/post'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:13:15 [trace] [vardump] 'site/login'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:21:06 [trace] [vardump] 'api/post'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:28:33 [trace] [vardump] 'api/post'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:28:47 [trace] [vardump] 'post'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:28:47 [trace] [vardump] 'site/login'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:28:55 [trace] [vardump] 'api'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:29:09 [trace] [vardump] 'api/post'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:29:51 [trace] [vardump] 'users/login'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:29:51 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:29:55 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:29:55 [trace] [vardump] 'api/post'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:30:41 [trace] [vardump] 'site/login'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:30:51 [trace] [vardump] 'users/login'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:30:51 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:30:54 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:31:40 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:31:48 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:32:38 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:32:41 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:34:10 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:34:12 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:34:49 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:34:52 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:35:10 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:35:13 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:35:52 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:35:55 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:36:24 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:36:26 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:36:36 [trace] [vardump] 'users/logout'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:36:36 [trace] [vardump] CWebUser#1
 (
-    0 => array
+    [allowAutoLogin] => false
+    [guestName] => 'Guest'
+    [loginUrl] => array
     (
-        'menu' => array
-        (
-            'text' => 'Administration'
-            'name' => 'Administration'
-            'application_k' => '1'
-            'application_parent_k' => '0'
-            'klass' => ''
-            'description' => 'Administration folder'
-            'configurations' => '{\"iconCls\":\"\",\"width\":800,\"height\":480,\"shorcutIconCls\":\"\"}'
-            'active' => '1'
-            'iconCls' => ''
-            2 => array
-            (
-                'menu' => array
-                (
-                    'text' => 'Applications'
-                    'name' => 'Applications'
-                    'application_k' => '2'
-                    'application_parent_k' => '1'
-                    'klass' => 'Bleext.modules.catalogs.applications.controller.Application'
-                    'description' => 'Applications catalog'
-                    'configurations' => '{
-   \"iconCls\":\"applications-icon\"
-}'
-                    'active' => '1'
-                    'iconCls' => 'applications-icon'
-                )
-            )
-            6 => array
-            (
-                'menu' => array
-                (
-                    'text' => 'Privileges'
-                    'name' => 'Privileges'
-                    'application_k' => '6'
-                    'application_parent_k' => '1'
-                    'klass' => 'Bleext.modules.security.permissions.controller.Permission'
-                    'description' => 'This module allow you to set the privileges to the roles and applications'
-                    'configurations' => '{\"iconCls\":\"permissions-icon-16\",\"width\":800,\"height\":480,\"shorcutIconCls\":\"\"}'
-                    'active' => '1'
-                    'iconCls' => 'permissions-icon-16'
-                )
-            )
-            7 => array
-            (
-                'menu' => array
-                (
-                    'text' => 'Groups'
-                    'name' => 'Groups'
-                    'application_k' => '7'
-                    'application_parent_k' => '1'
-                    'klass' => 'Bleext.modules.security.groups.controller.Groups'
-                    'description' => 'Groups module'
-                    'configurations' => '{\"iconCls\":\"groups-icon-16\",\"width\":800,\"height\":480,\"shorcutIconCls\":\"\"}'
-                    'active' => '1'
-                    'iconCls' => 'groups-icon-16'
-                )
-            )
-        )
+        0 => 'site/login'
     )
+    [identityCookie] => null
+    [authTimeout] => null
+    [absoluteAuthTimeout] => null
+    [autoRenewCookie] => false
+    [autoUpdateFlash] => true
+    [loginRequiredAjaxResponse] => null
+    [CWebUser:_keyPrefix] => '0e5bb5d314734529f467d4cdcf90c345'
+    [CWebUser:_access] => array()
+    [behaviors] => array()
+    [CApplicationComponent:_initialized] => true
+    [CComponent:_e] => null
+    [CComponent:_m] => null
 )
-in C:\wamp\www\tinywms\protected\config\commons.php (16)
-in C:\wamp\www\tinywms\protected\models\Applications.php (131)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (26)
-2013/09/23 18:41:25 [trace] [vardump] 'here1'
-in C:\wamp\www\tinywms\protected\config\commons.php (16)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (134)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (48)
-2013/09/23 18:41:55 [trace] [vardump] 'here1'
-in C:\wamp\www\tinywms\protected\config\commons.php (16)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (134)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (48)
-2013/09/23 18:42:16 [trace] [vardump] 'here1'
-in C:\wamp\www\tinywms\protected\config\commons.php (16)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (134)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (48)
-2013/09/23 18:42:28 [trace] [vardump] 'here1'
-in C:\wamp\www\tinywms\protected\config\commons.php (16)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (134)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (48)
-2013/09/23 18:44:22 [trace] [vardump] 'here1'
-in C:\wamp\www\tinywms\protected\config\commons.php (16)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (134)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (48)
-2013/09/23 18:46:46 [trace] [vardump] 'here1'
-in C:\wamp\www\tinywms\protected\config\commons.php (16)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (135)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (48)
-2013/09/23 18:47:06 [trace] [vardump] 'here1'
-in C:\wamp\www\tinywms\protected\config\commons.php (16)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (135)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (48)
-2013/09/23 18:47:19 [trace] [vardump] 'here1'
-in C:\wamp\www\tinywms\protected\config\commons.php (16)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (135)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (48)
-2013/09/23 18:50:46 [trace] [vardump] 'here1'
-in C:\wamp\www\tinywms\protected\config\commons.php (16)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (135)
-in C:\wamp\www\tinywms\protected\controllers\ClientController.php (48)
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\controllers\UsersController.php (197)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:36:38 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:36:40 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:37:05 [trace] [vardump] 'users/logout'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:37:45 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:37:47 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:37:51 [trace] [vardump] 'users/logout'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:37:52 [trace] [vardump] Users#1
+(
+    [CActiveRecord:_new] => false
+    [CActiveRecord:_attributes] => array
+    (
+        'user_k' => '1'
+        'username' => 'test'
+        'password' => '202cb962ac59075b964b07152d234b70'
+        'email' => 'crysfel@bleext.com'
+        'name' => 'Crysfel'
+        'lastname' => 'Villa'
+        'avatar' => 'default.png'
+        'active' => '1'
+    )
+    [CActiveRecord:_related] => array()
+    [CActiveRecord:_c] => null
+    [CActiveRecord:_pk] => '1'
+    [CActiveRecord:_alias] => 't'
+    [CModel:_errors] => array()
+    [CModel:_validators] => null
+    [CModel:_scenario] => 'update'
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\controllers\UsersController.php (197)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:38:14 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:38:16 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:38:21 [trace] [vardump] 'users/logout'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:38:21 [trace] [vardump] '1'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\controllers\UsersController.php (197)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:38:46 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:38:49 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:39:23 [trace] [vardump] 'users/logout'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:39:23 [trace] [vardump] 'site/login'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:39:29 [trace] [vardump] 'users/login'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:39:29 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:39:31 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:40:59 [trace] [vardump] 'users/logout'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:40:59 [trace] [vardump] '$1$tL2.yY3.$2wmdPEqfwY7DlfBRZ6N8t1'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\controllers\UsersController.php (197)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:43:57 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:43:59 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:44:04 [trace] [vardump] 'users/logout'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:44:04 [trace] [vardump] '$2a$10$1qAz2wSx3eDc4rssstGb5e.CZrmwRuZxpdsr3PtN4dT67IeRCudoS'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\controllers\UsersController.php (197)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:48:24 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:48:26 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:48:31 [trace] [vardump] 'users/logout'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:48:31 [trace] [vardump] '$2a$10$1qAz2wSx3eDc4rssstGb5e.CZrmwRuZxpdsr3PtN4dT67IeRCudoS'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\controllers\UsersController.php (197)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:48:31 [trace] [vardump] 'site/login'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:48:39 [trace] [vardump] 'users/login'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:48:39 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:48:41 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:48:46 [trace] [vardump] 'users/logout'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:48:46 [trace] [vardump] '$2a$10$1qAz2wSx3eDc4rssstGb5e.CZrmwRuZxpdsr3PtN4dT67IeRCudoS'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\controllers\UsersController.php (197)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:48:46 [trace] [vardump] 'site/login'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:48:54 [trace] [vardump] 'users/login'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:49:05 [trace] [vardump] 'users/login'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:49:05 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:49:08 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:49:13 [trace] [vardump] 'users/logout'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:49:13 [trace] [vardump] '$2a$10$1qAz2wSx3eDc4rssstGb5eYGY283853kd.OVpPDPgKkKBc6xXgRl.'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\controllers\UsersController.php (197)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:49:13 [trace] [vardump] 'site/login'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:49:37 [trace] [vardump] 'users/login'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:49:37 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)
+2013/09/24 17:49:45 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\index.php (18)

@@ -1,9 +1,9 @@
 <?php
-/* @var $this ClientController */
+/* @var $this LoginController */
 
 $this->breadcrumbs=array(
-	'Client'=>array('/client'),
-	'Filter',
+	'Login'=>array('/login'),
+	'Logout',
 );
 ?>
 <h1><?php echo $this->id . '/' . $this->action->id; ?></h1>

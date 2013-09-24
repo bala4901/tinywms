@@ -24,11 +24,17 @@ return array(
             'ipFilters' => array('127.0.0.1', '::1'),
         ),
     ),
+    'behaviors' => array(
+        'onBeginRequest' => array(
+            'class' => 'application.components.RequireLogin'
+        )
+    ),
     // application components
     'components' => array(
         'user' => array(
             // enable cookie-based authentication
-            'allowAutoLogin' => true,
+            'allowAutoLogin' => false,
+            'loginUrl' => array('site/login'),
         ),
         'urlManager' => array(
             'urlFormat' => 'path',
@@ -74,7 +80,7 @@ return array(
                     // 'levels' => 'trace,log',
                     'categories' => 'vardump',
                     'logFile' => 'debug.log'
-                ), 
+                ),
             // uncomment the following to show log messages on web pages
             /*
               array(
@@ -89,5 +95,12 @@ return array(
     'params' => array(
         // this is used in contact page
         'adminEmail' => 'webmaster@example.com',
+        'params' => [
+            'RestfullYii' => [
+                'req.auth.user' => function($application_id, $username, $password) {
+                    return false;
+                },
+            ]
+        ]
     ),
 );
