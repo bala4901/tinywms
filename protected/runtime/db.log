@@ -1,0 +1,500 @@
+2013/10/12 15:18:22 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SHOW FULL COLUMNS FROM `users`)
+2013/10/12 15:18:22 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SHOW FULL COLUMNS FROM `users`)
+2013/10/12 15:18:22 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SHOW CREATE TABLE `users`)
+2013/10/12 15:18:22 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SHOW CREATE TABLE `users`)
+2013/10/12 15:18:22 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT * FROM `users` `t` WHERE `t`.`username`=:yp0 LIMIT 1. Bound with :yp0='test')
+2013/10/12 15:18:22 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT * FROM `users` `t` WHERE `t`.`username`=:yp0 LIMIT 1. Bound with :yp0='test')
+2013/10/12 15:18:25 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `a`.*
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+JOIN `role_permissions` `rp` ON rp.permission_k=p.permission_k
+JOIN `roles` `r` ON r.role_k=rp.role_k
+JOIN `user_roles` `ur` ON ur.role_k=r.role_k
+JOIN `users` `u` ON u.user_k=ur.user_k
+WHERE (U.username='test') AND (P.action='access') AND (RP.value=true)
+GROUP BY `A`.`application_k`
+ORDER BY `A`.`application_parent_k` ASC)
+2013/10/12 15:18:26 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `a`.*
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+JOIN `role_permissions` `rp` ON rp.permission_k=p.permission_k
+JOIN `roles` `r` ON r.role_k=rp.role_k
+JOIN `user_roles` `ur` ON ur.role_k=r.role_k
+JOIN `users` `u` ON u.user_k=ur.user_k
+WHERE (U.username='test') AND (P.action='access') AND (RP.value=true)
+GROUP BY `A`.`application_k`
+ORDER BY `A`.`application_parent_k` ASC)
+2013/10/12 15:18:26 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SHOW FULL COLUMNS FROM `applications`)
+2013/10/12 15:18:26 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SHOW FULL COLUMNS FROM `applications`)
+2013/10/12 15:18:26 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SHOW CREATE TABLE `applications`)
+2013/10/12 15:18:26 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SHOW CREATE TABLE `applications`)
+2013/10/12 15:18:26 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SHOW FULL COLUMNS FROM `users`)
+2013/10/12 15:18:26 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SHOW FULL COLUMNS FROM `users`)
+2013/10/12 15:18:26 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SHOW CREATE TABLE `users`)
+2013/10/12 15:18:26 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SHOW CREATE TABLE `users`)
+2013/10/12 15:18:26 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT t.user_k,t.username,t.email,t.name,t.lastname,t.avatar,t.active FROM `users` `t` WHERE t.user_k = 1)
+2013/10/12 15:18:26 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT t.user_k,t.username,t.email,t.name,t.lastname,t.avatar,t.active FROM `users` `t` WHERE t.user_k = 1)
+2013/10/12 15:25:35 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT upper(P.action) as action, RP.value
+FROM `permissions` `P`
+JOIN `role_permissions` `RP` ON RP.permission_k = P.permission_k
+JOIN `roles` `R` ON R.role_k = RP.role_k
+JOIN `user_roles` `UR` ON UR.role_k = R.role_k
+JOIN `users` `U` ON U.user_k = UR.user_k)
+2013/10/12 15:25:35 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT upper(P.action) as action, RP.value
+FROM `permissions` `P`
+JOIN `role_permissions` `RP` ON RP.permission_k = P.permission_k
+JOIN `roles` `R` ON R.role_k = RP.role_k
+JOIN `user_roles` `UR` ON UR.role_k = R.role_k
+JOIN `users` `U` ON U.user_k = UR.user_k)
+2013/10/12 15:25:38 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(select R.*,U.users
+            from roles R
+            left join (
+            select R.role_k,count(R.role_k) as users 
+            from roles R
+            join user_roles UR on UR.role_k=R.role_k
+            group by R.role_k
+            ) U on U.role_k=R.role_k)
+2013/10/12 15:25:38 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(select R.*,U.users
+            from roles R
+            left join (
+            select R.role_k,count(R.role_k) as users 
+            from roles R
+            join user_roles UR on UR.role_k=R.role_k
+            group by R.role_k
+            ) U on U.role_k=R.role_k)
+2013/10/12 15:25:39 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SHOW FULL COLUMNS FROM `applications`)
+2013/10/12 15:25:39 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SHOW FULL COLUMNS FROM `applications`)
+2013/10/12 15:25:39 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SHOW CREATE TABLE `applications`)
+2013/10/12 15:25:39 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SHOW CREATE TABLE `applications`)
+2013/10/12 15:25:39 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT * FROM `applications` `t`)
+2013/10/12 15:25:39 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT * FROM `applications` `t`)
+2013/10/12 15:25:43 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `a`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k)
+2013/10/12 15:25:43 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `a`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k)
+2013/10/12 15:25:43 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:25:43 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:25:45 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `a`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k)
+2013/10/12 15:25:45 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `a`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k)
+2013/10/12 15:25:45 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:25:45 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:31:12 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `a`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k)
+2013/10/12 15:31:12 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `a`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k)
+2013/10/12 15:31:12 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:31:12 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:39:07 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k)
+2013/10/12 15:39:07 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k)
+2013/10/12 15:39:07 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:39:07 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:42:29 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:42:29 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:42:29 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:42:29 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:42:34 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:42:34 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:42:34 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:42:34 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:42:34 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:42:34 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:42:34 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:42:34 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:42:37 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:42:37 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:42:37 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:42:37 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:43:09 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:43:09 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:43:09 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:43:09 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:44:22 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:44:22 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:44:22 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:44:22 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:44:22 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:44:22 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:01 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='6'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:01 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='6'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:01 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='6'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:01 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='6'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:01 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:01 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:03 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='4'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:03 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='4'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:03 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='4'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:03 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='4'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:03 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:03 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:04 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='3'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:04 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='3'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:04 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='3'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:04 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='3'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:04 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:04 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:05 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='2'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:05 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='2'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:05 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='2'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:05 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='2'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:05 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:05 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:06 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='3'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:06 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='3'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:06 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='3'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:06 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='3'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:06 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:06 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:06 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='4'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:06 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='4'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:06 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='4'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:06 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='4'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:06 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:06 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:07 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='7'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:07 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='7'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:07 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='7'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:07 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='7'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:07 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:07 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:09 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='7'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:09 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='7'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:09 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='7'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:09 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='7'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:09 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:09 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:09 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='6'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:09 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='6'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:09 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='6'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:09 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='6'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:09 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:09 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:42 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='4'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:42 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `p`.`name`, `p`.`permission_k`
+FROM `applications` `a`
+JOIN `permissions` `p` ON p.application_k = a.application_k
+WHERE p.application_k='4'
+ORDER BY `p`.`name` ASC)
+2013/10/12 15:45:42 [profile] [system.db.CDbCommand.query] begin:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)
+2013/10/12 15:45:42 [profile] [system.db.CDbCommand.query] end:system.db.CDbCommand.query(SELECT `rp`.*
+FROM `role_permissions` `RP`
+JOIN `roles` `R` ON R.role_k=RP.role_k
+JOIN `permissions` `P` ON P.permission_k=RP.permission_k)

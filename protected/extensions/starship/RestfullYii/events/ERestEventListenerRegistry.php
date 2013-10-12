@@ -108,7 +108,7 @@ class ERestEventListenerRegistry
 		 */ 
 		$onRest(ERestEvent::REQ_AUTH_AJAX_USER, function() {
 			if(Yii::app()->user->isGuest) {
-				return true;
+				return false;
 			}
 			return true;
 		});
@@ -134,7 +134,7 @@ class ERestEventListenerRegistry
 		 * @return (String) the username
 		 */ 
 		$onRest(ERestEvent::REQ_AUTH_USERNAME, function(){
-			return 'admin@restuser';
+			return 'change@restuser';
 		});
 
 		/**
@@ -146,7 +146,7 @@ class ERestEventListenerRegistry
 		 * @return (String) the password
 		 */ 
 		$onRest(ERestEvent::REQ_AUTH_PASSWORD, function(){
-			return 'admin@Access';
+			return 'change@Access';
 		});
 
 		/**
