@@ -63,7 +63,7 @@ Ext.define("Bleext.modules.catalogs.applications.controller.Application",{
 			delete params.singleton;
 			
 			Bleext.Ajax.request({
-				url			: Bleext.BASE_PATH+"index.php/catalogs/applications/saveapp",
+				url             : Bleext.BASE_PATH+"index.php/applications/saveapp",
 				statusBar 	: this.win.statusBar,
 				params		: {data:Ext.encode(params)},
 				success		: function(data){

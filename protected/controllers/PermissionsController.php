@@ -1,5 +1,8 @@
 <?php
 
+Yii::import('application.vendor.*');
+require_once('Utilities/WebUtil.php');
+
 class PermissionsController extends Controller {
 
     /**
@@ -38,7 +41,7 @@ class PermissionsController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'view'),
+                'actions' => array('index', 'getByApplication', 'test'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -129,6 +132,49 @@ class PermissionsController extends Controller {
         $this->render('index', array(
             'dataProvider' => $dataProvider,
         ));
+    }
+
+    public function actionTest() {
+        $web = new WebUtil();
+        $application_k = $_GET["application_k"];
+
+        $r = Permissions::model()->getUserRoleAppPermission(array(
+            "user_k" => Yii::app()->user->user->user_k,
+            "application_k" => $application_k
+        ));
+
+
+        // Send the response
+        $web->sendResponse(200, CJSON::encode(array($r, "success" => TRUE)));
+    }
+
+    public function actionGetByApplication() {
+        $web = new WebUtil();
+        $application_k = $_GET["application_k"];
+
+        $rows = array();
+        $appPermissions = Applications::model()->getApplicationPermission($application_k);
+        $actives = RolePermissions::model()->getRolePermissions($application_k);
+
+        foreach ($appPermissions as $permission) {
+            array_push($rows, array(
+                "permission_k" => $permission["permission_k"],
+                "permission" => $permission["name"]
+            ));
+        }
+                
+        $result = array();
+        foreach ($rows as $row) {
+            foreach ($actives as $role) {
+                if ($role["permission_k"] === $row["permission_k"]) {
+                    $row["role_" . $role["role_k"]] = $role["value"];
+                }
+            }
+            array_push($result, $row);
+        }
+        
+        // Send the response
+        $web->sendResponse(200, CJSON::encode(array("data" => $result, "success" => TRUE)));
     }
 
     /**

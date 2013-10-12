@@ -1,5 +1,9 @@
 <?php
 
+Yii::import('application.vendor.*');
+require_once('Utilities/TreeUtil.php');
+require_once('Utilities/WebUtil.php');
+
 class RolesController extends Controller {
 
     /**
@@ -7,53 +11,6 @@ class RolesController extends Controller {
      * using two-column layout. See 'protected/views/layouts/column2.php'.
      */
     public $layout = '//layouts/column2';
-
-    /**
-     * @return array action filters
-     */
-    public function filters() {
-        return array(
-            'accessControl', // perform access control for CRUD operations
-            array(
-                'ext.starship.RestfullYii.filters.ERestFilter + 
-            REST.GET, REST.PUT, REST.POST, REST.DELETE'
-            ),
-        );
-    }
-
-    public function actions() {
-        return array(
-            'REST.' => 'ext.starship.RestfullYii.actions.ERestActionProvider',
-        );
-    }
-
-    /**
-     * Specifies the access control rules.
-     * This method is used by the 'accessControl' filter.
-     * @return array access control rules
-     */
-    public function accessRules() {
-        return array(
-            array('allow', 'actions' => array('REST.GET', 'REST.PUT', 'REST.POST', 'REST.DELETE'),
-                'users' => array('*'),
-            ),
-            array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'view', 'config'),
-                'users' => array('*'),
-            ),
-            array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'update'),
-                'users' => array('@'),
-            ),
-            array('allow', // allow admin user to perform 'admin' and 'delete' actions
-                'actions' => array('admin', 'delete'),
-                'users' => array('admin'),
-            ),
-            array('deny', // deny all users
-                'users' => array('*'),
-            ),
-        );
-    }
 
 /**
      * @return array action filters
@@ -86,7 +43,7 @@ class RolesController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'view', 'config'),
+                'actions' => array('GetRoleUsers'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -172,11 +129,11 @@ class RolesController extends Controller {
     /**
      * Lists all models.
      */
-    public function actionIndex() {
-        $dataProvider = new CActiveDataProvider('Roles');
-        $this->render('index', array(
-            'dataProvider' => $dataProvider,
-        ));
+    public function actionList() {
+        $web = new WebUtil();
+
+        $model = Applications::model()->findAll();
+        $web->sendResponse(500, CJSON::encode(array("success" => FALSE, $model)));
     }
 
     /**
@@ -216,6 +173,14 @@ class RolesController extends Controller {
             echo CActiveForm::validate($model);
             Yii::app()->end();
         }
+    }
+    
+    public function actionGetRoleUsers()
+    {
+        $web = new WebUtil();
+        $result = Roles::model()->getRolesUsers();
+        
+         $web->sendResponse(200, CJSON::encode(array("data" => $result, "success" => TRUE)));
     }
 
 }

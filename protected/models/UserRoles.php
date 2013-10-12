@@ -43,6 +43,8 @@ class UserRoles extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'roleUsers' => array(self::MANY_MANY, 'Roles', 'role_k'),
+                    'userRoles' => array(self::MANY_MANY, 'Users', 'user_k'),
 		);
 	}
 

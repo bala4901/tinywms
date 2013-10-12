@@ -70,7 +70,7 @@ Ext.define("Bleext.desktop.Application", {
         me.desktop.windowMgr.loader.show();
         Bleext.Ajax.request({
             /*url		: Bleext.BASE_PATH+"index.php/catalogs/permissions/getForCurrentUserApplication",*/
-            url: "http://localhost:8888/Bleextop/index.php/catalogs/permissions/getForCurrentUserApplication",
+            url: "http://localhost:8888/tinywms/index.php/permissions/test",
             scope: me,
             app: app,
             method: "GET",
@@ -158,7 +158,7 @@ Ext.define("Bleext.desktop.Application", {
      * @param {Object} config The message to show
      */
     showNotification: function(data) {
-        console.log(data.message);
+        console.log(data);
          Ext.create('Bleext.desktop.Notification', {
             title: 'Notification',
             position: 'br',

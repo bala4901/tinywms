@@ -35,7 +35,7 @@ Ext.define("Bleext.modules.security.permissions.controller.Permission",{
 		});
 		
 		Bleext.Ajax.request({
-			url		: Bleext.BASE_PATH+"index.php/catalogs/roles/getAll",
+			url		: Bleext.BASE_PATH+"index.php/roles/getRoleUsers",
 			scope	: this,
 			success	: this.buildGrid
 		});

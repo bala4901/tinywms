@@ -11,91 +11,103 @@
  * The followings are the available model relations:
  * @property RolePermissions[] $rolePermissions
  */
-class Roles extends CActiveRecord
-{
-	/**
-	 * @return string the associated database table name
-	 */
-	public function tableName()
-	{
-		return 'roles';
-	}
+class Roles extends CActiveRecord {
 
-	/**
-	 * @return array validation rules for model attributes.
-	 */
-	public function rules()
-	{
-		// NOTE: you should only define rules for those attributes that
-		// will receive user inputs.
-		return array(
-			array('name, description', 'required'),
-			array('name', 'length', 'max'=>50),
-			// The following rule is used by search().
-			// @todo Please remove those attributes that should not be searched.
-			array('role_k, name, description', 'safe', 'on'=>'search'),
-		);
-	}
+    /**
+     * @return string the associated database table name
+     */
+    public function tableName() {
+        return 'roles';
+    }
 
-	/**
-	 * @return array relational rules.
-	 */
-	public function relations()
-	{
-		// NOTE: you may need to adjust the relation name and the related
-		// class name for the relations automatically generated below.
-		return array(
-			'rolePermissions' => array(self::HAS_MANY, 'RolePermissions', 'role_k'),
-		);
-	}
+    /**
+     * @return array validation rules for model attributes.
+     */
+    public function rules() {
+        // NOTE: you should only define rules for those attributes that
+        // will receive user inputs.
+        return array(
+            array('name, description', 'required'),
+            array('name', 'length', 'max' => 50),
+            // The following rule is used by search().
+            // @todo Please remove those attributes that should not be searched.
+            array('role_k, name, description', 'safe', 'on' => 'search'),
+        );
+    }
 
-	/**
-	 * @return array customized attribute labels (name=>label)
-	 */
-	public function attributeLabels()
-	{
-		return array(
-			'role_k' => 'Role K',
-			'name' => 'Name',
-			'description' => 'Description',
-		);
-	}
+    /**
+     * @return array relational rules.
+     */
+    public function relations() {
+        // NOTE: you may need to adjust the relation name and the related
+        // class name for the relations automatically generated below.
+        return array(
+            'rolePermissions' => array(self::HAS_MANY, 'RolePermissions', 'role_k'),
+            'roleUsers' => array(self::HAS_MANY, 'UserRoles', 'role_k'),
+        );
+    }
 
-	/**
-	 * Retrieves a list of models based on the current search/filter conditions.
-	 *
-	 * Typical usecase:
-	 * - Initialize the model fields with values from filter form.
-	 * - Execute this method to get CActiveDataProvider instance which will filter
-	 * models according to data in model fields.
-	 * - Pass data provider to CGridView, CListView or any similar widget.
-	 *
-	 * @return CActiveDataProvider the data provider that can return the models
-	 * based on the search/filter conditions.
-	 */
-	public function search()
-	{
-		// @todo Please modify the following code to remove attributes that should not be searched.
+    /**
+     * @return array customized attribute labels (name=>label)
+     */
+    public function attributeLabels() {
+        return array(
+            'role_k' => 'Role K',
+            'name' => 'Name',
+            'description' => 'Description',
+        );
+    }
 
-		$criteria=new CDbCriteria;
+    /**
+     * Retrieves a list of models based on the current search/filter conditions.
+     *
+     * Typical usecase:
+     * - Initialize the model fields with values from filter form.
+     * - Execute this method to get CActiveDataProvider instance which will filter
+     * models according to data in model fields.
+     * - Pass data provider to CGridView, CListView or any similar widget.
+     *
+     * @return CActiveDataProvider the data provider that can return the models
+     * based on the search/filter conditions.
+     */
+    public function search() {
+        // @todo Please modify the following code to remove attributes that should not be searched.
 
-		$criteria->compare('role_k',$this->role_k);
-		$criteria->compare('name',$this->name,true);
-		$criteria->compare('description',$this->description,true);
+        $criteria = new CDbCriteria;
 
-		return new CActiveDataProvider($this, array(
-			'criteria'=>$criteria,
-		));
-	}
+        $criteria->compare('role_k', $this->role_k);
+        $criteria->compare('name', $this->name, true);
+        $criteria->compare('description', $this->description, true);
 
-	/**
-	 * Returns the static model of the specified AR class.
-	 * Please note that you should have this exact method in all your CActiveRecord descendants!
-	 * @param string $className active record class name.
-	 * @return Roles the static model class
-	 */
-	public static function model($className=__CLASS__)
-	{
-		return parent::model($className);
-	}
+        return new CActiveDataProvider($this, array(
+            'criteria' => $criteria,
+        ));
+    }
+
+    /**
+     * Returns the static model of the specified AR class.
+     * Please note that you should have this exact method in all your CActiveRecord descendants!
+     * @param string $className active record class name.
+     * @return Roles the static model class
+     */
+    public static function model($className = __CLASS__) {
+        return parent::model($className);
+    }
+
+    public function getRolesUsers($params = array(0,25)) {
+        $cmd = Yii::app()->db->createCommand(
+                "select R.*,U.users
+            from roles R
+            left join (
+            select R.role_k,count(R.role_k) as users 
+            from roles R
+            join user_roles UR on UR.role_k=R.role_k
+            group by R.role_k
+            ) U on U.role_k=R.role_k");
+        
+        return $cmd->queryAll();
+        
+
+    }
+
 }

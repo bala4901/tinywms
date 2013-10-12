@@ -33,10 +33,12 @@ class Applications extends CActiveRecord {
         // NOTE: you should only define rules for those attributes that
         // will receive user inputs.
         return array(
-            array('name, description, klass, configurations, date_created, date_updated, active', 'required'),
+            array('name, description, klass, configurations, active', 'required'),
             array('application_parent_k, active', 'numerical', 'integerOnly' => true),
             array('name', 'length', 'max' => 200),
             array('klass', 'length', 'max' => 255),
+            array('date_updated', 'default', 'value' => new CDbExpression('NOW()'), 'setOnEmpty' => false, 'on' => 'update'),
+            array('date_updated,date_created', 'default', 'value' => new CDbExpression('NOW()'), 'setOnEmpty' => false, 'on' => 'insert'),
             // The following rule is used by search().
             // @todo Please remove those attributes that should not be searched.
             array('application_k, application_parent_k, name, description, klass, configurations, date_created, date_updated, active', 'safe', 'on' => 'search'),
@@ -115,7 +117,7 @@ class Applications extends CActiveRecord {
                 ->where(
                         array(
                             'and',
-                            "U.username='".$params."'",
+                            "U.username='" . $params . "'",
                             "P.action='access'",
                             'RP.value=true'
                         )
@@ -128,7 +130,16 @@ class Applications extends CActiveRecord {
         return $this->renderRows($rows);
     }
 
-   
+    public function getApplicationPermission($params) {
+        $cmd = Yii::app()->db->createCommand();
+        $cmd->select('p.name, p.permission_k')
+                ->from('applications a')
+                ->join('permissions p', 'p.application_k = a.application_k')
+                ->where("p.application_k='" . $params . "'")
+                ->order('p.name asc');
+
+        return $cmd->queryAll();
+    }
 
     private function renderRows($rows) {
         $Models = array();

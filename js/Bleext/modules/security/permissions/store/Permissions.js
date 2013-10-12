@@ -12,6 +12,6 @@
 
 Ext.define("Bleext.modules.security.permissions.store.Permissions",{
 	extend		: "Bleext.abstract.Store",
-	url			: "catalogs/permissions/getByApplication",
+	url			: "permissions/GetByApplication",
 	autoLoad	: false
 });

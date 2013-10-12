@@ -1,351 +1,1308 @@
-2013/09/24 17:13:15 [trace] [vardump] 'api/post'
+2013/10/12 15:45:01 [trace] [vardump] '6'
 in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (155)
 in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:13:15 [trace] [vardump] 'site/login'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:21:06 [trace] [vardump] 'api/post'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:28:33 [trace] [vardump] 'api/post'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:28:47 [trace] [vardump] 'post'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:28:47 [trace] [vardump] 'site/login'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:28:55 [trace] [vardump] 'api'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:29:09 [trace] [vardump] 'api/post'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:29:51 [trace] [vardump] 'users/login'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:29:51 [trace] [vardump] ''
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:29:55 [trace] [vardump] 'site/config'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:29:55 [trace] [vardump] 'api/post'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:30:41 [trace] [vardump] 'site/login'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:30:51 [trace] [vardump] 'users/login'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:30:51 [trace] [vardump] ''
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:30:54 [trace] [vardump] 'site/config'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:31:40 [trace] [vardump] ''
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:31:48 [trace] [vardump] 'site/config'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:32:38 [trace] [vardump] ''
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:32:41 [trace] [vardump] 'site/config'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:34:10 [trace] [vardump] ''
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:34:12 [trace] [vardump] 'site/config'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:34:49 [trace] [vardump] ''
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:34:52 [trace] [vardump] 'site/config'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:35:10 [trace] [vardump] ''
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:35:13 [trace] [vardump] 'site/config'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:35:52 [trace] [vardump] ''
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:35:55 [trace] [vardump] 'site/config'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:36:24 [trace] [vardump] ''
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:36:26 [trace] [vardump] 'site/config'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:36:36 [trace] [vardump] 'users/logout'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:36:36 [trace] [vardump] CWebUser#1
+2013/10/12 15:45:01 [trace] [vardump] CDbCommand#1
 (
-    [allowAutoLogin] => false
-    [guestName] => 'Guest'
-    [loginUrl] => array
+    [params] => array()
+    [CDbCommand:_connection] => CDbConnection#2
     (
-        0 => 'site/login'
+        [connectionString] => 'mysql:host=localhost;dbname=tinywms'
+        [username] => 'root'
+        [password] => ''
+        [schemaCachingDuration] => 0
+        [schemaCachingExclude] => array()
+        [schemaCacheID] => 'cache'
+        [queryCachingDuration] => 0
+        [queryCachingDependency] => null
+        [queryCachingCount] => 0
+        [queryCacheID] => 'cache'
+        [autoConnect] => true
+        [charset] => 'utf8'
+        [emulatePrepare] => true
+        [enableParamLogging] => true
+        [enableProfiling] => true
+        [tablePrefix] => null
+        [initSQLs] => null
+        [driverMap] => array
+        (
+            'pgsql' => 'CPgsqlSchema'
+            'mysqli' => 'CMysqlSchema'
+            'mysql' => 'CMysqlSchema'
+            'sqlite' => 'CSqliteSchema'
+            'sqlite2' => 'CSqliteSchema'
+            'mssql' => 'CMssqlSchema'
+            'dblib' => 'CMssqlSchema'
+            'sqlsrv' => 'CMssqlSchema'
+            'oci' => 'COciSchema'
+        )
+        [pdoClass] => 'PDO'
+        [CDbConnection:_attributes] => array()
+        [CDbConnection:_active] => true
+        [CDbConnection:_pdo] => PDO#3
+        (
+        )
+        [CDbConnection:_transaction] => null
+        [CDbConnection:_schema] => CMysqlSchema#4
+        (
+            [columnTypes] => array
+            (
+                'pk' => 'int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY'
+                'string' => 'varchar(255)'
+                'text' => 'text'
+                'integer' => 'int(11)'
+                'float' => 'float'
+                'decimal' => 'decimal'
+                'datetime' => 'datetime'
+                'timestamp' => 'timestamp'
+                'time' => 'time'
+                'date' => 'date'
+                'binary' => 'blob'
+                'boolean' => 'tinyint(1)'
+                'money' => 'decimal(19,4)'
+            )
+            [CDbSchema:_tableNames] => array()
+            [CDbSchema:_tables] => array()
+            [CDbSchema:_connection] => CDbConnection#2(...)
+            [CDbSchema:_builder] => null
+            [CDbSchema:_cacheExclude] => array()
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [behaviors] => array()
+        [CApplicationComponent:_initialized] => true
+        [CComponent:_e] => null
+        [CComponent:_m] => null
     )
-    [identityCookie] => null
-    [authTimeout] => null
-    [absoluteAuthTimeout] => null
-    [autoRenewCookie] => false
-    [autoUpdateFlash] => true
-    [loginRequiredAjaxResponse] => null
-    [CWebUser:_keyPrefix] => '0e5bb5d314734529f467d4cdcf90c345'
-    [CWebUser:_access] => array()
-    [behaviors] => array()
-    [CApplicationComponent:_initialized] => true
+    [CDbCommand:_text] => null
+    [CDbCommand:_statement] => null
+    [CDbCommand:_paramLog] => array()
+    [CDbCommand:_query] => array
+    (
+        'select' => '`p`.`name`, `p`.`permission_k`'
+        'from' => '`applications` `a`'
+        'join' => array
+        (
+            0 => 'JOIN `permissions` `p` ON p.application_k = a.application_k'
+        )
+        'where' => 'p.application_k=\'6\''
+        'order' => '`p`.`name` ASC'
+    )
+    [CDbCommand:_fetchMode] => array
+    (
+        0 => 2
+    )
     [CComponent:_e] => null
     [CComponent:_m] => null
 )
 in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\controllers\UsersController.php (197)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:36:38 [trace] [vardump] ''
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:36:40 [trace] [vardump] 'site/config'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:37:05 [trace] [vardump] 'users/logout'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:37:45 [trace] [vardump] ''
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:37:47 [trace] [vardump] 'site/config'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:37:51 [trace] [vardump] 'users/logout'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:37:52 [trace] [vardump] Users#1
+in C:\wamp\www\tinywms\protected\models\Applications.php (144)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (158)
+2013/10/12 15:45:01 [trace] [vardump] array
 (
-    [CActiveRecord:_new] => false
-    [CActiveRecord:_attributes] => array
+    0 => array
     (
-        'user_k' => '1'
-        'username' => 'test'
-        'password' => '202cb962ac59075b964b07152d234b70'
-        'email' => 'crysfel@bleext.com'
-        'name' => 'Crysfel'
-        'lastname' => 'Villa'
-        'avatar' => 'default.png'
-        'active' => '1'
+        'name' => 'Access'
+        'permission_k' => '3'
     )
-    [CActiveRecord:_related] => array()
-    [CActiveRecord:_c] => null
-    [CActiveRecord:_pk] => '1'
-    [CActiveRecord:_alias] => 't'
-    [CModel:_errors] => array()
-    [CModel:_validators] => null
-    [CModel:_scenario] => 'update'
+    1 => array
+    (
+        'name' => 'Create'
+        'permission_k' => '5'
+    )
+    2 => array
+    (
+        'name' => 'Delete'
+        'permission_k' => '8'
+    )
+    3 => array
+    (
+        'name' => 'Edit'
+        'permission_k' => '4'
+    )
+    4 => array
+    (
+        'name' => 'export'
+        'permission_k' => '10'
+    )
+    5 => array
+    (
+        'name' => 'List'
+        'permission_k' => '7'
+    )
+    6 => array
+    (
+        'name' => 'Print'
+        'permission_k' => '9'
+    )
+    7 => array
+    (
+        'name' => 'Update'
+        'permission_k' => '6'
+    )
+)
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\models\Applications.php (145)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (158)
+2013/10/12 15:45:03 [trace] [vardump] '4'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (155)
+in C:\wamp\www\tinywms\index.php (18)
+2013/10/12 15:45:03 [trace] [vardump] CDbCommand#1
+(
+    [params] => array()
+    [CDbCommand:_connection] => CDbConnection#2
+    (
+        [connectionString] => 'mysql:host=localhost;dbname=tinywms'
+        [username] => 'root'
+        [password] => ''
+        [schemaCachingDuration] => 0
+        [schemaCachingExclude] => array()
+        [schemaCacheID] => 'cache'
+        [queryCachingDuration] => 0
+        [queryCachingDependency] => null
+        [queryCachingCount] => 0
+        [queryCacheID] => 'cache'
+        [autoConnect] => true
+        [charset] => 'utf8'
+        [emulatePrepare] => true
+        [enableParamLogging] => true
+        [enableProfiling] => true
+        [tablePrefix] => null
+        [initSQLs] => null
+        [driverMap] => array
+        (
+            'pgsql' => 'CPgsqlSchema'
+            'mysqli' => 'CMysqlSchema'
+            'mysql' => 'CMysqlSchema'
+            'sqlite' => 'CSqliteSchema'
+            'sqlite2' => 'CSqliteSchema'
+            'mssql' => 'CMssqlSchema'
+            'dblib' => 'CMssqlSchema'
+            'sqlsrv' => 'CMssqlSchema'
+            'oci' => 'COciSchema'
+        )
+        [pdoClass] => 'PDO'
+        [CDbConnection:_attributes] => array()
+        [CDbConnection:_active] => true
+        [CDbConnection:_pdo] => PDO#3
+        (
+        )
+        [CDbConnection:_transaction] => null
+        [CDbConnection:_schema] => CMysqlSchema#4
+        (
+            [columnTypes] => array
+            (
+                'pk' => 'int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY'
+                'string' => 'varchar(255)'
+                'text' => 'text'
+                'integer' => 'int(11)'
+                'float' => 'float'
+                'decimal' => 'decimal'
+                'datetime' => 'datetime'
+                'timestamp' => 'timestamp'
+                'time' => 'time'
+                'date' => 'date'
+                'binary' => 'blob'
+                'boolean' => 'tinyint(1)'
+                'money' => 'decimal(19,4)'
+            )
+            [CDbSchema:_tableNames] => array()
+            [CDbSchema:_tables] => array()
+            [CDbSchema:_connection] => CDbConnection#2(...)
+            [CDbSchema:_builder] => null
+            [CDbSchema:_cacheExclude] => array()
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [behaviors] => array()
+        [CApplicationComponent:_initialized] => true
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+    [CDbCommand:_text] => null
+    [CDbCommand:_statement] => null
+    [CDbCommand:_paramLog] => array()
+    [CDbCommand:_query] => array
+    (
+        'select' => '`p`.`name`, `p`.`permission_k`'
+        'from' => '`applications` `a`'
+        'join' => array
+        (
+            0 => 'JOIN `permissions` `p` ON p.application_k = a.application_k'
+        )
+        'where' => 'p.application_k=\'4\''
+        'order' => '`p`.`name` ASC'
+    )
+    [CDbCommand:_fetchMode] => array
+    (
+        0 => 2
+    )
     [CComponent:_e] => null
     [CComponent:_m] => null
 )
 in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\controllers\UsersController.php (197)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:38:14 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\models\Applications.php (144)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (158)
+2013/10/12 15:45:03 [trace] [vardump] array
+(
+    0 => array
+    (
+        'name' => 'Access'
+        'permission_k' => '19'
+    )
+    1 => array
+    (
+        'name' => 'Create'
+        'permission_k' => '21'
+    )
+    2 => array
+    (
+        'name' => 'Delete'
+        'permission_k' => '24'
+    )
+    3 => array
+    (
+        'name' => 'Edit'
+        'permission_k' => '20'
+    )
+    4 => array
+    (
+        'name' => 'export'
+        'permission_k' => '26'
+    )
+    5 => array
+    (
+        'name' => 'List'
+        'permission_k' => '23'
+    )
+    6 => array
+    (
+        'name' => 'Print'
+        'permission_k' => '25'
+    )
+    7 => array
+    (
+        'name' => 'Update'
+        'permission_k' => '22'
+    )
+)
 in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:38:16 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\models\Applications.php (145)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (158)
+2013/10/12 15:45:04 [trace] [vardump] '3'
 in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (155)
 in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:38:21 [trace] [vardump] 'users/logout'
+2013/10/12 15:45:04 [trace] [vardump] CDbCommand#1
+(
+    [params] => array()
+    [CDbCommand:_connection] => CDbConnection#2
+    (
+        [connectionString] => 'mysql:host=localhost;dbname=tinywms'
+        [username] => 'root'
+        [password] => ''
+        [schemaCachingDuration] => 0
+        [schemaCachingExclude] => array()
+        [schemaCacheID] => 'cache'
+        [queryCachingDuration] => 0
+        [queryCachingDependency] => null
+        [queryCachingCount] => 0
+        [queryCacheID] => 'cache'
+        [autoConnect] => true
+        [charset] => 'utf8'
+        [emulatePrepare] => true
+        [enableParamLogging] => true
+        [enableProfiling] => true
+        [tablePrefix] => null
+        [initSQLs] => null
+        [driverMap] => array
+        (
+            'pgsql' => 'CPgsqlSchema'
+            'mysqli' => 'CMysqlSchema'
+            'mysql' => 'CMysqlSchema'
+            'sqlite' => 'CSqliteSchema'
+            'sqlite2' => 'CSqliteSchema'
+            'mssql' => 'CMssqlSchema'
+            'dblib' => 'CMssqlSchema'
+            'sqlsrv' => 'CMssqlSchema'
+            'oci' => 'COciSchema'
+        )
+        [pdoClass] => 'PDO'
+        [CDbConnection:_attributes] => array()
+        [CDbConnection:_active] => true
+        [CDbConnection:_pdo] => PDO#3
+        (
+        )
+        [CDbConnection:_transaction] => null
+        [CDbConnection:_schema] => CMysqlSchema#4
+        (
+            [columnTypes] => array
+            (
+                'pk' => 'int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY'
+                'string' => 'varchar(255)'
+                'text' => 'text'
+                'integer' => 'int(11)'
+                'float' => 'float'
+                'decimal' => 'decimal'
+                'datetime' => 'datetime'
+                'timestamp' => 'timestamp'
+                'time' => 'time'
+                'date' => 'date'
+                'binary' => 'blob'
+                'boolean' => 'tinyint(1)'
+                'money' => 'decimal(19,4)'
+            )
+            [CDbSchema:_tableNames] => array()
+            [CDbSchema:_tables] => array()
+            [CDbSchema:_connection] => CDbConnection#2(...)
+            [CDbSchema:_builder] => null
+            [CDbSchema:_cacheExclude] => array()
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [behaviors] => array()
+        [CApplicationComponent:_initialized] => true
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+    [CDbCommand:_text] => null
+    [CDbCommand:_statement] => null
+    [CDbCommand:_paramLog] => array()
+    [CDbCommand:_query] => array
+    (
+        'select' => '`p`.`name`, `p`.`permission_k`'
+        'from' => '`applications` `a`'
+        'join' => array
+        (
+            0 => 'JOIN `permissions` `p` ON p.application_k = a.application_k'
+        )
+        'where' => 'p.application_k=\'3\''
+        'order' => '`p`.`name` ASC'
+    )
+    [CDbCommand:_fetchMode] => array
+    (
+        0 => 2
+    )
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
 in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\protected\models\Applications.php (144)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (158)
+2013/10/12 15:45:04 [trace] [vardump] array
+(
+    0 => array
+    (
+        'name' => 'Access'
+        'permission_k' => '34'
+    )
+    1 => array
+    (
+        'name' => 'Create'
+        'permission_k' => '13'
+    )
+    2 => array
+    (
+        'name' => 'Delete'
+        'permission_k' => '16'
+    )
+    3 => array
+    (
+        'name' => 'Edit'
+        'permission_k' => '12'
+    )
+    4 => array
+    (
+        'name' => 'export'
+        'permission_k' => '18'
+    )
+    5 => array
+    (
+        'name' => 'List'
+        'permission_k' => '15'
+    )
+    6 => array
+    (
+        'name' => 'Print'
+        'permission_k' => '17'
+    )
+    7 => array
+    (
+        'name' => 'Update'
+        'permission_k' => '14'
+    )
+)
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\models\Applications.php (145)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (158)
+2013/10/12 15:45:05 [trace] [vardump] '2'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (155)
 in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:38:21 [trace] [vardump] '1'
+2013/10/12 15:45:05 [trace] [vardump] CDbCommand#1
+(
+    [params] => array()
+    [CDbCommand:_connection] => CDbConnection#2
+    (
+        [connectionString] => 'mysql:host=localhost;dbname=tinywms'
+        [username] => 'root'
+        [password] => ''
+        [schemaCachingDuration] => 0
+        [schemaCachingExclude] => array()
+        [schemaCacheID] => 'cache'
+        [queryCachingDuration] => 0
+        [queryCachingDependency] => null
+        [queryCachingCount] => 0
+        [queryCacheID] => 'cache'
+        [autoConnect] => true
+        [charset] => 'utf8'
+        [emulatePrepare] => true
+        [enableParamLogging] => true
+        [enableProfiling] => true
+        [tablePrefix] => null
+        [initSQLs] => null
+        [driverMap] => array
+        (
+            'pgsql' => 'CPgsqlSchema'
+            'mysqli' => 'CMysqlSchema'
+            'mysql' => 'CMysqlSchema'
+            'sqlite' => 'CSqliteSchema'
+            'sqlite2' => 'CSqliteSchema'
+            'mssql' => 'CMssqlSchema'
+            'dblib' => 'CMssqlSchema'
+            'sqlsrv' => 'CMssqlSchema'
+            'oci' => 'COciSchema'
+        )
+        [pdoClass] => 'PDO'
+        [CDbConnection:_attributes] => array()
+        [CDbConnection:_active] => true
+        [CDbConnection:_pdo] => PDO#3
+        (
+        )
+        [CDbConnection:_transaction] => null
+        [CDbConnection:_schema] => CMysqlSchema#4
+        (
+            [columnTypes] => array
+            (
+                'pk' => 'int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY'
+                'string' => 'varchar(255)'
+                'text' => 'text'
+                'integer' => 'int(11)'
+                'float' => 'float'
+                'decimal' => 'decimal'
+                'datetime' => 'datetime'
+                'timestamp' => 'timestamp'
+                'time' => 'time'
+                'date' => 'date'
+                'binary' => 'blob'
+                'boolean' => 'tinyint(1)'
+                'money' => 'decimal(19,4)'
+            )
+            [CDbSchema:_tableNames] => array()
+            [CDbSchema:_tables] => array()
+            [CDbSchema:_connection] => CDbConnection#2(...)
+            [CDbSchema:_builder] => null
+            [CDbSchema:_cacheExclude] => array()
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [behaviors] => array()
+        [CApplicationComponent:_initialized] => true
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+    [CDbCommand:_text] => null
+    [CDbCommand:_statement] => null
+    [CDbCommand:_paramLog] => array()
+    [CDbCommand:_query] => array
+    (
+        'select' => '`p`.`name`, `p`.`permission_k`'
+        'from' => '`applications` `a`'
+        'join' => array
+        (
+            0 => 'JOIN `permissions` `p` ON p.application_k = a.application_k'
+        )
+        'where' => 'p.application_k=\'2\''
+        'order' => '`p`.`name` ASC'
+    )
+    [CDbCommand:_fetchMode] => array
+    (
+        0 => 2
+    )
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
 in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\controllers\UsersController.php (197)
+in C:\wamp\www\tinywms\protected\models\Applications.php (144)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (158)
+2013/10/12 15:45:05 [trace] [vardump] array
+(
+    0 => array
+    (
+        'name' => 'Access'
+        'permission_k' => '2'
+    )
+    1 => array
+    (
+        'name' => 'Create'
+        'permission_k' => '28'
+    )
+    2 => array
+    (
+        'name' => 'Delete'
+        'permission_k' => '31'
+    )
+    3 => array
+    (
+        'name' => 'Edit'
+        'permission_k' => '27'
+    )
+    4 => array
+    (
+        'name' => 'export'
+        'permission_k' => '33'
+    )
+    5 => array
+    (
+        'name' => 'List'
+        'permission_k' => '30'
+    )
+    6 => array
+    (
+        'name' => 'Print'
+        'permission_k' => '32'
+    )
+    7 => array
+    (
+        'name' => 'Update'
+        'permission_k' => '29'
+    )
+)
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\models\Applications.php (145)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (158)
+2013/10/12 15:45:06 [trace] [vardump] '3'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (155)
 in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:38:46 [trace] [vardump] ''
+2013/10/12 15:45:06 [trace] [vardump] CDbCommand#1
+(
+    [params] => array()
+    [CDbCommand:_connection] => CDbConnection#2
+    (
+        [connectionString] => 'mysql:host=localhost;dbname=tinywms'
+        [username] => 'root'
+        [password] => ''
+        [schemaCachingDuration] => 0
+        [schemaCachingExclude] => array()
+        [schemaCacheID] => 'cache'
+        [queryCachingDuration] => 0
+        [queryCachingDependency] => null
+        [queryCachingCount] => 0
+        [queryCacheID] => 'cache'
+        [autoConnect] => true
+        [charset] => 'utf8'
+        [emulatePrepare] => true
+        [enableParamLogging] => true
+        [enableProfiling] => true
+        [tablePrefix] => null
+        [initSQLs] => null
+        [driverMap] => array
+        (
+            'pgsql' => 'CPgsqlSchema'
+            'mysqli' => 'CMysqlSchema'
+            'mysql' => 'CMysqlSchema'
+            'sqlite' => 'CSqliteSchema'
+            'sqlite2' => 'CSqliteSchema'
+            'mssql' => 'CMssqlSchema'
+            'dblib' => 'CMssqlSchema'
+            'sqlsrv' => 'CMssqlSchema'
+            'oci' => 'COciSchema'
+        )
+        [pdoClass] => 'PDO'
+        [CDbConnection:_attributes] => array()
+        [CDbConnection:_active] => true
+        [CDbConnection:_pdo] => PDO#3
+        (
+        )
+        [CDbConnection:_transaction] => null
+        [CDbConnection:_schema] => CMysqlSchema#4
+        (
+            [columnTypes] => array
+            (
+                'pk' => 'int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY'
+                'string' => 'varchar(255)'
+                'text' => 'text'
+                'integer' => 'int(11)'
+                'float' => 'float'
+                'decimal' => 'decimal'
+                'datetime' => 'datetime'
+                'timestamp' => 'timestamp'
+                'time' => 'time'
+                'date' => 'date'
+                'binary' => 'blob'
+                'boolean' => 'tinyint(1)'
+                'money' => 'decimal(19,4)'
+            )
+            [CDbSchema:_tableNames] => array()
+            [CDbSchema:_tables] => array()
+            [CDbSchema:_connection] => CDbConnection#2(...)
+            [CDbSchema:_builder] => null
+            [CDbSchema:_cacheExclude] => array()
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [behaviors] => array()
+        [CApplicationComponent:_initialized] => true
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+    [CDbCommand:_text] => null
+    [CDbCommand:_statement] => null
+    [CDbCommand:_paramLog] => array()
+    [CDbCommand:_query] => array
+    (
+        'select' => '`p`.`name`, `p`.`permission_k`'
+        'from' => '`applications` `a`'
+        'join' => array
+        (
+            0 => 'JOIN `permissions` `p` ON p.application_k = a.application_k'
+        )
+        'where' => 'p.application_k=\'3\''
+        'order' => '`p`.`name` ASC'
+    )
+    [CDbCommand:_fetchMode] => array
+    (
+        0 => 2
+    )
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
 in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\protected\models\Applications.php (144)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (158)
+2013/10/12 15:45:06 [trace] [vardump] array
+(
+    0 => array
+    (
+        'name' => 'Access'
+        'permission_k' => '34'
+    )
+    1 => array
+    (
+        'name' => 'Create'
+        'permission_k' => '13'
+    )
+    2 => array
+    (
+        'name' => 'Delete'
+        'permission_k' => '16'
+    )
+    3 => array
+    (
+        'name' => 'Edit'
+        'permission_k' => '12'
+    )
+    4 => array
+    (
+        'name' => 'export'
+        'permission_k' => '18'
+    )
+    5 => array
+    (
+        'name' => 'List'
+        'permission_k' => '15'
+    )
+    6 => array
+    (
+        'name' => 'Print'
+        'permission_k' => '17'
+    )
+    7 => array
+    (
+        'name' => 'Update'
+        'permission_k' => '14'
+    )
+)
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\models\Applications.php (145)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (158)
+2013/10/12 15:45:06 [trace] [vardump] '4'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (155)
 in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:38:49 [trace] [vardump] 'site/config'
+2013/10/12 15:45:06 [trace] [vardump] CDbCommand#1
+(
+    [params] => array()
+    [CDbCommand:_connection] => CDbConnection#2
+    (
+        [connectionString] => 'mysql:host=localhost;dbname=tinywms'
+        [username] => 'root'
+        [password] => ''
+        [schemaCachingDuration] => 0
+        [schemaCachingExclude] => array()
+        [schemaCacheID] => 'cache'
+        [queryCachingDuration] => 0
+        [queryCachingDependency] => null
+        [queryCachingCount] => 0
+        [queryCacheID] => 'cache'
+        [autoConnect] => true
+        [charset] => 'utf8'
+        [emulatePrepare] => true
+        [enableParamLogging] => true
+        [enableProfiling] => true
+        [tablePrefix] => null
+        [initSQLs] => null
+        [driverMap] => array
+        (
+            'pgsql' => 'CPgsqlSchema'
+            'mysqli' => 'CMysqlSchema'
+            'mysql' => 'CMysqlSchema'
+            'sqlite' => 'CSqliteSchema'
+            'sqlite2' => 'CSqliteSchema'
+            'mssql' => 'CMssqlSchema'
+            'dblib' => 'CMssqlSchema'
+            'sqlsrv' => 'CMssqlSchema'
+            'oci' => 'COciSchema'
+        )
+        [pdoClass] => 'PDO'
+        [CDbConnection:_attributes] => array()
+        [CDbConnection:_active] => true
+        [CDbConnection:_pdo] => PDO#3
+        (
+        )
+        [CDbConnection:_transaction] => null
+        [CDbConnection:_schema] => CMysqlSchema#4
+        (
+            [columnTypes] => array
+            (
+                'pk' => 'int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY'
+                'string' => 'varchar(255)'
+                'text' => 'text'
+                'integer' => 'int(11)'
+                'float' => 'float'
+                'decimal' => 'decimal'
+                'datetime' => 'datetime'
+                'timestamp' => 'timestamp'
+                'time' => 'time'
+                'date' => 'date'
+                'binary' => 'blob'
+                'boolean' => 'tinyint(1)'
+                'money' => 'decimal(19,4)'
+            )
+            [CDbSchema:_tableNames] => array()
+            [CDbSchema:_tables] => array()
+            [CDbSchema:_connection] => CDbConnection#2(...)
+            [CDbSchema:_builder] => null
+            [CDbSchema:_cacheExclude] => array()
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [behaviors] => array()
+        [CApplicationComponent:_initialized] => true
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+    [CDbCommand:_text] => null
+    [CDbCommand:_statement] => null
+    [CDbCommand:_paramLog] => array()
+    [CDbCommand:_query] => array
+    (
+        'select' => '`p`.`name`, `p`.`permission_k`'
+        'from' => '`applications` `a`'
+        'join' => array
+        (
+            0 => 'JOIN `permissions` `p` ON p.application_k = a.application_k'
+        )
+        'where' => 'p.application_k=\'4\''
+        'order' => '`p`.`name` ASC'
+    )
+    [CDbCommand:_fetchMode] => array
+    (
+        0 => 2
+    )
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
 in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\protected\models\Applications.php (144)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (158)
+2013/10/12 15:45:06 [trace] [vardump] array
+(
+    0 => array
+    (
+        'name' => 'Access'
+        'permission_k' => '19'
+    )
+    1 => array
+    (
+        'name' => 'Create'
+        'permission_k' => '21'
+    )
+    2 => array
+    (
+        'name' => 'Delete'
+        'permission_k' => '24'
+    )
+    3 => array
+    (
+        'name' => 'Edit'
+        'permission_k' => '20'
+    )
+    4 => array
+    (
+        'name' => 'export'
+        'permission_k' => '26'
+    )
+    5 => array
+    (
+        'name' => 'List'
+        'permission_k' => '23'
+    )
+    6 => array
+    (
+        'name' => 'Print'
+        'permission_k' => '25'
+    )
+    7 => array
+    (
+        'name' => 'Update'
+        'permission_k' => '22'
+    )
+)
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\models\Applications.php (145)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (158)
+2013/10/12 15:45:07 [trace] [vardump] '7'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (155)
 in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:39:23 [trace] [vardump] 'users/logout'
+2013/10/12 15:45:07 [trace] [vardump] CDbCommand#1
+(
+    [params] => array()
+    [CDbCommand:_connection] => CDbConnection#2
+    (
+        [connectionString] => 'mysql:host=localhost;dbname=tinywms'
+        [username] => 'root'
+        [password] => ''
+        [schemaCachingDuration] => 0
+        [schemaCachingExclude] => array()
+        [schemaCacheID] => 'cache'
+        [queryCachingDuration] => 0
+        [queryCachingDependency] => null
+        [queryCachingCount] => 0
+        [queryCacheID] => 'cache'
+        [autoConnect] => true
+        [charset] => 'utf8'
+        [emulatePrepare] => true
+        [enableParamLogging] => true
+        [enableProfiling] => true
+        [tablePrefix] => null
+        [initSQLs] => null
+        [driverMap] => array
+        (
+            'pgsql' => 'CPgsqlSchema'
+            'mysqli' => 'CMysqlSchema'
+            'mysql' => 'CMysqlSchema'
+            'sqlite' => 'CSqliteSchema'
+            'sqlite2' => 'CSqliteSchema'
+            'mssql' => 'CMssqlSchema'
+            'dblib' => 'CMssqlSchema'
+            'sqlsrv' => 'CMssqlSchema'
+            'oci' => 'COciSchema'
+        )
+        [pdoClass] => 'PDO'
+        [CDbConnection:_attributes] => array()
+        [CDbConnection:_active] => true
+        [CDbConnection:_pdo] => PDO#3
+        (
+        )
+        [CDbConnection:_transaction] => null
+        [CDbConnection:_schema] => CMysqlSchema#4
+        (
+            [columnTypes] => array
+            (
+                'pk' => 'int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY'
+                'string' => 'varchar(255)'
+                'text' => 'text'
+                'integer' => 'int(11)'
+                'float' => 'float'
+                'decimal' => 'decimal'
+                'datetime' => 'datetime'
+                'timestamp' => 'timestamp'
+                'time' => 'time'
+                'date' => 'date'
+                'binary' => 'blob'
+                'boolean' => 'tinyint(1)'
+                'money' => 'decimal(19,4)'
+            )
+            [CDbSchema:_tableNames] => array()
+            [CDbSchema:_tables] => array()
+            [CDbSchema:_connection] => CDbConnection#2(...)
+            [CDbSchema:_builder] => null
+            [CDbSchema:_cacheExclude] => array()
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [behaviors] => array()
+        [CApplicationComponent:_initialized] => true
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+    [CDbCommand:_text] => null
+    [CDbCommand:_statement] => null
+    [CDbCommand:_paramLog] => array()
+    [CDbCommand:_query] => array
+    (
+        'select' => '`p`.`name`, `p`.`permission_k`'
+        'from' => '`applications` `a`'
+        'join' => array
+        (
+            0 => 'JOIN `permissions` `p` ON p.application_k = a.application_k'
+        )
+        'where' => 'p.application_k=\'7\''
+        'order' => '`p`.`name` ASC'
+    )
+    [CDbCommand:_fetchMode] => array
+    (
+        0 => 2
+    )
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
 in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\protected\models\Applications.php (144)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (158)
+2013/10/12 15:45:07 [trace] [vardump] array
+(
+    0 => array
+    (
+        'name' => 'Access'
+        'permission_k' => '35'
+    )
+    1 => array
+    (
+        'name' => 'Delete'
+        'permission_k' => '39'
+    )
+    2 => array
+    (
+        'name' => 'Edit'
+        'permission_k' => '38'
+    )
+    3 => array
+    (
+        'name' => 'Export'
+        'permission_k' => '40'
+    )
+    4 => array
+    (
+        'name' => 'List'
+        'permission_k' => '37'
+    )
+    5 => array
+    (
+        'name' => 'Print'
+        'permission_k' => '41'
+    )
+    6 => array
+    (
+        'name' => 'View'
+        'permission_k' => '36'
+    )
+)
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\models\Applications.php (145)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (158)
+2013/10/12 15:45:09 [trace] [vardump] '7'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (155)
 in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:39:23 [trace] [vardump] 'site/login'
+2013/10/12 15:45:09 [trace] [vardump] CDbCommand#1
+(
+    [params] => array()
+    [CDbCommand:_connection] => CDbConnection#2
+    (
+        [connectionString] => 'mysql:host=localhost;dbname=tinywms'
+        [username] => 'root'
+        [password] => ''
+        [schemaCachingDuration] => 0
+        [schemaCachingExclude] => array()
+        [schemaCacheID] => 'cache'
+        [queryCachingDuration] => 0
+        [queryCachingDependency] => null
+        [queryCachingCount] => 0
+        [queryCacheID] => 'cache'
+        [autoConnect] => true
+        [charset] => 'utf8'
+        [emulatePrepare] => true
+        [enableParamLogging] => true
+        [enableProfiling] => true
+        [tablePrefix] => null
+        [initSQLs] => null
+        [driverMap] => array
+        (
+            'pgsql' => 'CPgsqlSchema'
+            'mysqli' => 'CMysqlSchema'
+            'mysql' => 'CMysqlSchema'
+            'sqlite' => 'CSqliteSchema'
+            'sqlite2' => 'CSqliteSchema'
+            'mssql' => 'CMssqlSchema'
+            'dblib' => 'CMssqlSchema'
+            'sqlsrv' => 'CMssqlSchema'
+            'oci' => 'COciSchema'
+        )
+        [pdoClass] => 'PDO'
+        [CDbConnection:_attributes] => array()
+        [CDbConnection:_active] => true
+        [CDbConnection:_pdo] => PDO#3
+        (
+        )
+        [CDbConnection:_transaction] => null
+        [CDbConnection:_schema] => CMysqlSchema#4
+        (
+            [columnTypes] => array
+            (
+                'pk' => 'int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY'
+                'string' => 'varchar(255)'
+                'text' => 'text'
+                'integer' => 'int(11)'
+                'float' => 'float'
+                'decimal' => 'decimal'
+                'datetime' => 'datetime'
+                'timestamp' => 'timestamp'
+                'time' => 'time'
+                'date' => 'date'
+                'binary' => 'blob'
+                'boolean' => 'tinyint(1)'
+                'money' => 'decimal(19,4)'
+            )
+            [CDbSchema:_tableNames] => array()
+            [CDbSchema:_tables] => array()
+            [CDbSchema:_connection] => CDbConnection#2(...)
+            [CDbSchema:_builder] => null
+            [CDbSchema:_cacheExclude] => array()
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [behaviors] => array()
+        [CApplicationComponent:_initialized] => true
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+    [CDbCommand:_text] => null
+    [CDbCommand:_statement] => null
+    [CDbCommand:_paramLog] => array()
+    [CDbCommand:_query] => array
+    (
+        'select' => '`p`.`name`, `p`.`permission_k`'
+        'from' => '`applications` `a`'
+        'join' => array
+        (
+            0 => 'JOIN `permissions` `p` ON p.application_k = a.application_k'
+        )
+        'where' => 'p.application_k=\'7\''
+        'order' => '`p`.`name` ASC'
+    )
+    [CDbCommand:_fetchMode] => array
+    (
+        0 => 2
+    )
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
 in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\protected\models\Applications.php (144)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (158)
+2013/10/12 15:45:09 [trace] [vardump] array
+(
+    0 => array
+    (
+        'name' => 'Access'
+        'permission_k' => '35'
+    )
+    1 => array
+    (
+        'name' => 'Delete'
+        'permission_k' => '39'
+    )
+    2 => array
+    (
+        'name' => 'Edit'
+        'permission_k' => '38'
+    )
+    3 => array
+    (
+        'name' => 'Export'
+        'permission_k' => '40'
+    )
+    4 => array
+    (
+        'name' => 'List'
+        'permission_k' => '37'
+    )
+    5 => array
+    (
+        'name' => 'Print'
+        'permission_k' => '41'
+    )
+    6 => array
+    (
+        'name' => 'View'
+        'permission_k' => '36'
+    )
+)
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\models\Applications.php (145)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (158)
+2013/10/12 15:45:09 [trace] [vardump] '6'
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (155)
 in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:39:29 [trace] [vardump] 'users/login'
+2013/10/12 15:45:09 [trace] [vardump] CDbCommand#1
+(
+    [params] => array()
+    [CDbCommand:_connection] => CDbConnection#2
+    (
+        [connectionString] => 'mysql:host=localhost;dbname=tinywms'
+        [username] => 'root'
+        [password] => ''
+        [schemaCachingDuration] => 0
+        [schemaCachingExclude] => array()
+        [schemaCacheID] => 'cache'
+        [queryCachingDuration] => 0
+        [queryCachingDependency] => null
+        [queryCachingCount] => 0
+        [queryCacheID] => 'cache'
+        [autoConnect] => true
+        [charset] => 'utf8'
+        [emulatePrepare] => true
+        [enableParamLogging] => true
+        [enableProfiling] => true
+        [tablePrefix] => null
+        [initSQLs] => null
+        [driverMap] => array
+        (
+            'pgsql' => 'CPgsqlSchema'
+            'mysqli' => 'CMysqlSchema'
+            'mysql' => 'CMysqlSchema'
+            'sqlite' => 'CSqliteSchema'
+            'sqlite2' => 'CSqliteSchema'
+            'mssql' => 'CMssqlSchema'
+            'dblib' => 'CMssqlSchema'
+            'sqlsrv' => 'CMssqlSchema'
+            'oci' => 'COciSchema'
+        )
+        [pdoClass] => 'PDO'
+        [CDbConnection:_attributes] => array()
+        [CDbConnection:_active] => true
+        [CDbConnection:_pdo] => PDO#3
+        (
+        )
+        [CDbConnection:_transaction] => null
+        [CDbConnection:_schema] => CMysqlSchema#4
+        (
+            [columnTypes] => array
+            (
+                'pk' => 'int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY'
+                'string' => 'varchar(255)'
+                'text' => 'text'
+                'integer' => 'int(11)'
+                'float' => 'float'
+                'decimal' => 'decimal'
+                'datetime' => 'datetime'
+                'timestamp' => 'timestamp'
+                'time' => 'time'
+                'date' => 'date'
+                'binary' => 'blob'
+                'boolean' => 'tinyint(1)'
+                'money' => 'decimal(19,4)'
+            )
+            [CDbSchema:_tableNames] => array()
+            [CDbSchema:_tables] => array()
+            [CDbSchema:_connection] => CDbConnection#2(...)
+            [CDbSchema:_builder] => null
+            [CDbSchema:_cacheExclude] => array()
+            [CComponent:_e] => null
+            [CComponent:_m] => null
+        )
+        [behaviors] => array()
+        [CApplicationComponent:_initialized] => true
+        [CComponent:_e] => null
+        [CComponent:_m] => null
+    )
+    [CDbCommand:_text] => null
+    [CDbCommand:_statement] => null
+    [CDbCommand:_paramLog] => array()
+    [CDbCommand:_query] => array
+    (
+        'select' => '`p`.`name`, `p`.`permission_k`'
+        'from' => '`applications` `a`'
+        'join' => array
+        (
+            0 => 'JOIN `permissions` `p` ON p.application_k = a.application_k'
+        )
+        'where' => 'p.application_k=\'6\''
+        'order' => '`p`.`name` ASC'
+    )
+    [CDbCommand:_fetchMode] => array
+    (
+        0 => 2
+    )
+    [CComponent:_e] => null
+    [CComponent:_m] => null
+)
 in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:39:29 [trace] [vardump] ''
+in C:\wamp\www\tinywms\protected\models\Applications.php (144)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (158)
+2013/10/12 15:45:09 [trace] [vardump] array
+(
+    0 => array
+    (
+        'name' => 'Access'
+        'permission_k' => '3'
+    )
+    1 => array
+    (
+        'name' => 'Create'
+        'permission_k' => '5'
+    )
+    2 => array
+    (
+        'name' => 'Delete'
+        'permission_k' => '8'
+    )
+    3 => array
+    (
+        'name' => 'Edit'
+        'permission_k' => '4'
+    )
+    4 => array
+    (
+        'name' => 'export'
+        'permission_k' => '10'
+    )
+    5 => array
+    (
+        'name' => 'List'
+        'permission_k' => '7'
+    )
+    6 => array
+    (
+        'name' => 'Print'
+        'permission_k' => '9'
+    )
+    7 => array
+    (
+        'name' => 'Update'
+        'permission_k' => '6'
+    )
+)
 in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:39:31 [trace] [vardump] 'site/config'
+in C:\wamp\www\tinywms\protected\models\Applications.php (145)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (158)
+2013/10/12 15:45:42 [trace] [vardump] '4'
 in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:40:59 [trace] [vardump] 'users/logout'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:40:59 [trace] [vardump] '$1$tL2.yY3.$2wmdPEqfwY7DlfBRZ6N8t1'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\controllers\UsersController.php (197)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:43:57 [trace] [vardump] ''
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:43:59 [trace] [vardump] 'site/config'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:44:04 [trace] [vardump] 'users/logout'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:44:04 [trace] [vardump] '$2a$10$1qAz2wSx3eDc4rssstGb5e.CZrmwRuZxpdsr3PtN4dT67IeRCudoS'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\controllers\UsersController.php (197)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:48:24 [trace] [vardump] ''
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:48:26 [trace] [vardump] 'site/config'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:48:31 [trace] [vardump] 'users/logout'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:48:31 [trace] [vardump] '$2a$10$1qAz2wSx3eDc4rssstGb5e.CZrmwRuZxpdsr3PtN4dT67IeRCudoS'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\controllers\UsersController.php (197)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:48:31 [trace] [vardump] 'site/login'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:48:39 [trace] [vardump] 'users/login'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:48:39 [trace] [vardump] ''
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:48:41 [trace] [vardump] 'site/config'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:48:46 [trace] [vardump] 'users/logout'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:48:46 [trace] [vardump] '$2a$10$1qAz2wSx3eDc4rssstGb5e.CZrmwRuZxpdsr3PtN4dT67IeRCudoS'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\controllers\UsersController.php (197)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:48:46 [trace] [vardump] 'site/login'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:48:54 [trace] [vardump] 'users/login'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:49:05 [trace] [vardump] 'users/login'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:49:05 [trace] [vardump] ''
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:49:08 [trace] [vardump] 'site/config'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:49:13 [trace] [vardump] 'users/logout'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:49:13 [trace] [vardump] '$2a$10$1qAz2wSx3eDc4rssstGb5eYGY283853kd.OVpPDPgKkKBc6xXgRl.'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\controllers\UsersController.php (197)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:49:13 [trace] [vardump] 'site/login'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:49:37 [trace] [vardump] 'users/login'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:49:37 [trace] [vardump] ''
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
-in C:\wamp\www\tinywms\index.php (18)
-2013/09/24 17:49:45 [trace] [vardump] 'site/config'
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\components\RequireLogin.php (21)
+in C:\wamp\www\tinywms\protected\controllers\PermissionsController.php (155)
 in C:\wamp\www\tinywms\index.php (18)
