@@ -194,3 +194,16 @@ Ext.define("Bleext.desktop.Application", {
         }
     }
 });
+
+Ext.define('MyDesktop.override.ZIndexManager', {
+	override: 'Ext.ZIndexManager',
+	
+	show: function() {
+		for (var idx = 0, len = this.tempHidden ? this.tempHidden.length : 0; idx < len; idx++) {
+			var comp = this.tempHidden[idx];
+			comp.show();
+			comp.setPosition(comp.x, comp.y);
+		}
+		delete this.tempHidden;
+	}
+});

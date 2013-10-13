@@ -74,7 +74,7 @@ Ext.define("Bleext.modules.security.permissions.controller.Permission",{
 			records.push(r.data);
 		});
 		Bleext.Ajax.request({
-			url			: Bleext.BASE_PATH+"index.php/catalogs/permissions/save",
+			url			: Bleext.BASE_PATH+"index.php/permissions/updatepermissions",
 			params		: {permissions:Ext.encode(records)},
 			statusBar	: this.win.statusBar,
 			success		: function(){

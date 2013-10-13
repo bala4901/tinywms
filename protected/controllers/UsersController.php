@@ -41,7 +41,7 @@ class UsersController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'view', 'login', 'logout'),
+                'actions' => array('index', 'getusers', 'login', 'logout'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -193,9 +193,18 @@ class UsersController extends Controller {
         }
     }
 
-    public function actionLogout() {    
+    public function actionLogout() {
         Yii::app()->user->logout();
         $this->redirect(Yii::app()->createUrl('site/login'));
+    }
+
+    public function actionGetUsers() {
+        $web = new WebUtil();
+        $limits = $this->getPageLimit(Yii::app()->request);
+
+        $model = Users::model()->getUsers($limits);
+
+        $web->sendResponse(200, CJSON::encode(array("data" => $model, "success" => TRUE)));
     }
 
 }

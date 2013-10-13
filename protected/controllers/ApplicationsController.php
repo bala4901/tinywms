@@ -54,7 +54,6 @@ class ApplicationsController extends Controller {
 
             if (isset($model)) {
                 foreach ($form as $var => $value) {
-                    commons::dTrace($var);
                     // Does model have this attribute?
                     if ($model->hasAttribute($var)) {
                         $model->$var = $value;

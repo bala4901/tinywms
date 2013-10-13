@@ -12,10 +12,9 @@ class RolesController extends Controller {
      */
     public $layout = '//layouts/column2';
 
-/**
+    /**
      * @return array action filters
      */
-
     public function filters() {
         return array(
             'accessControl', // perform access control for CRUD operations
@@ -43,7 +42,7 @@ class RolesController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('GetRoleUsers'),
+                'actions' => array('GetRoleUsers', 'getusers'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -174,13 +173,24 @@ class RolesController extends Controller {
             Yii::app()->end();
         }
     }
-    
-    public function actionGetRoleUsers()
-    {
+
+    public function actionGetRoleUsers() {
         $web = new WebUtil();
         $result = Roles::model()->getRolesUsers();
+
+        $web->sendResponse(200, CJSON::encode(array("data" => $result, "success" => TRUE)));
+    }
+
+    public function actionGetUsers() {
+        $web = new WebUtil();
+
+        $limits = $this->getPageLimit(Yii::app()->request);
+        $role_k = Yii::app()->request->getQuery("role_k", "0");
         
-         $web->sendResponse(200, CJSON::encode(array("data" => $result, "success" => TRUE)));
+        
+        $model = Roles::model()->getUsers($role_k, $limits);
+
+        $web->sendResponse(200, CJSON::encode(array("data" => $model, "success" => TRUE)));
     }
 
 }

@@ -103,6 +103,25 @@ class Users extends CActiveRecord {
         ));
     }
 
+    public function getUsers($params) {
+        $count = Yii::app()->db->createCommand('SELECT COUNT(*) FROM users')->queryScalar();
+        $sql = 'select user_k, username,  email, name, lastname, avatar, active from users ';
+        $dataProvider = new CSqlDataProvider($sql, array(
+            'totalItemCount' => $count,
+            'sort' => array(
+                'attributes' => array(
+                    'name','username',
+                ),
+            ),
+            'pagination' => array(
+                'pageSize' => $params["limit"],
+            ),
+        ));
+        
+        return $dataProvider->getData();
+  
+    }
+
     /**
      * Returns the static model of the specified AR class.
      * Please note that you should have this exact method in all your CActiveRecord descendants!

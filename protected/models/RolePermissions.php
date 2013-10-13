@@ -97,11 +97,7 @@ class RolePermissions extends CActiveRecord {
                 ->from("role_permissions RP")
                 ->join("roles R", "R.role_k=RP.role_k")
                 ->join("permissions P", "P.permission_k=RP.permission_k")
-                ->where(
-                        array(
-                            "p.application_k='" . $params . "'",
-                        )
-        );
+                ->where("p.application_k='" . $params . "'");
 
         return $cmd->queryAll();
     }

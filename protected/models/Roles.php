@@ -94,7 +94,7 @@ class Roles extends CActiveRecord {
         return parent::model($className);
     }
 
-    public function getRolesUsers($params = array(0,25)) {
+    public function getRolesUsers($params = array(0, 25)) {
         $cmd = Yii::app()->db->createCommand(
                 "select R.*,U.users
             from roles R
@@ -104,10 +104,32 @@ class Roles extends CActiveRecord {
             join user_roles UR on UR.role_k=R.role_k
             group by R.role_k
             ) U on U.role_k=R.role_k");
-        
-        return $cmd->queryAll();
-        
 
+        return $cmd->queryAll();
+    }
+
+    //Get all roles that contain the given permission
+    public function getByPermissions($permission_k) {
+
+        $cmd = Yii::app()->db->createCommand();
+        $cmd->select("RP.*,R.name")
+                ->from("role_permissions RP")
+                ->join("roles R", "R.role_k=RP.role_k")
+                ->where("RP.permission_k='" . $permission_k . "'");
+
+        return $cmd->queryAll();
+    }
+
+    public function getUsers($role_k, $params) {
+        $cmd = Yii::app()->db->createCommand();
+        $cmd->select("U.*")
+                ->from("users U")
+                ->join("user_roles UR", "UR.user_k=U.user_k")
+                ->where("UR.role_k=" . $role_k)
+                ->limit($params["limit"],$params["offset"]);
+                
+
+        return $cmd->queryAll();
     }
 
 }

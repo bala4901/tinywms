@@ -45,7 +45,7 @@ class PermissionsController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
-                'actions' => array('create', 'update'),
+                'actions' => array('create', 'updatepermissions'),
                 'users' => array('@'),
             ),
             array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -75,8 +75,8 @@ class PermissionsController extends Controller {
     public function actionCreate() {
         $model = new Permissions;
 
-        // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
+// Uncomment the following line if AJAX validation is needed
+// $this->performAjaxValidation($model);
 
         if (isset($_POST['Permissions'])) {
             $model->attributes = $_POST['Permissions'];
@@ -97,8 +97,8 @@ class PermissionsController extends Controller {
     public function actionUpdate($id) {
         $model = $this->loadModel($id);
 
-        // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
+// Uncomment the following line if AJAX validation is needed
+// $this->performAjaxValidation($model);
 
         if (isset($_POST['Permissions'])) {
             $model->attributes = $_POST['Permissions'];
@@ -119,7 +119,7 @@ class PermissionsController extends Controller {
     public function actionDelete($id) {
         $this->loadModel($id)->delete();
 
-        // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
         if (!isset($_GET['ajax']))
             $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
     }
@@ -144,13 +144,14 @@ class PermissionsController extends Controller {
         ));
 
 
-        // Send the response
+// Send the response
         $web->sendResponse(200, CJSON::encode(array($r, "success" => TRUE)));
     }
 
     public function actionGetByApplication() {
         $web = new WebUtil();
-        $application_k = $_GET["application_k"];
+
+        $application_k = Yii::app()->request->getQuery("application_k", "0");
 
         $rows = array();
         $appPermissions = Applications::model()->getApplicationPermission($application_k);
@@ -162,7 +163,7 @@ class PermissionsController extends Controller {
                 "permission" => $permission["name"]
             ));
         }
-                
+
         $result = array();
         foreach ($rows as $row) {
             foreach ($actives as $role) {
@@ -172,9 +173,44 @@ class PermissionsController extends Controller {
             }
             array_push($result, $row);
         }
-        
-        // Send the response
+
+// Send the response
         $web->sendResponse(200, CJSON::encode(array("data" => $result, "success" => TRUE)));
+    }
+
+    public function actionUpdatePermissions() {
+        $permissions = json_decode($_POST["permissions"]);
+        $web = new WebUtil();
+
+        if (isset($permissions)) {
+            foreach ($permissions as $p) {
+                $roles = Roles::model()->getByPermissions($p->permission_k);
+
+                foreach ($roles as $role) {
+                    $rpModel = RolePermissions::model()->findByPk($role["role_permission_k"]);
+                    $rpModel->delete();
+                }
+                foreach ($p as $key => $value) {
+
+                    if (preg_match("/^role_/", $key)) {
+                        $rolesPerm = new RolePermissions();
+
+                        $rolesPerm->permission_k = $p->permission_k;
+                        $rolesPerm->date_created = date("Y-m-d h:i:s");
+                        $rolesPerm->role_k = substr($key, 5);
+                        if ($value) {
+                            $rolesPerm->value = 1;
+                        } else {
+                            $rolesPerm->value = 0;
+                        }
+
+                        $rolesPerm->save();
+                    }
+                }
+            }
+            $web->sendResponse(200, CJSON::encode(array("success" => TRUE, "message" => "Permissions successfully saved")));
+        }
+
     }
 
     /**
