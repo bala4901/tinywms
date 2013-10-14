@@ -4,7 +4,7 @@
 // Yii::setPathOfAlias('local','path/to/local-folder');
 // This is the main Web application configuration. Any writable
 // CWebApplication properties can be configured here.
-return array(
+$config = array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
     'name' => 'My Web Application',
     // preloading 'log' component
@@ -104,3 +104,13 @@ return array(
         ]
     ),
 );
+
+$modules_dir = dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'modules' . DIRECTORY_SEPARATOR;
+$handle = opendir($modules_dir);
+while (false !== ($file = readdir($handle))) {
+    if ($file != "." && $file != ".." && is_dir($modules_dir . $file)) {
+        $config = CMap::mergeArray($config, require($modules_dir . $file . DIRECTORY_SEPARATOR . 'config' . DIRECTORY_SEPARATOR . 'main.php'));
+    }
+}
+closedir($handle);
+return $config;

@@ -10,79 +10,77 @@
  *
  **/
 
-Ext.define("Bleext.desktop.WindowManager",{
-	extend				: "Ext.Component",
-	requires			: [
-		"Ext.util.MixedCollection",
-		"Bleext.desktop.LoadingModule",
-		"Bleext.desktop.Window"
-	],
+Ext.define("Bleext.desktop.WindowManager", {
+    extend: "Ext.Component",
+    requires: [
+        "Ext.util.MixedCollection",
+        "Bleext.desktop.LoadingModule",
+        "Bleext.desktop.Window"
+    ],
+    xTickSize: 1,
+    yTickSize: 1,
+    lastActiveWindow: null,
+    activeWindowCls: 'bleext-desktop-active-win',
+    inactiveWindowCls: 'bleext-desktop-inactive-win',
+    initComponent: function() {
 
-	xTickSize			: 1,
-    yTickSize			: 1,
-	lastActiveWindow	: null,
-	activeWindowCls		: 'bleext-desktop-active-win',
-    inactiveWindowCls	: 'bleext-desktop-inactive-win',
+        this.windows = new Ext.util.MixedCollection();
+        this.loader = Ext.create("Bleext.desktop.LoadingModule", {
+            hidden: true
+        });
 
-	initComponent		: function() {
-		
-		this.windows = new Ext.util.MixedCollection();
-		this.loader = Ext.create("Bleext.desktop.LoadingModule",{
-			hidden	: true
-		});
-        
-		this.callParent();
-	},
-	
-	/**
-	 * Creates the main window for an application. If the application is configured as "singleton" this method return the same windows every time.
-	 * @param {Object} app The configuration object for the application
-	 * @return {Bleext.desktop.Window} Return a window
-	 */
-	createWindow	: function(app){
-		var me = this, 
-			win,
-			cfg = {
-				title		: app.text,
-				singleton 	: false
-            };
-		
-		try{
-			var customCfg = Ext.decode(app.configurations);
-			Ext.apply(cfg,customCfg || {});
-		}catch(e){}
+        this.callParent();
+    },
+    /**
+     * Creates the main window for an application. If the application is configured as "singleton" this method return the same windows every time.
+     * @param {Object} app The configuration object for the application
+     * @return {Bleext.desktop.Window} Return a window
+     */
+    createWindow: function(app) {
+        var me = this,
+                win,
+                cfg = {
+            title: app.text,
+            singleton: false
+        };
 
-		
-		if(!app.klass){
-			return false;
-		}
+        try {
+            var customCfg = Ext.decode(app.configurations);
+            Ext.apply(cfg, customCfg || {});
+        } catch (e) {
+        }
 
-		if(cfg.singleton){
-			cfg.id = app.klass.replace(/\./g,'-');
-		}
 
-		//if only one instance of the application is allowed
-		if(cfg.singleton && me.windows.containsKey(cfg.id)){
-			return me.windows.get(cfg.id);
-		}
-		
-        win = Ext.create("Bleext.desktop.Window",cfg);
+        if (!app.klass) {
+            return false;
+        }
 
-		me.windows.add(win);
-		win.taskButton = me.taskbar.addTaskButton(win);
+        if (cfg.singleton) {
+            cfg.id = app.klass.replace(/\./g, '-');
+        }
+
+        //if only one instance of the application is allowed
+        if (cfg.singleton && me.windows.containsKey(cfg.id)) {
+            return me.windows.get(cfg.id);
+        }
+
+        win = Ext.create("Bleext.desktop.Window", cfg);
+
+        me.windows.add(win);
+        win.taskButton = me.taskbar.addTaskButton(win);
         win.animateTarget = win.taskButton.el;
 
         win.on({
-            activate	: me.updateActiveWindow,
-            beforeshow	: me.updateActiveWindow,
-            deactivate	: me.updateActiveWindow,
-            minimize	: me.minimizeWindow,
-            destroy		: me.onWindowClose,
-            scope		: me
+            activate: me.updateActiveWindow,
+            beforeshow: me.updateActiveWindow,
+            deactivate: me.updateActiveWindow,
+            minimize: me.minimizeWindow,
+            destroy: me.onWindowClose,
+            scope: me
         });
 
         win.on({
-            afterrender: function () {
+            afterrender: function() {
                 win.dd.xTickSize = me.xTickSize;
                 win.dd.yTickSize = me.yTickSize;
 
@@ -93,27 +91,24 @@ Ext.define("Bleext.desktop.WindowManager",{
             },
             single: true
         });
-		
+
         return win;
-	},
-	
-	minimizeWindow		: function(win){
-		win.minimized = true;
+    },
+    minimizeWindow: function(win) {
+        win.minimized = true;
         win.hide();
-	},
-    
-	onWindowClose: function(win) {
+    },
+    onWindowClose: function(win) {
         var me = this;
         me.windows.remove(win);
         me.taskbar.removeTaskButton(win.taskButton);
         me.updateActiveWindow();
     },
-	
-	updateActiveWindow: function () {
-        var me = this, 
-			activeWindow = me.getActiveWindow(), 
-			last = me.lastActiveWindow;
-			
+    updateActiveWindow: function() {
+        var me = this,
+                activeWindow = me.getActiveWindow(),
+                last = me.lastActiveWindow;
+
         if (activeWindow === last) {
             return;
         }
@@ -140,18 +135,17 @@ Ext.define("Bleext.desktop.WindowManager",{
         if (!window.document.originalTitle) {
             window.document.originalTitle = window.document.title;
         }
-        window.document.title = ((activeWindow && activeWindow.title) ? '['+ activeWindow.title +'] - ' : '') + window.document.originalTitle;
+        window.document.title = ((activeWindow && activeWindow.title) ? '[' + activeWindow.title + '] - ' : '') + window.document.originalTitle;
     },
-
-	getActiveWindow: function () {
+    getActiveWindow: function() {
         var win = null,
-            zmgr = this.getDesktopZIndexManager();
+                zmgr = this.getDesktopZIndexManager();
 
         if (zmgr) {
             // We cannot rely on activate/deactive because that fires against non-Window
             // components in the stack.
 
-            zmgr.eachTopDown(function (comp) {
+            zmgr.eachTopDown(function(comp) {
                 if (comp.isWindow && !comp.hidden) {
                     win = comp;
                     return false;
@@ -162,20 +156,17 @@ Ext.define("Bleext.desktop.WindowManager",{
 
         return win;
     },
-	
-	getDesktopZIndexManager: function () {
+    getDesktopZIndexManager: function() {
         var windows = this.windows;
         // TODO - there has to be a better way to get this...
         return (windows.getCount() && windows.getAt(0).zIndexManager) || null;
     },
-
-	getCount				: function(){
-		return this.windows.getCount();
-	},
-	
-	cascadeWindows: function() {
+    getCount: function() {
+        return this.windows.getCount();
+    },
+    cascadeWindows: function() {
         var x = 0, y = 0,
-            zmgr = this.getDesktopZIndexManager();
+                zmgr = this.getDesktopZIndexManager();
 
         zmgr.eachBottomUp(function(win) {
             if (win.isWindow && win.isVisible() && !win.maximized) {
@@ -185,21 +176,19 @@ Ext.define("Bleext.desktop.WindowManager",{
             }
         });
     },
-
-	minimizeAllWindows: function() {
+    minimizeAllWindows: function() {
         var x = 0, y = 0,
-            zmgr = this.getDesktopZIndexManager();
+                zmgr = this.getDesktopZIndexManager();
 
         zmgr.eachBottomUp(function(win) {
             if (win.isWindow && win.isVisible()) {
                 this.minimizeWindow(win);
             }
-        },this);
+        }, this);
     },
-
-	closeAllWindows: function() {
+    closeAllWindows: function() {
         var x = 0, y = 0,
-            zmgr = this.getDesktopZIndexManager();
+                zmgr = this.getDesktopZIndexManager();
 
         zmgr.eachBottomUp(function(win) {
             if (win.isWindow) {
@@ -207,37 +196,31 @@ Ext.define("Bleext.desktop.WindowManager",{
             }
         });
     },
-
-	onWindowMenuBeforeShow: function (menu) {
+    onWindowMenuBeforeShow: function(menu) {
         var items = menu.items.items, win = menu.theWin;
         items[0].setDisabled(win.maximized !== true && win.hidden !== true); // Restore
         items[1].setDisabled(win.minimized === true); // Minimize
         items[2].setDisabled(win.maximized === true || win.hidden === true); // Maximize
     },
-
-    onWindowMenuClose: function () {
+    onWindowMenuClose: function() {
         var me = this, win = me.windowMenu.theWin;
 
         win.close();
     },
-
-    onWindowMenuHide: function (menu) {
+    onWindowMenuHide: function(menu) {
         menu.theWin = null;
     },
-
-    onWindowMenuMaximize: function () {
+    onWindowMenuMaximize: function() {
         var me = this, win = me.windowMenu.theWin;
 
         win.maximize();
     },
-
-    onWindowMenuMinimize: function () {
+    onWindowMenuMinimize: function() {
         var me = this, win = me.windowMenu.theWin;
 
         win.minimize();
     },
-
-    onWindowMenuRestore: function () {
+    onWindowMenuRestore: function() {
         var me = this, win = me.windowMenu.theWin;
 
         me.restoreWindow(win);

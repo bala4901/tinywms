@@ -8,15 +8,14 @@
  *
  **/
 
-Ext.define("Bleext.core.Log",{
-	extend 		: "Object",
-	singleton	: true,
-
-	log			: function(object){
-		if(console){
-			console.log(object);
-		}
-	}
+Ext.define("Bleext.core.Log", {
+    extend: "Object",
+    singleton: true,
+    log: function(object) {
+        if (console) {
+            console.log(object);
+        }
+    }
 });
 
 Bleext.log = Bleext.core.Log.log;

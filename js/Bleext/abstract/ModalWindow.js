@@ -8,13 +8,12 @@
  *
  **/
 
-Ext.define("Bleext.abstract.ModalWindow",{
-	extend 			: "Ext.Window",
-	
-	layout			: "fit",
-	cls				: "bleext-window",
-	modal			: true,
-	draggable 		: false,
-	resizable		: false,
-	bodyPadding		: 10
+Ext.define("Bleext.abstract.ModalWindow", {
+    extend: "Ext.Window",
+    layout: "fit",
+    cls: "bleext-window",
+    modal: true,
+    draggable: false,
+    resizable: false,
+    bodyPadding: 10
 });

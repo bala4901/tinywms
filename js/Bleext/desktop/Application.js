@@ -69,8 +69,7 @@ Ext.define("Bleext.desktop.Application", {
 
         me.desktop.windowMgr.loader.show();
         Bleext.Ajax.request({
-            /*url		: Bleext.BASE_PATH+"index.php/catalogs/permissions/getForCurrentUserApplication",*/
-            url: "http://localhost:8888/tinywms/index.php/permissions/test",
+            url: Bleext.BASE_PATH+"index.php/permissions/getpermissions",
             scope: me,
             app: app,
             method: "GET",
@@ -159,7 +158,7 @@ Ext.define("Bleext.desktop.Application", {
      */
     showNotification: function(data) {
         console.log(data);
-         Ext.create('Bleext.desktop.Notification', {
+        Ext.create('Bleext.desktop.Notification', {
             title: 'Notification',
             position: 'br',
             manager: '',
@@ -196,14 +195,13 @@ Ext.define("Bleext.desktop.Application", {
 });
 
 Ext.define('MyDesktop.override.ZIndexManager', {
-	override: 'Ext.ZIndexManager',
-	
-	show: function() {
-		for (var idx = 0, len = this.tempHidden ? this.tempHidden.length : 0; idx < len; idx++) {
-			var comp = this.tempHidden[idx];
-			comp.show();
-			comp.setPosition(comp.x, comp.y);
-		}
-		delete this.tempHidden;
-	}
+    override: 'Ext.ZIndexManager',
+    show: function() {
+        for (var idx = 0, len = this.tempHidden ? this.tempHidden.length : 0; idx < len; idx++) {
+            var comp = this.tempHidden[idx];
+            comp.show();
+            comp.setPosition(comp.x, comp.y);
+        }
+        delete this.tempHidden;
+    }
 });

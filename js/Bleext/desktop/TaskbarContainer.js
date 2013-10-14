@@ -8,11 +8,10 @@
  *
  **/
 
-Ext.define("Bleext.desktop.TaskbarContainer",{
-	extend 			: "Ext.toolbar.Toolbar",
-
-	flex			: 1,
-	enableOverflow	: true,
-	cls				: "bleext-toolbar-container",
-	items			: ["&#160;"]
+Ext.define("Bleext.desktop.TaskbarContainer", {
+    extend: "Ext.toolbar.Toolbar",
+    flex: 1,
+    enableOverflow: true,
+    cls: "bleext-toolbar-container",
+    items: ["&#160;"]
 });

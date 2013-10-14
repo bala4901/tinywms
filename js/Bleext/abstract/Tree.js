@@ -10,14 +10,12 @@
  *
  **/
 
-Ext.define("Bleext.abstract.Tree",{
-	extend		: "Ext.tree.Panel",
-	
-	
-	initComponent	: function() {
-		var me = this;
-		
-        
-		me.callParent();
-	}
+Ext.define("Bleext.abstract.Tree", {
+    extend: "Ext.tree.Panel",
+    initComponent: function() {
+        var me = this;
+
+
+        me.callParent();
+    }
 });

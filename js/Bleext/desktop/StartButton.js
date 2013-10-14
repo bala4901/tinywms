@@ -8,16 +8,14 @@
  *
  **/
 
-Ext.define("Bleext.desktop.StartButton",{
-	extend		: "Ext.button.Button",
+Ext.define("Bleext.desktop.StartButton", {
+    extend: "Ext.button.Button",
+    menuAlign: "bl-tl",
+    clickEvent: "mousedown",
+    text: "Start",
+    cls: "bleext-start-button",
+    iconCls: "bleext-start-button-icon",
+    text		: "Start"
 
-	menuAlign	: "bl-tl",
-    clickEvent	: "mousedown",
-	text		: "Start",
-	cls			: "bleext-start-button",
-	iconCls		: "bleext-start-button-icon",
-	
-	text		: "Start"
-	
 
 });

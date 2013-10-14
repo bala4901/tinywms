@@ -41,7 +41,7 @@ class PermissionsController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'getByApplication', 'test'),
+                'actions' => array('index', 'getByApplication', 'getpermissions'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -134,7 +134,7 @@ class PermissionsController extends Controller {
         ));
     }
 
-    public function actionTest() {
+    public function actionGetPermissions() {
         $web = new WebUtil();
         $application_k = $_GET["application_k"];
 
