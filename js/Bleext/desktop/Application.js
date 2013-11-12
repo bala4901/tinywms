@@ -99,6 +99,7 @@ Ext.define("Bleext.desktop.Application", {
 
             Ext.Loader.setPath(appname, Bleext.desktop.Constants.JS_PATH + appname);
             Ext.Loader.require(app.klass, function() {
+                
                 var controller,
                         id = win.id + "-" + app.klass;
                 me.desktop.add(win);

@@ -104,7 +104,7 @@ class Permissions extends CActiveRecord {
                 ->join("roles R", "R.role_k = RP.role_k")
                 ->join("user_roles UR", "UR.role_k = R.role_k")
                 ->join("users U", "U.user_k = UR.user_k")
-                ->where(array(
+                ->where(array('AND',
                     "P.application_k='" . $data["application_k"] . "'",
                     "U.user_k='" . $data["user_k"] . "'"
         ));
@@ -117,9 +117,8 @@ class Permissions extends CActiveRecord {
     public function addPermissions($id) {
         $permissions = array(
             array("application_k" => $id, "action" => "access", "name" => "Access", "description" => "To access the menu"),
-            array("application_k" => $id, "action" => "view", "name" => "View", "description" => "View"),
-            array("application_k" => $id, "action" => "list", "name" => "List", "description" => "List"),
-            array("application_k" => $id, "action" => "edit", "name" => "Edit", "description" => "Edit"),
+            array("application_k" => $id, "action" => "new", "name" => "Create", "description" => "Create"),
+            array("application_k" => $id, "action" => "save", "name" => "Edit", "description" => "Edit"),
             array("application_k" => $id, "action" => "delete", "name" => "Delete", "description" => "Delete"),
             array("application_k" => $id, "action" => "export", "name" => "Export", "description" => "Export"),
             array("application_k" => $id, "action" => "print", "name" => "Print", "description" => "Print"),

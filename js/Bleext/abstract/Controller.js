@@ -26,8 +26,9 @@ Ext.define("Bleext.abstract.Controller", {
         var me = this,
                 actions = {};
 
-
         me.setViewport();
+
+        me.setPermissions(me.permissions);
 
         me.control({
             "button[action=new]": {
@@ -38,8 +39,34 @@ Ext.define("Bleext.abstract.Controller", {
             },
             "button[action=delete]": {
                 click: me.remove
+            },
+            "button[action=export]": {
+                click: me.export
+            },
+            "button[action=print]": {
+                click: me.print
             }
         });
+    },
+    setPermissions: function(permission)
+    {
+        for (var i = 0; i < permission.length; i++)
+        {
+            var actionButton = this.win.down("button[action=" + permission[i]["action"].toLowerCase() + "]");
+
+            if (actionButton)
+            {
+                if (permission[i]["value"] <= 0)
+                {
+                    actionButton.setDisabled(true);
+                }
+                else
+                {
+                    actionButton.setDisabled(false);
+                }
+            }
+        }
+
     },
     /**
      * This method add the window id to the selectors, this way we can create more the one
@@ -114,5 +141,7 @@ Ext.define("Bleext.abstract.Controller", {
      * An abstract method. This method is executed when the user clicks in any button
      * withing the main window than contain a property "action" equals to "delete".
      */
-    remove: Ext.emptyFn
+    remove: Ext.emptyFn,
+    export: Ext.emptyFn,
+    print: Ext.emptyFn,
 });

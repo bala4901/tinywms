@@ -41,8 +41,8 @@ class PermissionsController extends Controller {
                 'users' => array('*'),
             ),
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'getByApplication', 'getpermissions'),
-                'users' => array('*'),
+                'actions' => array('getByApplication', 'getpermissions'),
+                'users' => array('@'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
                 'actions' => array('create', 'updatepermissions'),
@@ -136,17 +136,17 @@ class PermissionsController extends Controller {
 
     public function actionGetPermissions() {
         $web = new WebUtil();
-        $application_k = $_GET["application_k"];
+        $application_k = Yii::app()->request->getQuery("application_k",0);
 
         $r = Permissions::model()->getUserRoleAppPermission(array(
             "user_k" => Yii::app()->user->user->user_k,
             "application_k" => $application_k
         ));
 
-
-// Send the response
-        $web->sendResponse(200, CJSON::encode(array($r, "success" => TRUE)));
+        $web->sendResponse(200, CJSON::encode(array("data"=>$r, "success" => TRUE)));
     }
+
+
 
     public function actionGetByApplication() {
         $web = new WebUtil();
@@ -210,7 +210,6 @@ class PermissionsController extends Controller {
             }
             $web->sendResponse(200, CJSON::encode(array("success" => TRUE, "message" => "Permissions successfully saved")));
         }
-
     }
 
     /**
