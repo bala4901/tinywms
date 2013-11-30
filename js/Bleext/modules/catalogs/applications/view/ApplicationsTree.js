@@ -10,29 +10,27 @@
  *
  **/
 
-Ext.define("Bleext.modules.catalogs.applications.view.ApplicationsTree",{
-	extend		: "Bleext.abstract.Tree",
-	
-	itemId		: "applicationsTree",
-	title		: "Applications",
-	split		: true,
-	collapsible	: true,
-	border		: false,
-	multiSelect	: false,
-	rootVisible	: false,
-	full		: true,
-	viewConfig	: {
-		plugins	: {
-			ptype: "treeviewdragdrop"
-		}
-	},
+Ext.define("Bleext.modules.catalogs.applications.view.ApplicationsTree", {
+    extend: "Bleext.abstract.Tree",
+    itemId: "applicationsTree",
+    title: "Applications",
+    split: true,
+    collapsible: true,
+    border: false,
+    multiSelect: false,
+    rootVisible: false,
+    full: true,
+    viewConfig: {
+        plugins: {
+            ptype: "treeviewdragdrop"
+        }
+    },
+    initComponent: function() {
+        var me = this;
 
-	initComponent	: function() {
-		var me = this;
-		
-		me.store = Ext.create("Bleext.modules.catalogs.applications.store.Applications");
-		
-		
-		me.callParent();
-	}
+        me.store = Ext.create("Bleext.modules.catalogs.applications.store.Applications");
+
+
+        me.callParent();
+    }
 });

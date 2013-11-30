@@ -18,6 +18,11 @@ Ext.define("Bleext.abstract.Grid", {
     initComponent: function() {
         var me = this;
 
+        me.bbar = Ext.create('Ext.ux.StatusBar', {
+            defaultText: me.defaultStatusText,
+            name: 'searchStatusBar'
+        });
+
         if (me.paging) {
             me.dockedItems = [{
                     xtype: "pagingtoolbar",
@@ -29,5 +34,7 @@ Ext.define("Bleext.abstract.Grid", {
 
 
         me.callParent();
-    }
+    },
+    
+
 });

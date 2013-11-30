@@ -23,13 +23,15 @@ Ext.define("Bleext.abstract.Controller", {
 
     //private
     init: function() {
+        if (this.inited) {
+            return;
+        }
+        this.inited = true;
+
         var me = this,
                 actions = {};
-
         me.setViewport();
-
         me.setPermissions(me.permissions);
-
         me.control({
             "button[action=new]": {
                 click: me.add
@@ -50,22 +52,21 @@ Ext.define("Bleext.abstract.Controller", {
     },
     setPermissions: function(permission)
     {
-        for (var i = 0; i < permission.length; i++)
-        {
-            var actionButton = this.win.down("button[action=" + permission[i]["action"].toLowerCase() + "]");
-
-            if (actionButton)
-            {
-                if (permission[i]["value"] <= 0)
-                {
-                    actionButton.setDisabled(true);
-                }
-                else
-                {
-                    actionButton.setDisabled(false);
-                }
-            }
-        }
+        /* for (var i = 0; i < permission.length; i++)
+         {
+         var actionButton = this.win.down("button[action=" + permission[i]["action"].toLowerCase() + "]");
+         if (actionButton)
+         {
+         if (permission[i]["value"] <= 0)
+         {
+         actionButton.setDisabled(true);
+         }
+         else
+         {
+         actionButton.setDisabled(false);
+         }
+         }
+         }*/
 
     },
     /**
@@ -82,12 +83,10 @@ Ext.define("Bleext.abstract.Controller", {
                 obj[s] = actions[selector];
             }, this);
             delete actions;
-
             if (!me.selectors) {
                 me.selectors = [];
             }
             me.selectors.push(obj);
-
             this.callParent([obj]);
         } else {
             this.callParent(arguments);
@@ -112,6 +111,19 @@ Ext.define("Bleext.abstract.Controller", {
             text: msg,
             iconCls: "x-status-valid"
         });
+    },
+    runAction: function(controllerName, actionName) {
+        var controller = this.getController(controllerName);
+       // controller.init(this);
+        controller['action' + actionName]();
+    },
+    setMainView: function(view) {
+        var center = this.viewport.layout.regions.center;
+        if (center.items.indexOf(view) === -1) {
+            center.add(view);
+        }
+
+        center.setActiveTab(view);
     },
     /**
      * An abstract method to be implemented in the subclass, this method is executed 

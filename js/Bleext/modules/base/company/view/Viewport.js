@@ -10,16 +10,25 @@
  *
  **/
 
-Ext.define("Bleext.modules.base.company.view.Viewport",{
-	extend		: "Bleext.abstract.Viewport",
-	
-	buildItems		: function(){
-		var grid = Ext.create("Bleext.modules.base.company.view.MCompanyGrid",{
-			region	: "center",
-			
-		});
-		
+Ext.define("Bleext.modules.base.company.view.Viewport", {
+    extend: "Bleext.abstract.Viewport",
+    initComponent: function() {
+        var me = this;
 
-		return [grid];
-	}
+        this.items = this.buildItems();
+
+        me.callParent();
+    },
+    buildItems: function() {
+        var tree = Ext.create("Bleext.modules.base.company.view.CompaniesTree", {
+            region: "west",
+            width: 200
+        });
+
+        var form = Ext.create("Bleext.modules.base.company.view.CompanyForm", {
+            region: "center"
+        });
+
+        return [tree, {layout: "border", region: "center", border: false, items: [form]}];
+    }
 });
