@@ -23,9 +23,9 @@ Ext.define("Bleext.modules.wms.locmgmt.view.warehouse.WhGrid", {
 
         me.columns = [
             Ext.create('Ext.grid.RowNumberer'),
-            {header: "Wh Code", dataIndex: "Code", flex: 1, field: 'textfield'},
+            {header: "Wh Code", dataIndex: "wh_code", flex: 1, field: 'textfield'},
             {header: "Warehouse", dataIndex: "name", flex: 1, field: 'textfield'},
-            {header: "Company", dataIndex: "company_id.name", flex: 1, field: 'textfield'},
+            {header: "Company", dataIndex: "company.name", flex: 1, field: 'textfield'},
         ];
 
         me.callParent();

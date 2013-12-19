@@ -3,13 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-Ext.define("Bleext.modules.wms.master.view.location.LocationGrid", {
+Ext.define("Bleext.modules.wms.locmgmt.view.location.LocationGrid", {
     extend: "Bleext.abstract.Grid",
     store: "Bleext.modules.wms.locmgmt.store.Locations",
     title: "Location",
     border: false,
     split: true,
-    collapsible: true,
     editable: false,
     alias : 'widget.locationgrid',
     initComponent: function() {
@@ -23,12 +22,10 @@ Ext.define("Bleext.modules.wms.master.view.location.LocationGrid", {
 
         me.columns = [
             Ext.create('Ext.grid.RowNumberer'),
-            {header: "Code", dataIndex: "code", flex: 1, field: 'textfield'},
-            {header: "Name", dataIndex: "name", flex: 1, field: 'textfield'},
-            {header: "Email", dataIndex: "email", flex: 1, field: 'textfield'},
-            {header: "Phone", dataIndex: "phone", flex: 1, field: 'textfield'},
-            {header: "Mobile", dataIndex: "mobile", flex: 1, field: 'textfield'},
-            {header: "Fax", dataIndex: "fax", flex: 1, field: 'textfield'},
+            {header: "Location No", dataIndex: "name", flex: 1, field: 'textfield'},
+            {header: "Area", dataIndex: "area.name", flex: 1, field: 'textfield'},
+            {header: "Warehouse", dataIndex: "warehouse.name", flex: 1, field: 'textfield'},
+            {header: "Order", dataIndex: "sort", flex: 1, field: 'textfield'},
         ];
 
         me.callParent();
@@ -41,20 +38,6 @@ Ext.define("Bleext.modules.wms.master.view.location.LocationGrid", {
                 hideLabel: true,
                 width: 200,
                 align: 'right'
-            }, '-',{
-                xtype: 'checkboxfield',
-                width: 110,
-                boxLabel: 'Customer',
-                name: 'customer',
-                id:'aaa',
-                inputValue: '1',
-            },
-            {
-                width: 110,
-                xtype: 'checkboxfield',
-                boxLabel: 'Supplier',
-                name: 'supplier',
-                inputValue: '1',
             }];
     }
 });

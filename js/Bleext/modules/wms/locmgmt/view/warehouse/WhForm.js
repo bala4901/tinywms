@@ -35,6 +35,14 @@ Ext.define("Bleext.modules.wms.locmgmt.view.warehouse.WhForm", {
                         title: 'Basic',
                         items: [
                             {
+                                xtype: "hidden",
+                                name: "id"
+                            },
+                            {
+                                xtype: "hidden",
+                                name: "write_date"
+                            },
+                            {
                                 xtype: 'fieldset',
                                 title: 'General',
                                 defaultType: 'textfield',
@@ -44,22 +52,24 @@ Ext.define("Bleext.modules.wms.locmgmt.view.warehouse.WhForm", {
                                     labelWidth: 110,
                                 },
                                 items: [{
-                                        fieldLabel: 'Wh Code',
+                                        fieldLabel: 'Warehouse Code',
                                         labelWidth: 110,
                                         allowBlank: false,
-                                        name: 'code',
-                                        emptyText: 'eg. John Berkshire',
+                                        name: 'wh_code',
+                                        emptyText: 'eg. 0001,1001,9999',
+                                        maxLength: 6,
+                                        enforceMaxLength: 6,
                                     },
                                     {
                                         fieldLabel: 'Warehouse Name',
                                         labelWidth: 110,
                                         allowBlank: false,
                                         name: 'name',
-                                        emptyText: 'eg. John Berkshire',
+                                        emptyText: 'eg. dry whs, cold storage, etc',
                                     },
                                     {
                                         xtype: 'combobox',
-                                        name: 'company_id.name',
+                                        name: 'company_id',
                                         forceSelection: true,
                                         listeners: {
                                             scope: this,
@@ -70,8 +80,8 @@ Ext.define("Bleext.modules.wms.locmgmt.view.warehouse.WhForm", {
                                         listConfig: {
                                             minWidth: null
                                         },
-                                        store: Ext.create("Bleext.modules.base.company.store.Company", {
-                                            url: "rescompany",
+                                        store: Ext.create("Bleext.abstract.ComboBoxStore", {
+                                            url: "rescompany/getcomboselection"
                                         }),
                                         valueField: 'id',
                                         displayField: 'name',

@@ -46,7 +46,7 @@ Ext.define("Bleext.modules.wms.master.view.location.LocationGrid", {
                 width: 110,
                 boxLabel: 'Customer',
                 name: 'customer',
-                id:'aaa',
+                
                 inputValue: '1',
             },
             {

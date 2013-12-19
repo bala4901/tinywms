@@ -13,6 +13,6 @@
 Ext.define("Bleext.modules.wms.locmgmt.store.Locations", {
     extend: "Bleext.abstract.Store",
     model: "Bleext.modules.wms.locmgmt.model.Location",
-    url: "respartner",
-    autoLoad: false
+    url: "wmslocation",
+    autoLoad: true
 });

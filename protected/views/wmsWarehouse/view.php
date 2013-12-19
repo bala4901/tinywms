@@ -27,6 +27,7 @@ $this->menu=array(
 'create_date',
 'write_uid',
 'write_date',
+'active:boolean',
 	),
 )); ?>
 

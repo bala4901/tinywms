@@ -13,6 +13,6 @@
 Ext.define("Bleext.modules.wms.locmgmt.store.Warehouses", {
     extend: "Bleext.abstract.Store",
     model: "Bleext.modules.wms.locmgmt.model.Warehouse",
-    url: "respartner",
-    autoLoad: false
+    url: "wmswarehouse",
+    autoLoad: true
 });

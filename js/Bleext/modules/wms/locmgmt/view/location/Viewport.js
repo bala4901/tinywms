@@ -10,7 +10,7 @@
  *
  **/
 
-Ext.define("Bleext.modules.wms.master.view.location.Viewport", {
+Ext.define("Bleext.modules.wms.locmgmt.view.location.Viewport", {
     extend: "Bleext.abstract.Viewport",
     initComponent: function() {
         var me = this;
@@ -20,11 +20,11 @@ Ext.define("Bleext.modules.wms.master.view.location.Viewport", {
         me.callParent();
     },
     buildItems: function() {
-        var form = Ext.create("Bleext.modules.wms.master.view.location.LocationForm", {
+        var form = Ext.create("Bleext.modules.wms.locmgmt.view.location.LocationForm", {
             region: "east",
             collapsed: true
         });
-        var grid = Ext.create("Bleext.modules.wms.master.view.location.LocationGrid", {
+        var grid = Ext.create("Bleext.modules.wms.locmgmt.view.location.LocationGrid", {
             region: "center"
         });
 

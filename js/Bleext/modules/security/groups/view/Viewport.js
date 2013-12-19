@@ -21,19 +21,19 @@ Ext.define("Bleext.modules.security.groups.view.Viewport", {
         var users = Ext.create("Bleext.modules.catalogs.users.view.UsersView"),
                 roles = Ext.create("Bleext.modules.catalogs.roles.view.RolesView"),
                 usersRole = Ext.create("Bleext.modules.catalogs.users.view.UsersGrid", {
-            full: false,
-            editable: false,
-            width: 180,
-            title: "Select a role",
-            hideCollapseTool: true,
-            collapsible: true,
-            collapsed: true,
-            region: "east",
-            store: Ext.create("Bleext.modules.catalogs.users.store.Users", {
-                url: "roles/getusers",
-                autoLoad: false
-            })
-        });
+                    full: false,
+                    editable: false,
+                    width: 180,
+                    title: "Select a role",
+                    hideCollapseTool: true,
+                    collapsible: true,
+                    collapsed: true,
+                    region: "east",
+                    store: Ext.create("Bleext.modules.catalogs.users.store.Users", {
+                        url: "roles/getusers",
+                        autoLoad: false
+                    })
+                });
 
 
         return [{

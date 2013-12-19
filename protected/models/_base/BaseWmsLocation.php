@@ -23,71 +23,86 @@
  */
 abstract class BaseWmsLocation extends GxActiveRecord {
 
-	public static function model($className=__CLASS__) {
-		return parent::model($className);
-	}
+    public static function model($className = __CLASS__) {
+        return parent::model($className);
+    }
 
-	public function tableName() {
-		return 'wms_location';
-	}
+    public function tableName() {
+        return 'wms_location';
+    }
 
-	public static function label($n = 1) {
-		return Yii::t('app', 'WmsLocation|WmsLocations', $n);
-	}
+    public static function label($n = 1) {
+        return Yii::t('app', 'WmsLocation|WmsLocations', $n);
+    }
 
-	public static function representingColumn() {
-		return 'name';
-	}
+    public static function representingColumn() {
+        return 'name';
+    }
 
-	public function rules() {
-		return array(
-			array('name, location_code, area_id, wh_id, sort, create_uid, create_date, write_uid, write_date', 'required'),
-			array('area_id, wh_id, sort, create_uid, write_uid', 'numerical', 'integerOnly'=>true),
-			array('id, name, location_code, area_id, wh_id, sort, create_uid, create_date, write_uid, write_date', 'safe', 'on'=>'search'),
-		);
-	}
+    public function rules() {
+        return array(
+            array('name, location_code, area_id, wh_id, sort, create_uid, create_date, write_uid, write_date', 'required'),
+            array('area_id, wh_id, sort, create_uid, write_uid', 'numerical', 'integerOnly' => true),
+            array('write_uid', 'default',
+                'value' => Yii::app()->user->getId(),
+                'setOnEmpty' => false, 'on' => 'update'),
+            array('create_uid,write_uid', 'default',
+                'value' => Yii::app()->user->getId(),
+                'setOnEmpty' => false, 'on' => 'insert'),
+            array('write_date', 'default',
+                'value' => new CDbExpression('NOW()'),
+                'setOnEmpty' => false, 'on' => 'update'),
+            array('create_date,write_date', 'default',
+                'value' => new CDbExpression('NOW()'),
+                'setOnEmpty' => false, 'on' => 'insert'),
+            array('id, name, location_code, area_id, wh_id, sort, create_uid, create_date, write_uid, write_date', 'safe', 'on' => 'search'),
+        );
+    }
 
-	public function relations() {
-		return array(
-		);
-	}
+    public function relations() {
+        return array(
+            'area' => array(self::BELONGS_TO, 'WmsArea', 'area_id'),
+            'warehouse' => array(self::BELONGS_TO, 'WmsWarehouse', 'wh_id'),
+        );
+    }
 
-	public function pivotModels() {
-		return array(
-		);
-	}
+    public function pivotModels() {
+        return array(
+        );
+    }
 
-	public function attributeLabels() {
-		return array(
-			'id' => Yii::t('app', 'ID'),
-			'name' => Yii::t('app', 'Name'),
-			'location_code' => Yii::t('app', 'Location Code'),
-			'area_id' => Yii::t('app', 'Area'),
-			'wh_id' => Yii::t('app', 'Wh'),
-			'sort' => Yii::t('app', 'Sort'),
-			'create_uid' => Yii::t('app', 'Create Uid'),
-			'create_date' => Yii::t('app', 'Create Date'),
-			'write_uid' => Yii::t('app', 'Write Uid'),
-			'write_date' => Yii::t('app', 'Write Date'),
-		);
-	}
+    public function attributeLabels() {
+        return array(
+            'id' => Yii::t('app', 'ID'),
+            'name' => Yii::t('app', 'Name'),
+            'location_code' => Yii::t('app', 'Location Code'),
+            'area_id' => Yii::t('app', 'Area'),
+            'wh_id' => Yii::t('app', 'Wh'),
+            'sort' => Yii::t('app', 'Sort'),
+            'create_uid' => Yii::t('app', 'Create Uid'),
+            'create_date' => Yii::t('app', 'Create Date'),
+            'write_uid' => Yii::t('app', 'Write Uid'),
+            'write_date' => Yii::t('app', 'Write Date'),
+        );
+    }
 
-	public function search() {
-		$criteria = new CDbCriteria;
+    public function search() {
+        $criteria = new CDbCriteria;
 
-		$criteria->compare('id', $this->id);
-		$criteria->compare('name', $this->name, true);
-		$criteria->compare('location_code', $this->location_code, true);
-		$criteria->compare('area_id', $this->area_id);
-		$criteria->compare('wh_id', $this->wh_id);
-		$criteria->compare('sort', $this->sort);
-		$criteria->compare('create_uid', $this->create_uid);
-		$criteria->compare('create_date', $this->create_date, true);
-		$criteria->compare('write_uid', $this->write_uid);
-		$criteria->compare('write_date', $this->write_date, true);
+        $criteria->compare('id', $this->id);
+        $criteria->compare('name', $this->name, true);
+        $criteria->compare('location_code', $this->location_code, true);
+        $criteria->compare('area_id', $this->area_id);
+        $criteria->compare('wh_id', $this->wh_id);
+        $criteria->compare('sort', $this->sort);
+        $criteria->compare('create_uid', $this->create_uid);
+        $criteria->compare('create_date', $this->create_date, true);
+        $criteria->compare('write_uid', $this->write_uid);
+        $criteria->compare('write_date', $this->write_date, true);
 
-		return new CActiveDataProvider($this, array(
-			'criteria' => $criteria,
-		));
-	}
+        return new CActiveDataProvider($this, array(
+            'criteria' => $criteria,
+        ));
+    }
+
 }

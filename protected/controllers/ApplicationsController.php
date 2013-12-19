@@ -50,57 +50,22 @@ class ApplicationsController extends Controller {
         $form = json_decode($_POST["data"]);
 
         if (strlen($form->application_k) > 0) {
-            $model = Applications::model()->findByPk($form->application_k);
-
-            if (isset($model)) {
-                foreach ($form as $var => $value) {
-                    // Does model have this attribute?
-                    if ($model->hasAttribute($var)) {
-                        $model->$var = $value;
-                    } else {
-                        // No, raise error
-                        $web->sendResponse(500, CJSON::encode(array("success" => FALSE, "message" => "Parameter <b>%s</b> is not allowed for applications.", $var)));
-                    }
-                }
-                // Try to save the model
-                if ($model->save()) {
-                    $web->sendResponse(200, CJSON::encode(array("success" => TRUE, "application_k" => $model->application_k, "message" => "Application successfully updated")));
-                } else {
-                    $web->sendResponse(200, CJSON::encode(array("success" => FALSE, "message" => "There was an error updating this application.")));
-                }
-            } else {
-                $web->sendResponse(200, CJSON::encode(array("success" => FALSE, "message" => "The record could not be found.")));
-            }
+            
         } else {
-            $model = new Applications();
+            $id = Applications::model()->create($form);
 
-            foreach ($form as $var => $value) {
-                if ($model->hasAttribute($var)) {
-                    $model->$var = $value;
-                }
-            }
+            Permissions::model()->addPermissions($id, $form->name);
 
-            if ($model->save()) {
-
-                $id = Yii::app()->db->getLastInsertID();
-                Permissions::model()->addPermissions($id);
-                $web->sendResponse(200, CJSON::encode(
-                                array("success" => TRUE,
-                                    "application_k" => $id,
-                                    "message" => "Application successfully saved")));
-            } else {
-                commons::dTrace($model);
-                commons::dTrace($model->getErrors());
-                $web->sendResponse(200, CJSON::encode(
-                                array("success" => FALSE,
-                                    "message" => "There was an error saving this application.")));
-            }
+            $web->sendResponse(200, NJSON::encode(
+                            array("success" => TRUE,
+                                "application_k" => $id,
+                                "message" => Yii::t('Hint', 'AppAddSuccess', array(), 'i18n'))));
         }
     }
 
     public function getTree() {
 
-        $apps = Applications::model()->findAll();
+        $apps = Applications::model()->findAll(array('order'=>'sort'));
 
         $tree = $this->buildTree($apps, "children");
 
@@ -129,6 +94,7 @@ class ApplicationsController extends Controller {
                 "description" => $app["description"],
                 "configurations" => $app["configurations"],
                 "active" => $app["active"],
+                "sort" => $app["sort"],
                 "iconCls" => $iconCls,
             ));
         }

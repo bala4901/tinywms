@@ -37,9 +37,15 @@ Ext.define("Bleext.modules.catalogs.applications.view.ApplicationForm",{
 				fieldLabel	: "Name",
 				name		: "name",
 				allowBlank	: false
-			},{
+			},
+                        {
 				fieldLabel	: "Controller",
 				name		: "klass"
+			},
+                        {
+				fieldLabel	: "Order",
+				name		: "sort",
+				allowBlank	: false
 			},{
 				xtype		: "textarea",
 				fieldLabel	: "Description",

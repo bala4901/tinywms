@@ -51,6 +51,11 @@ You may optionally enter a comparison operator (&lt;, &lt;=, &gt;, &gt;=, &lt;&g
 		/*
 		'write_uid',
 		'write_date',
+		array(
+					'name' => 'active',
+					'value' => '($data->active === 0) ? Yii::t(\'app\', \'No\') : Yii::t(\'app\', \'Yes\')',
+					'filter' => array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')),
+					),
 		*/
 		array(
 			'class' => 'CButtonColumn',

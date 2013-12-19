@@ -15,12 +15,10 @@ Ext.define("Bleext.modules.catalogs.roles.view.Viewport",{
 	
 	buildItems	: function(){
 		var grid = Ext.create("Bleext.modules.catalogs.roles.view.RolesGrid",{
-			region	: "south",
-			height	: 150
+			region	: "center",
+			
 		});
-		var form = Ext.create("Bleext.modules.catalogs.roles.view.RoleForm",{
-			region	: "center"
-		});
-		return [grid,form];
+
+		return [grid];
 	}
 });

@@ -22,6 +22,7 @@ Ext.define("Bleext.modules.catalogs.applications.model.Application",{
 		"description",
 		{name:"active",type:"boolean"},
 		"klass",
-		"configurations"
+		"configurations",
+                "sort"
 	]
 });

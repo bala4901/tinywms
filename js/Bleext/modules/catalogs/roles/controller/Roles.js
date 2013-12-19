@@ -19,28 +19,29 @@ Ext.define("Bleext.modules.catalogs.roles.controller.Roles", {
     stores: ["Bleext.modules.catalogs.roles.store.Roles"],
     models: ["Bleext.modules.catalogs.roles.model.Role"],
     init: function(app) {
-        this.win.add(Ext.create("Bleext.modules.catalogs.roles.view.Viewport"));
+        this.callParent();
+        //this.win.add(Ext.create("Bleext.modules.catalogs.roles.view.Viewport"));
 
         this.control({
-            "#roles button[action=new]": {
-                click: this.addRole
-            },
-            "#roles button[action=save]": {
-                click: this.saveRole
-            },
-            "#roles button[action=delete]": {
-                click: this.deleteRole
-            }
+            /*  "#roles button[action=new]": {
+             click: this.addRole
+             },
+             "#roles button[action=save]": {
+             click: this.saveRole
+             },
+             "#roles button[action=delete]": {
+             click: this.deleteRole
+             }*/
         });
     },
-    addRole: function() {
+    add: function() {
         var grid = this.win.down("panel[region=center]"),
                 store = grid.getStore();
 
         store.insert(0, {});
         grid.editingPlugin.startEdit(0, 0);
     },
-    saveRole: function() {
+    save: function() {
         var grid = this.win.down("panel[region=center]"),
                 store = grid.getStore(),
                 records = Ext.Array.merge(store.getNewRecords(), store.getUpdatedRecords()),
@@ -51,19 +52,20 @@ Ext.define("Bleext.modules.catalogs.roles.controller.Roles", {
         });
 
         Bleext.Ajax.request({
-            url: Bleext.BASE_PATH + "index.php/roles/saveRoles",
-            params: {roles: Ext.encode(data)},
+            url: Bleext.BASE_PATH + "index.php/roles/create",
+            params: {data: Ext.encode(data)},
             el: this.win.el,
             success: function(info, options) {
-                Ext.Msg.alert("Mensaje", info.message);
+             //   Ext.Msg.alert("Mensaje", info.message);
                 store.load();
             },
             failure: function(info) {
-                Bleext.log(info);
-                Ext.Msg.alert("Error", "No se guardaron los roles!");
+                //Bleext.log(info);
+              //  Ext.Msg.alert("Error", "No se guardaron los roles!");
             }
         });
-    }, deleteRole: function() {
+    },
+    remove: function() {
         var grid = this.win.down("panel[region=center]"),
                 store = grid.getStore(),
                 sm = grid.getSelectionModel();
@@ -105,7 +107,8 @@ Ext.define("Bleext.modules.catalogs.roles.controller.Roles", {
                     }
             );
         }
-    }
-
-
+    },
+    setViewport: function() {
+        this.win.add(Ext.create("Bleext.modules.catalogs.roles.view.Viewport"));
+    },
 });

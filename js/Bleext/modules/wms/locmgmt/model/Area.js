@@ -16,6 +16,10 @@ Ext.define("Bleext.modules.wms.locmgmt.model.Area", {
         {name: "area_code"},
         {name: "wh_id"},
         {name: "area_type_id"},
+        {name: "areatype"},
+        {name: "areatype.name"},
+        {name: "warehouse"},
+        {name: "warehouse.name"},
     ]
 
 });

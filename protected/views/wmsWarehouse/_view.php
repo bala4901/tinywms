@@ -26,6 +26,9 @@
 	<?php echo GxHtml::encode($data->getAttributeLabel('write_date')); ?>:
 	<?php echo GxHtml::encode($data->write_date); ?>
 	<br />
+	<?php echo GxHtml::encode($data->getAttributeLabel('active')); ?>:
+	<?php echo GxHtml::encode($data->active); ?>
+	<br />
 	*/ ?>
 
 </div>

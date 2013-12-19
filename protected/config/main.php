@@ -6,7 +6,7 @@
 // CWebApplication properties can be configured here.
 $config = array(
     'basePath' => dirname(__FILE__) . DIRECTORY_SEPARATOR . '..',
-    'name' => 'My Web Application',
+    'name' => 'tinyWMS',
     // preloading 'log' component
     'preload' => array('log'),
     // autoloading model and component classes
@@ -24,8 +24,8 @@ $config = array(
             // If removed, Gii defaults to localhost only. Edit carefully to taste.
             'ipFilters' => array('127.0.0.1', '::1'),
             'generatorPaths' => array(
-			'ext.giix-core', // giix generators
-		),
+                'ext.giix-core', // giix generators
+            ),
         ),
     ),
     'behaviors' => array(
@@ -35,6 +35,19 @@ $config = array(
     ),
     // application components
     'components' => array(
+        'db' => array(
+            'connectionString' => 'mysql:host=localhost;dbname=tinywms',
+            'emulatePrepare' => true,
+            'username' => 'root',
+            'password' => '',
+            'charset' => 'utf8',
+            'enableProfiling' => true,
+            'enableParamLogging' => true,
+        ),
+        'authManager' => array(
+            'class' => 'CDbAuthManager',
+            'connectionID' => 'db',
+        ),
         'user' => array(
             // enable cookie-based authentication
             'allowAutoLogin' => false,
@@ -46,21 +59,22 @@ $config = array(
             dirname(__FILE__) . '/../extensions/starship/restfullyii/config/routes.php'
             ),
         ),
+        'i18n_db' => array(
+            'class' => 'CDbConnection',
+            'connectionString' => 'sqlite:' . dirname(__FILE__) . '/../modules/i18n/data/i18n.sqlite',
+        ),
+        'i18n' => array(
+            'class' => 'CDbMessageSource',
+            'connectionID' => 'i18n_db',
+            'sourceMessageTable' => 'yii_i18n_source_messages', // will not use Yii Core framework/i18n/CdbMessageSource.php public case sensitive attributes values.
+            'translatedMessageTable' => 'yii_i18n_messages', // will not use Yii Core framework/i18n/CdbMessageSource.php public case sensitive attributes values.
+        ),
         /*
           'db'=>array(
           'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
           ),
          */
         // uncomment the following to use a MySQL database
-        'db' => array(
-            'connectionString' => 'mysql:host=localhost;dbname=tinywms',
-            'emulatePrepare' => true,
-            'username' => 'root',
-            'password' => '',
-            'charset' => 'utf8',
-            'enableProfiling' => true,
-            'enableParamLogging' => true,
-        ),
         'errorHandler' => array(
             // use 'site/error' action to display errors
             'errorAction' => 'site/error',
@@ -70,18 +84,17 @@ $config = array(
             'routes' => array(
                 array(
                     'class' => 'CFileLogRoute',
-                    'levels' => 'error, warning,trace',
+                    'levels' => 'error,info, warning,trace',
                     'logFile' => 'application.log'
                 ),
                 array(
                     'class' => 'CFileLogRoute',
-                    // 'levels' => 'trace,log',
+                    'levels' => 'profile',
                     'categories' => 'system.db.CDbCommand.query',
                     'logFile' => 'db.log'
                 ),
                 array(
                     'class' => 'CFileLogRoute',
-                    // 'levels' => 'trace,log',
                     'categories' => 'vardump',
                     'logFile' => 'debug.log'
                 ),
@@ -102,11 +115,12 @@ $config = array(
         'params' => [
             'RestfullYii' => [
                 'req.auth.user' => function($application_id, $username, $password) {
-                    return false;
-                },
+            return false;
+        },
             ]
         ]
     ),
+
 );
 
 $modules_dir = dirname(dirname(__FILE__)) . DIRECTORY_SEPARATOR . 'modules' . DIRECTORY_SEPARATOR;

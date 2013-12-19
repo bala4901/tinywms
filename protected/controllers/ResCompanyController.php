@@ -14,13 +14,15 @@ class ResCompanyController extends Controller {
 
     /**
      * @return array action filters
-     */
+     
     public function filters() {
         return array(
             'accessControl', // perform access control for CRUD operations
             'postOnly + delete', // we only allow deletion via POST request
         );
     }
+     * 
+     */
 
     /**
      * Specifies the access control rules.
@@ -30,7 +32,7 @@ class ResCompanyController extends Controller {
     public function accessRules() {
         return array(
             array('allow', // allow all users to perform 'index' and 'view' actions
-                'actions' => array('index', 'view', 'save', 'loadTree', 'move'),
+                'actions' => array('index', 'view', 'save', 'loadTree', 'move', 'GetComboSelection'),
                 'users' => array('*'),
             ),
             array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -319,6 +321,19 @@ class ResCompanyController extends Controller {
             $tree->addChild($app, $app["parent_id"]);
         }
         return $tree;
+    }
+
+    /**
+     * Returns the data for filling the combo box
+     * @return id, name
+     */
+    public function actionGetComboSelection() {
+
+        $model = new ResCompany();
+        $data = $model->getComboSelect();
+        //findAll($criteria);
+        $web = new WebUtil();
+        $web->sendResponse(200, CJSON::encode(array("data" => $data, "success" => TRUE, "message" => "Permissions successfully saved")));
     }
 
 }

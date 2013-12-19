@@ -48,6 +48,11 @@
 		<?php echo $form->textField($model, 'write_date'); ?>
 		<?php echo $form->error($model,'write_date'); ?>
 		</div><!-- row -->
+		<div class="row">
+		<?php echo $form->labelEx($model,'active'); ?>
+		<?php echo $form->checkBox($model, 'active'); ?>
+		<?php echo $form->error($model,'active'); ?>
+		</div><!-- row -->
 
 
 <?php

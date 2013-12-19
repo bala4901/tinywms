@@ -17,7 +17,7 @@ Ext.define("Bleext.modules.catalogs.roles.view.RolesGrid",{
 	title		: "Roles",
 	border		: false,
 	split		: true,
-	collapsible	: true,
+	collapsible	: false,
 	editable	: true,
 	
 	initComponent	: function(){

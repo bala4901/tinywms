@@ -1,255 +1,40 @@
-2013/11/18 16:17:00 [trace] [vardump] stdClass#1
+2013/12/15 12:08:22 [trace] [vardump] array
 (
-    [id] => 11
-    [parent_id] => ''
-)
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\controllers\ResCompanyController.php (256)
-in C:\wamp\www\tinywms\index.php (18)
-2013/11/18 16:23:07 [trace] [vardump] stdClass#1
-(
-    [id] => 12
-    [parent_id] => null
-)
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\controllers\ResCompanyController.php (256)
-in C:\wamp\www\tinywms\index.php (18)
-2013/11/18 16:23:11 [trace] [vardump] stdClass#1
-(
-    [id] => 12
-    [parent_id] => null
-)
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\controllers\ResCompanyController.php (256)
-in C:\wamp\www\tinywms\index.php (18)
-2013/11/18 16:24:43 [trace] [vardump] stdClass#1
-(
-    [id] => 12
-    [parent_id] => null
-    [old] => null
-)
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\controllers\ResCompanyController.php (256)
-in C:\wamp\www\tinywms\index.php (18)
-2013/11/29 05:23:13 [trace] [vardump] Applications#1
-(
-    [CActiveRecord:_new] => true
-    [CActiveRecord:_attributes] => array
+    0 => stdClass#1
     (
-        'application_k' => ''
-        'application_parent_k' => '20'
-        'name' => 'Warehouse'
-        'klass' => 'Bleext.modules.wms.locmgmt.controller.Warehouse'
-        'description' => ''
-        'active' => 1
-        'configurations' => '{\"iconCls\":\"\",\"width\":800,\"height\":480,\"shorcutIconCls\":\"\",\"singleton\":0}'
-        'date_updated' => CDbExpression#2
-        (
-            [expression] => 'NOW()'
-            [params] => array()
-            [CComponent:_e] => null
-            [CComponent:_m] => null
-        )
-        'date_created' => CDbExpression#2(...)
+        [role_k] => 0
+        [users] => 0
+        [name] => 'sdfsf'
+        [description] => 'sdfdsf'
     )
-    [CActiveRecord:_related] => array()
-    [CActiveRecord:_c] => null
-    [CActiveRecord:_pk] => null
-    [CActiveRecord:_alias] => 't'
-    [CModel:_errors] => array
+    1 => stdClass#2
     (
-        'description' => array
-        (
-            0 => 'Description cannot be blank.'
-        )
+        [role_k] => 0
+        [users] => 0
+        [name] => 'dsf'
+        [description] => 'dfs'
     )
-    [CModel:_validators] => CList#3
+    2 => stdClass#3
     (
-        [CList:_d] => array
-        (
-            0 => CRequiredValidator#4
-            (
-                [requiredValue] => null
-                [strict] => false
-                [trim] => true
-                [attributes] => array
-                (
-                    0 => 'name'
-                    1 => 'description'
-                    2 => 'klass'
-                    3 => 'configurations'
-                    4 => 'active'
-                )
-                [message] => null
-                [skipOnError] => false
-                [on] => array()
-                [except] => array()
-                [safe] => true
-                [enableClientValidation] => true
-                [CComponent:_e] => null
-                [CComponent:_m] => null
-            )
-            1 => CNumberValidator#5
-            (
-                [integerOnly] => true
-                [allowEmpty] => true
-                [max] => null
-                [min] => null
-                [tooBig] => null
-                [tooSmall] => null
-                [integerPattern] => '/^\\s*[+-]?\\d+\\s*$/'
-                [numberPattern] => '/^\\s*[-+]?[0-9]*\\.?[0-9]+([eE][-+]?[0-9]+)?\\s*$/'
-                [attributes] => array
-                (
-                    0 => 'application_parent_k'
-                    1 => 'active'
-                )
-                [message] => null
-                [skipOnError] => false
-                [on] => array()
-                [except] => array()
-                [safe] => true
-                [enableClientValidation] => true
-                [CComponent:_e] => null
-                [CComponent:_m] => null
-            )
-            2 => CStringValidator#6
-            (
-                [max] => 200
-                [min] => null
-                [is] => null
-                [tooShort] => null
-                [tooLong] => null
-                [allowEmpty] => true
-                [encoding] => null
-                [attributes] => array
-                (
-                    0 => 'name'
-                )
-                [message] => null
-                [skipOnError] => false
-                [on] => array()
-                [except] => array()
-                [safe] => true
-                [enableClientValidation] => true
-                [CComponent:_e] => null
-                [CComponent:_m] => null
-            )
-            3 => CStringValidator#7
-            (
-                [max] => 255
-                [min] => null
-                [is] => null
-                [tooShort] => null
-                [tooLong] => null
-                [allowEmpty] => true
-                [encoding] => null
-                [attributes] => array
-                (
-                    0 => 'klass'
-                )
-                [message] => null
-                [skipOnError] => false
-                [on] => array()
-                [except] => array()
-                [safe] => true
-                [enableClientValidation] => true
-                [CComponent:_e] => null
-                [CComponent:_m] => null
-            )
-            4 => CDefaultValueValidator#8
-            (
-                [value] => CDbExpression#9
-                (
-                    [expression] => 'NOW()'
-                    [params] => array()
-                    [CComponent:_e] => null
-                    [CComponent:_m] => null
-                )
-                [setOnEmpty] => false
-                [attributes] => array
-                (
-                    0 => 'date_updated'
-                )
-                [message] => null
-                [skipOnError] => false
-                [on] => array
-                (
-                    'update' => 'update'
-                )
-                [except] => array()
-                [safe] => true
-                [enableClientValidation] => true
-                [CComponent:_e] => null
-                [CComponent:_m] => null
-            )
-            5 => CDefaultValueValidator#10
-            (
-                [value] => CDbExpression#2(...)
-                [setOnEmpty] => false
-                [attributes] => array
-                (
-                    0 => 'date_updated'
-                    1 => 'date_created'
-                )
-                [message] => null
-                [skipOnError] => false
-                [on] => array
-                (
-                    'insert' => 'insert'
-                )
-                [except] => array()
-                [safe] => true
-                [enableClientValidation] => true
-                [CComponent:_e] => null
-                [CComponent:_m] => null
-            )
-            6 => CSafeValidator#11
-            (
-                [attributes] => array
-                (
-                    0 => 'application_k'
-                    1 => 'application_parent_k'
-                    2 => 'name'
-                    3 => 'description'
-                    4 => 'klass'
-                    5 => 'configurations'
-                    6 => 'date_created'
-                    7 => 'date_updated'
-                    8 => 'active'
-                )
-                [message] => null
-                [skipOnError] => false
-                [on] => array
-                (
-                    'search' => 'search'
-                )
-                [except] => array()
-                [safe] => true
-                [enableClientValidation] => true
-                [CComponent:_e] => null
-                [CComponent:_m] => null
-            )
-        )
-        [CList:_c] => 7
-        [CList:_r] => false
-        [CComponent:_e] => null
-        [CComponent:_m] => null
-    )
-    [CModel:_scenario] => 'insert'
-    [CComponent:_e] => null
-    [CComponent:_m] => null
-)
-in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\controllers\ApplicationsController.php (92)
-in C:\wamp\www\tinywms\index.php (18)
-2013/11/29 05:23:13 [trace] [vardump] array
-(
-    'description' => array
-    (
-        0 => 'Description cannot be blank.'
+        [role_k] => 1
+        [users] => 1
+        [name] => 'Administratorwe'
+        [description] => 'The super user'
     )
 )
 in C:\wamp\www\tinywms\protected\config\commons.php (17)
-in C:\wamp\www\tinywms\protected\controllers\ApplicationsController.php (93)
+in C:\wamp\www\tinywms\protected\controllers\RolesController.php (79)
+in C:\wamp\www\tinywms\index.php (18)
+2013/12/15 12:08:43 [trace] [vardump] array
+(
+    0 => stdClass#1
+    (
+        [role_k] => 0
+        [users] => 0
+        [name] => 'asd'
+        [description] => 'asd'
+    )
+)
+in C:\wamp\www\tinywms\protected\config\commons.php (17)
+in C:\wamp\www\tinywms\protected\controllers\RolesController.php (79)
 in C:\wamp\www\tinywms\index.php (18)

@@ -45,6 +45,11 @@
 		<?php echo $form->textField($model, 'write_date'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model, 'active'); ?>
+		<?php echo $form->dropDownList($model, 'active', array('0' => Yii::t('app', 'No'), '1' => Yii::t('app', 'Yes')), array('prompt' => Yii::t('app', 'All'))); ?>
+	</div>
+
 	<div class="row buttons">
 		<?php echo GxHtml::submitButton(Yii::t('app', 'Search')); ?>
 	</div>

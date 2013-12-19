@@ -1,9 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>js/Bleext/modules/wms/locmgmt/view/warehouse/WhForm.js</url>
+            <bookmark id="1">
+                <name/>
+                <line>36</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp/www/tinywms/js/Bleext/abstract/Viewport.js</file>
+            <file>file:/C:/wamp/www/tinywms/protected/tests/bootstrap.php</file>
+            <file>file:/C:/wamp/www/tinywms/protected/models/Roles.php</file>
+            <file>file:/C:/wamp/www/tinywms/protected/models/_base/BaseRoles.php</file>
+            <file>file:/C:/wamp/www/tinywms/protected/models/Permissions.php</file>
+            <file>file:/C:/wamp/www/tinywms/protected/tests/unit/protected/models/WmsWarehouseTest.php</file>
+            <file>file:/C:/wamp/www/tinywms/protected/tests/unit/protected/models/RolesTest.php</file>
+            <file>file:/C:/wamp/www/tinywms/protected/controllers/RolesController.php</file>
         </group>
     </open-files>
 </project-private>

@@ -16,6 +16,10 @@ Ext.define("Bleext.modules.wms.locmgmt.model.Location", {
         {name: "location_code"},
         {name: "area_id"},
         {name: "wh_id"},
+        {name: "warehouse"},
+        {name: "warehouse.name"},
+        {name: "area"},
+        {name: "area.name"},
         {name: "sort"},
     ]
 

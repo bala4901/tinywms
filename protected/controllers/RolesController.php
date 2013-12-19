@@ -2,7 +2,8 @@
 
 Yii::import('application.vendor.*');
 require_once('Utilities/TreeUtil.php');
-require_once('Utilities/WebUtil.php');
+
+//require_once('Utilities/WebUtil.php');
 
 class RolesController extends Controller {
 
@@ -74,20 +75,22 @@ class RolesController extends Controller {
      * If creation is successful, the browser will be redirected to the 'view' page.
      */
     public function actionCreate() {
-        $model = new Roles;
+        $datas = json_decode($_POST["data"]);
+        
+        foreach ($datas as $var => $data) {
+          //update
+        if (strlen($data->role_k) > 0) {
+            $retVal = Roles::model()->Write($data);
+            
+            WebUtil::sendResponse(200, NJSON::encode($retVal));
+         
+        } else { //create
+            $retVal = Roles::model()->create($data);
 
-        // Uncomment the following line if AJAX validation is needed
-        // $this->performAjaxValidation($model);
-
-        if (isset($_POST['Roles'])) {
-            $model->attributes = $_POST['Roles'];
-            if ($model->save())
-                $this->redirect(array('view', 'id' => $model->role_k));
+            WebUtil::sendResponse(200, NJSON::encode($retVal));
         }
-
-        $this->render('create', array(
-            'model' => $model,
-        ));
+        }
+        
     }
 
     /**
@@ -186,8 +189,8 @@ class RolesController extends Controller {
 
         $limits = $this->getPageLimit(Yii::app()->request);
         $role_k = Yii::app()->request->getQuery("role_k", "0");
-        
-        
+
+
         $model = Roles::model()->getUsers($role_k, $limits);
 
         $web->sendResponse(200, CJSON::encode(array("data" => $model, "success" => TRUE)));

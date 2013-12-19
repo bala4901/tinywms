@@ -13,17 +13,31 @@
 Ext.define("Bleext.modules.wms.locmgmt.controller.Location", {
     extend: "Bleext.abstract.Controller",
     views: [
+        'Bleext.modules.wms.locmgmt.view.location.LocationGrid',
+        'Bleext.modules.wms.locmgmt.view.location.LocationForm'
     ],
     stores: ['Bleext.modules.wms.locmgmt.store.Locations'],
     models: ['Bleext.modules.wms.locmgmt.model.Location'],
     init: function() {
         this.callParent();
 
-
+        this.control({
+            'locationgrid': {
+                itemdblclick: this.gridDblClick,
+            }
+        });
     },
     add: function()
     {
-        console.log("location");
+        var formPanel = this.win.down("panel[region=east]");
+        var form = this.win.down("form");
+
+        form.getForm().reset();
+
+        if (formPanel.collapsed)
+        {
+            formPanel.expand();
+        }
     },
     export: function()
     {
@@ -35,26 +49,6 @@ Ext.define("Bleext.modules.wms.locmgmt.controller.Location", {
     remove: function() {
 
     },
-    editApplication: function(tree, record) {
-
-    },
-    changeParent: function(application, oldParent, newParent, index, options) {
-
-
-    },
-    actionIndex: function(obj) {
-        //if (record.data.clickable <= 0) return;
-        var view = Ext.create("Bleext.modules.wms.master.view.location.LocationGrid");
-
-        var ctrPanel = obj;
-
-        ctrPanel.removeAll();
-
-        ctrPanel.insert(0, view);
-        ctrPanel.doLayout;
-
-        //this.application.setMainView("Bleext.modules.wms.master.view.location.LocationGrid");
-    },
     getCentrePanel: function()
     {
         return this.win.down("panel[region=center]");
@@ -62,4 +56,24 @@ Ext.define("Bleext.modules.wms.locmgmt.controller.Location", {
     setViewport: function() {
         this.win.add(Ext.create("Bleext.modules.wms.locmgmt.view.location.Viewport"));
     },
+    gridDblClick: function(model, records) {
+        console.log(records);
+
+        this.getFormPanel().expand();
+        this.getFormPanel().getForm().loadRecord(records);
+        //  }
+    },
+    onViewReady: function(grid) {
+        // grid.getSelectionModel().select(0);
+    },
+    getFormPanel: function()
+    {
+        var fPanel = this.win.down("panel[region=east]");
+        return fPanel;
+    },
+    getGridPanel: function()
+    {
+        var fPanel = this.win.down("panel[region=center]");
+        return fPanel;
+    }
 });

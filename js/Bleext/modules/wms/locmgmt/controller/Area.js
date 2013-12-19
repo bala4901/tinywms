@@ -13,35 +13,62 @@
 Ext.define("Bleext.modules.wms.locmgmt.controller.Area", {
     extend: "Bleext.abstract.Controller",
     views: [
-
+        "Bleext.modules.wms.locmgmt.view.area.AreaForm",
+        "Bleext.modules.wms.locmgmt.view.area.AreaGrid"
     ],
     stores: ['Bleext.modules.wms.locmgmt.store.Areas'],
     models: ['Bleext.modules.wms.locmgmt.model.Area'],
     init: function() {
         this.callParent();
 
+        this.control({
+            'areagrid': {
+                itemdblclick: this.gridDblClick,
+                viewready: this.onViewReady
+            }
+        });
 
     },
     add: function()
     {
-        
+        var formPanel = this.win.down("panel[region=east]");
+        var form = this.win.down("form");
+
+        form.getForm().reset();
+
+        if (formPanel.collapsed)
+        {
+            formPanel.expand();
+        }
     },
     export: function()
     {
- 
+
     },
     save: function() {
-       
+
     },
     remove: function() {
-        
+
     },
-    editApplication: function(tree, record) {
-      
+    gridDblClick: function(model, records) {
+
+        this.getFormPanel().expand();
+        this.getFormPanel().getForm().loadRecord(records);
+        //  }
     },
-    changeParent: function(application, oldParent, newParent, index, options) {
-        
-        
+    onViewReady: function(grid) {
+        // grid.getSelectionModel().select(0);
+    },
+    getFormPanel: function()
+    {
+        var fPanel = this.win.down("panel[region=east]");
+        return fPanel;
+    },
+    getGridPanel: function()
+    {
+        var fPanel = this.win.down("panel[region=center]");
+        return fPanel;
     },
     setViewport: function() {
         this.win.add(Ext.create("Bleext.modules.wms.locmgmt.view.area.Viewport"));

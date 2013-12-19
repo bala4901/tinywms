@@ -15,7 +15,8 @@ Ext.define("Bleext.modules.wms.locmgmt.model.Warehouse", {
     fields: [
         {name: "wh_code"},
         {name: "company_id"},
-        {name: "company_id.name"},
+        {name: "company"},
+        {name: "company.name"},
     ]
 
 });

@@ -114,7 +114,7 @@ class Permissions extends CActiveRecord {
         return $rows;
     }
 
-    public function addPermissions($id) {
+    public function addPermissions($id, $appname) {
         $permissions = array(
             array("application_k" => $id, "action" => "access", "name" => "Access", "description" => "To access the menu"),
             array("application_k" => $id, "action" => "new", "name" => "Create", "description" => "Create"),
@@ -133,6 +133,15 @@ class Permissions extends CActiveRecord {
                 $model->save();
             }
         }
+  
+        $auth = Yii::app()->authManager;
+
+        $auth->createOperation('[' . $id . ']' . 'Access', 'To access the menu');
+        $auth->createOperation('[' . $id . ']' . 'Create', 'Create');
+        $auth->createOperation('[' . $id . ']' . 'Edit', 'Edit');
+        $auth->createOperation('[' . $id . ']' . 'Delete', 'Delete');
+        $auth->createOperation('[' . $id . ']' . 'Export', 'Export');
+        $auth->createOperation('[' . $id . ']' . 'Print', 'Print');
     }
 
     /**
